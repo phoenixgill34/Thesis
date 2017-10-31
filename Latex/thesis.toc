@@ -1,0 +1,61 @@
+\contentsline {chapter}{List of Figures}{v}
+\contentsline {chapter}{List of Tables}{vi}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Motivation}{1}
+\contentsline {section}{\numberline {1.2}State of the Art}{3}
+\contentsline {section}{\numberline {1.3}Thesis Contributions}{4}
+\contentsline {section}{\numberline {1.4}Thesis Organization}{5}
+\contentsline {chapter}{\numberline {2}Heterogeneous Cooperative Spectrum Sensing (CSS)}{6}
+\contentsline {section}{\numberline {2.1}Cognitive Radios}{6}
+\contentsline {section}{\numberline {2.2}Heterogeneous Networks}{7}
+\contentsline {section}{\numberline {2.3}Cooperative Spectrum Sensing}{7}
+\contentsline {section}{\numberline {2.4}Software Defined Radios}{8}
+\contentsline {subsection}{\numberline {2.4.1}GNURadio}{9}
+\contentsline {subsection}{\numberline {2.4.2}MATLAB}{9}
+\contentsline {section}{\numberline {2.5}Summary}{10}
+\contentsline {chapter}{\numberline {3}Long Term Evolution for Railways (LTE-R)}{11}
+\contentsline {section}{\numberline {3.1}LTE-R Communication System}{11}
+\contentsline {section}{\numberline {3.2}Leaky Coaxial Cable}{13}
+\contentsline {section}{\numberline {3.3}Channel Impairements Inside a Tunnel}{14}
+\contentsline {subsection}{\numberline {3.3.1}Multipath Fading}{14}
+\contentsline {subsection}{\numberline {3.3.2}Doppler Shift}{15}
+\contentsline {section}{\numberline {3.4}Two-Ray Propagation Model}{15}
+\contentsline {subsection}{\numberline {3.4.1}Classical Two-Ray Propagation Model}{15}
+\contentsline {subsection}{\numberline {3.4.2}Dynamic K-factor}{15}
+\contentsline {section}{\numberline {3.5}Summary}{15}
+\contentsline {chapter}{\numberline {4}Heterogeneous CSS Implementation}{16}
+\contentsline {section}{\numberline {4.1}Overview}{17}
+\contentsline {section}{\numberline {4.2}Experimental Setup}{17}
+\contentsline {subsection}{\numberline {4.2.1}Transmitter Setup for CSS Measurements}{17}
+\contentsline {subsection}{\numberline {4.2.2}Sensor Nodes Setup}{17}
+\contentsline {section}{\numberline {4.3}Hard Fusion}{17}
+\contentsline {subsection}{\numberline {4.3.1}AND Algorithm}{17}
+\contentsline {subsection}{\numberline {4.3.2}OR Algorithm}{17}
+\contentsline {subsection}{\numberline {4.3.3}Majority Rule}{17}
+\contentsline {section}{\numberline {4.4}Soft Fusion}{17}
+\contentsline {subsection}{\numberline {4.4.1}EGC Scheme}{17}
+\contentsline {subsection}{\numberline {4.4.2}MNE Scheme}{17}
+\contentsline {section}{\numberline {4.5}Summary}{17}
+\contentsline {chapter}{\numberline {5}LTE-R Communication System Implementation}{18}
+\contentsline {section}{\numberline {5.1}Overview}{18}
+\contentsline {section}{\numberline {5.2}LTE-R Testbed in Matlab}{18}
+\contentsline {subsection}{\numberline {5.2.1}HST Channel Model}{18}
+\contentsline {subsection}{\numberline {5.2.2}LTE-R OFDMA}{18}
+\contentsline {section}{\numberline {5.3}Analysis}{18}
+\contentsline {section}{\numberline {5.4}Summary}{18}
+\contentsline {chapter}{\numberline {6}Experimental Results}{20}
+\contentsline {section}{\numberline {6.1}Overview}{20}
+\contentsline {section}{\numberline {6.2}Heterogeneous CSS Results}{20}
+\contentsline {subsection}{\numberline {6.2.1}Hard Decision Combining}{20}
+\contentsline {subsection}{\numberline {6.2.2}Soft Decision Combining}{20}
+\contentsline {section}{\numberline {6.3}HST LTE-R in a Tunnel}{20}
+\contentsline {subsection}{\numberline {6.3.1}K-factor in a Tunnel}{20}
+\contentsline {subsection}{\numberline {6.3.2}BER Performance}{20}
+\contentsline {subsection}{\numberline {6.3.3}Real-time BER in a Tunnel}{20}
+\contentsline {section}{\numberline {6.4}Summary}{20}
+\contentsline {chapter}{\numberline {7}Conclusions}{22}
+\contentsline {section}{\numberline {7.1}Research Outcomes}{22}
+\contentsline {section}{\numberline {7.2}Future Work}{22}
+\contentsline {chapter}{Bibliography}{23}
+\contentsline {chapter}{Appendix:}{}
+\contentsline {chapter}{\numberline {A}SS.m}{26}
