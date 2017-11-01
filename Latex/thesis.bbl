@@ -21,11 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{bookhtn1}
-A.~M. Wyglinski and D.~Pu, \emph{Digital communication systems engineering with
-  software-defined radio}.\hskip 1em plus 0.5em minus 0.4em\relax Artech House,
-  2013.
-
 \bibitem{arhtn2}
 I.~F. Akyildiz, W.-Y. Lee, M.~C. Vuran, and S.~Mohanty, ``Next
   generation/dynamic spectrum access/cognitive radio wireless networks: A
@@ -34,6 +29,11 @@ I.~F. Akyildiz, W.-Y. Lee, M.~C. Vuran, and S.~Mohanty, ``Next
 \bibitem{arhtn3}
 Q.~Zhao and B.~M. Sadler, ``A survey of dynamic spectrum access,'' \emph{IEEE
   signal processing magazine}, vol.~24, no.~3, pp. 79--89, 2007.
+
+\bibitem{bookhtn1}
+A.~M. Wyglinski and D.~Pu, \emph{Digital communication systems engineering with
+  software-defined radio}.\hskip 1em plus 0.5em minus 0.4em\relax Artech House,
+  2013.
 
 \bibitem{arhtn4}
 H.~Urkowitz, ``Energy detection of unknown deterministic signals,''
