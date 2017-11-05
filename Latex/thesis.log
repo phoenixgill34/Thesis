@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.31)  31 OCT 2017 16:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.31)  1 NOV 2017 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -139,6 +139,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box28
 \@float@everytoks=\toks24
 \@floatcapt=\box29
+) (./cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
 )
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -191,21 +195,21 @@ LaTeX Warning: Label `fig:2' multiply defined.
 (./appendixb.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
 \c@lstlisting=\count118
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
 
  []
 
@@ -281,35 +285,37 @@ Chapter 2.
 
 
 ]
+File: images/Gill/figs/cognitive_radio.eps Graphic file (type eps)
+ <images/Gill/figs/cognitive_radio.eps> [8]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
- [8]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
  [9]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [10])
-Underfull \hbox (badness 10000) in paragraph at lines 75--90
+ [10]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+)
+Underfull \hbox (badness 10000) in paragraph at lines 80--91
 
  []
 
-[11]
+[11] [12]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
@@ -330,11 +336,11 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 File: images/Gill/lte_figs/lter_architecture.eps Graphic file (type eps)
-<images/Gill/lte_figs/lter_architecture.eps> [12
+<images/Gill/lte_figs/lter_architecture.eps> [13
 
 
 
-] [13]
+] [14]
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no ≠ in font cmr10!
 
@@ -343,7 +349,7 @@ Overfull \hbox (17.3532pt too wide) in paragraph at lines 40--44
 GongpuWang/HSRCommunications] 
  []
 
-[14]
+[15]
 Missing character: There is no œ in font cmr10!
 Missing character: There is no Ñ in font cmr10!
 Missing character: There is no Œ in font cmr10!
@@ -359,26 +365,26 @@ Missing character: There is no Œ in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no Œ in font cmr10!
 Missing character: There is no ± in font cmr10!
- [15])
-Underfull \hbox (badness 10000) in paragraph at lines 90--93
+ [16])
+Underfull \hbox (badness 10000) in paragraph at lines 90--94
 
  []
 
-[16]
+[17]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 4.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 16--96
+Underfull \hbox (badness 10000) in paragraph at lines 16--97
 
  []
 
-[17
+[18
 
 
 
-] [18]
+] [19]
 \openout2 = `chapter5.aux'.
 
  (./chapter5.tex
@@ -388,11 +394,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-[19
+[20
 
 
 
-]) [20]
+]) [21]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
@@ -402,33 +408,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[21
+[22
 
 
 
-]) [22]
+]) [23]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
 Chapter 7.
-) [23
+) [24
 
 
 
-] (./thesis.bbl [24
+] (./thesis.bbl [25
 
 
 ]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
- [25]
+ [26]
 Underfull \hbox (badness 1953) in paragraph at lines 139--142
 []\OT1/cmr/m/n/10.95 Usrp. [On-line]. Avail-able: $https : / / www . ettus . co
 m / product / category /
  []
 
-) [26]
+[27]) [28]
 \openout2 = `appendixb.aux'.
 
  (./appendixb.tex
@@ -439,7 +445,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
- [27
+ [29
 
 
 ]
@@ -450,20 +456,20 @@ File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 48.
- [28] [29] [30]
-[31]) [32] (./thesis.aux (./chapter2.aux) (./chapter3.aux) (./chapter4.aux)
+ [30] [31] [32]
+[33]) [34] (./thesis.aux (./chapter2.aux) (./chapter3.aux) (./chapter4.aux)
 (./chapter5.aux) (./chapter6.aux) (./conclusion.aux) (./appendixb.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 3560 strings out of 494930
- 47363 string characters out of 6180168
- 156221 words of memory out of 5000000
- 6760 multiletter control sequences out of 15000+600000
+ 3656 strings out of 494930
+ 48533 string characters out of 6180168
+ 157068 words of memory out of 5000000
+ 6853 multiletter control sequences out of 15000+600000
  11665 words of font info for 43 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  29i,6n,32p,1363b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (39 pages, 87688 bytes).
+Output written on thesis.dvi (41 pages, 90784 bytes).

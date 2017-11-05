@@ -150,4 +150,30 @@ T.~S. Rappaport \emph{et~al.}, \emph{Wireless communications: principles and
   practice}.\hskip 1em plus 0.5em minus 0.4em\relax prentice hall PTR New
   Jersey, 1996, vol.~2.
 
+\bibitem{cogjm}
+J.~Mitola and G.~Q. Maguire, ``Cognitive radio: making software radios more
+  personal,'' \emph{IEEE Personal Communications}, vol.~6, no.~4, pp. 13--18,
+  Aug 1999.
+
+\bibitem{barker2008mission}
+B.~Barker, A.~Agah, and A.~M. Wyglinski, ``Mission-oriented communications
+  properties for software-defined radio configuration,'' \emph{Cognitive Radio
+  Networks}, p. 435, 2008.
+
+\bibitem{haykin2005cognitive}
+S.~Haykin, ``Cognitive radio: brain-empowered wireless communications,''
+  \emph{IEEE journal on selected areas in communications}, vol.~23, no.~2,
+  2005.
+
+\bibitem{newman2007cognitive}
+T.~R. Newman, B.~A. Barker, A.~M. Wyglinski, A.~Agah, J.~B. Evans, and G.~J.
+  Minden, ``Cognitive engine implementation for wireless multicarrier
+  transceivers,'' \emph{Wireless communications and mobile computing}, vol.~7,
+  no.~9, pp. 1129--1142, 2007.
+
+\bibitem{newman2008population}
+T.~R. Newman, R.~Rajbanshi, A.~M. Wyglinski, J.~B. Evans, and G.~J. Minden,
+  ``Population adaptation for genetic algorithm-based cognitive radios,''
+  \emph{Mobile networks and applications}, vol.~13, no.~5, pp. 442--451, 2008.
+
 \end{thebibliography}

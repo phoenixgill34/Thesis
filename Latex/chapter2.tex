@@ -5,35 +5,16 @@ This chapter provides the background information needed to understand the chapte
 
 \section{Cognitive Radios}
 Cognitive radio (CR)~\cite{cogjm} is a communication systems paradigm that focuses on employing highly agile, environmentally aware, intelligent wireless platforms in
-order to autonomously select and configure device operating parameters based on the prevailing radio and network environmental conditions~\cite{bookhtn1}. In general the cognitive radio may be expected to look at parameters such as channel occupancy rate, available channels, bandwidth required for data transmission and the modulation types that may be used. It must also look at the regulatory requirements set by the Federal Comm. In some instances a knowledge of geography and this may alter what it may be allowed to do. Software-defined radios (SDR) are mainly responsible for making cognitive radios used in wireless communications system a reality. Software radios provide a vast untapped potential to personalize services, and they make the process of modifying the radio characterisitcs extremely simple. 
+order to autonomously select and configure device operating parameters based on the prevailing radio and network environmental conditions~\cite{bookhtn1}. In general the cognitive radio may be expected to look at parameters such as channel occupancy rate, available channels, bandwidth required for data transmission and the modulation types that may be used. It must also look at the regulatory requirements set by the Federal Comm. In some instances a knowledge of geography and this may alter what it may be allowed to do. Software-defined radios (SDR) are mainly responsible for making cognitive radios used in wireless communications system a reality. Software radios provide a vast untapped potential to personalize services, and they make the process of modifying the radio characteristics extremely simple. 
 
+The work is underway to determine the best possible methods of developing the cognitive radio communications system that can fulfill all its requirements. To facilitate the intelligent decision making capabilities in these cognitive radio systems, machine learning algorithms have been proposed in the literature~\cite{barker2008mission,haykin2005cognitive,newman2007cognitive,newman2008population} to automate the reconfiguration process. The Figure~\ref{cograd} describes the various building blocks of a cognitive radio system. The spectrum sensing is performed to estimate the spectrum holes in the band and after the analysis the decision strategy is prepared. The radio is configured with the new parameters based on the radio environment and the spectrum decision made.  
 
-
-
-
-
-
-
-
-
-
-In order to enable a substantial level of intelligent decision making in these cognitive radio systems, machine learning techniques have been proposed to either partially or entirely automate the (re)configuration process . However, the solutions produced by these techniques often depend on explicit inputs by the human operators, which require some knowledge of the wireless device and the target networking behavior (e.g., high data rates, high error robustness, and low network latency). Moreover, the target behavior specified by the human operators may not match the actual target behavior[Di Pu/A. Wyglinski].
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/cognitive_radio.eps}
+    \caption{The block diagram explaining the basic parts of Cognitive Radio system. The operating parameters are configured based on the characterization of the wireless environment.} 
+\label{cograd}      
+\end{figure}
 
 \section{Heterogeneous Networks}
 Heterogeneous CR network, in which each SU may be equipped with different numbers of antennas and sampling
@@ -58,6 +39,13 @@ due to its low complexity [9], [13].[GuoshengYangHetNetPaper]
 Now that the signal processing techniques have been discussed, a platform for implementation is needed. The alley chosen for this thesis is to utilize a new hardware frontier
 called Software-Defined Radio, which will be discussed in this section.
 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/softwaredefinedradio.eps}
+    \caption{Software defined radio pushes all the adaptive elements and data manipulation operation into software. The goal of SDR is to provide or define all of the radio operation in software.} 
+\label{sdr}      
+\end{figure}
+
 For the past two decades there has been a paradigm shift is the definition of a radio device. The conversation has to do with the question of where hardware ends and where
 software begins. The term Software Defined Radio, coined by Dr. J. Mitola III, defined as a set of digital signal processing (DSP) primitives, a meta-level system for combining
 the primitives into communication system functions (transmitter, channel model, receiver, etc.), and a set of target processors on which the software radio is hosted for real-time
@@ -69,17 +57,39 @@ SpeakEasy was to use programmable processing to emulate more than ten existing m
 single radio, the operator could talk to ten radios operating under ten different standards. As simple enough idea, but unfortunately the implementation left much to be desired. For
 example, physically the device encapsulated the entire back of a common pickup truck [44]. This might be great for a ground station that does not move, but for a mobile unit this
 was highly impractical. Secondly, in 1992 field programmable gate arrays (FPGA) required significant time, comparatively to re-flash or change their operational parameters. Again,
-this also limited SpeakEasy’s flexibility.[Travisthesis]
+this also limited SpeakEasy’s flexibility.[Travisthesis].
+\subsection{Universal Software Radio Peripheral (USRP) N210}
 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/usrp.eps}
+    \caption{USRP N210.} 
+\label{usrp}      
+\end{figure}
 
-\subsection{GNURadio}
+\subsection{RTL-SDR Software-Defined Radio}
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/rtlsdr.eps}
+    \caption{RTL-SDR R2832u} 
+\label{usrp}      
+\end{figure}
+
+\subsection{GNURadio and Software-Defined Radio}
 The first software package to be discussed by this thesis is GNU Radio. GNU Radio provides the reconfigurable signal processing blocks that are necessary for software defined
 radios. GNU Radio is an open source project allowing for SDR developers to develop unique signal processing blocks and SDR systems. GNU Radio was started in 2001, originally
 forked from the SpectrumWare project developed at the Massachusetts Institute of Technology [46]. Since 2001, the code base has undergone massive changes, containing almost
 no code from the original SpectrumWare project. Physically the code consist of three languages Python, C++, and SWIG. Python provides the overarching control of the system or
 program, while C++ provides the actual signal processing blocks and mathematics. SWIG is a wrapper for C++ which allows Python to dynamically wrap around C++ and control
-or compile with it. A diagram below better illustrates this architecture. It is also important to mention that there as significant paradigm shifts in the community, pushing more and
-more code to Python rather than C++, due to its easier programming syntax and structure.
+or compile with it. A diagram below better illustrates this architecture. It is also important to mention that there as significant paradigm shifts in the community, pushing more and more code to Python rather than C++, due to its easier programming syntax and structure.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/gnuradio.eps}
+    \caption{GNURadio and Software-Defined Radio} 
+\label{usrp}      
+\end{figure}
 
 GNU Radio provides a very structured framework of flow design. Data processing segments are extremely self contained to minimize error propagation during system debugging.
 Since the software is open-source full access to all code is provide, giving low-level access to all operation within GNU Radio. Much of the actions have been abstracted to limited the

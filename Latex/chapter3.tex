@@ -22,7 +22,7 @@ sites, which could save as much as 80–90\% of the cost of a network. Railways 
 ing to make use of their GSM-R masts, and, therefore, a spectrum allocation under 1 GHz is more cost effective
 in Europe. However, the selection of frequency band depends on government policy and differs by country.
 \begin{figure*}[t]
-\label{fig:2}
+\label{fig:ltearch}
 \centering
 \includegraphics[width=\linewidth,keepaspectratio]{images/Gill/lte_figs/lter_architecture.eps} 
 \caption{High speed train inside a tunnel for LTE-R. $D_{LOS}$ is the distance between transmitter and receiver, $d$ is the distance between the LCX cable transmission slots.}
@@ -44,7 +44,16 @@ is ­preferred, and the packet number of retransmission must be reduced as much 
 
 
 \section{Leaky Coaxial Cable}
-Substantial work has been done for the radio communication in tunnel environments. Authors of [2]measure the radio channel frequency response; the large scale and small scale
+Substantial work has been done for the radio communication in tunnel environments. 
+
+\begin{figure}[!ht]
+\label{fig:leakcoax}
+\centering
+\includegraphics[width=\linewidth,keepaspectratio]{images/Gill/lte_figs/leakycoax.eps} 
+\caption{Leaky Coaxial Cable}
+\end{figure}
+
+Authors of [2]measure the radio channel frequency response; the large scale and small scale
 fading in tunnel are investigated through field experiments. Statistical characteristics of the propagation channels are
 suggested in [3]. Both [2] and [3] indicate that WLAN cannot achieve good performance when used in tunnel environments.
 As a result, leaky waveguide and leaky coaxial cable are used in wireless communication due to their stability and
@@ -83,8 +92,12 @@ tunnels using multiple antennas. Since the slots of LCX can be modeled as multip
 profile for our proposed channel. The Doppler shift variation f s (t) is described by
 
 \section{Two-Ray Propagation Model}
-	\subsection{Classical Two-Ray Propagation Model}
-	\subsection{Dynamic K-factor}
-\section{Summary}
 
+\subsection{Classical Two-Ray Propagation Model}
+
+
+
+\subsection{Dynamic K-factor}
+
+\section{Summary}
 This chapter outlined and examined the topics of jamming and anti-jamming techniques, and provided a foundation in communication system theory and advanced equalizer design.  Secondly it setup an understanding of Software-Defined Radio, the power of such an architecture, and examples of implementations and existing software for future designs.  Next, this thesis will consider a new anti-jamming technique and design an implementation of such a system.  After the implementation is investigated, the result of specific experiments on such an implementation will be analyzed.\\
