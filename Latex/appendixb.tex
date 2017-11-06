@@ -1,152 +1,607 @@
-\chapter{SS.m}
+\chapter{Heterogeneous Cooperative Spectrum Sensing Code}
+\section{harddecisionpdroc.m}
 \begin{lstlisting}[breaklines]
-
+% Hard-Decision Combining Results For Sensor Nodes
 clc;
-!sudo sysctl -w net.core.rmem_max=50000000
-!sudo sysctl -w net.core.wmem_max=1048576
+close all;
+clear all;
+%% Parameter Initialization
+N = 32;
+k=4;%sensor nodes..
+variance = 24.32e-9;
+pfa = 0.05;
+threshold = (qfuncinv(pfa)+sqrt(N)).*sqrt(N)*2*variance;
+snrthreotical = -18:0.5:20;
+snrlinear = 10.^(snrthreotical/10);
+%% SNR values from USRP and RTL-SDR
+snrpracticalavg = [-18.23,-14.22,-13.1,-12.22,-10.35,-8.25,-5.3,-2.1,0.13,...
+    1.34,2.58,3.76,8.98,11.33,12.35,13.45,15.77];
+snrlinearprac = 10.^(snrpracticalavg/10);
+%% Computing Detection Probability and ROC Characteristics
+pdprac = qfunc((threshold-2*N*variance.*(1+snrlinearprac))./...
+    (sqrt(N.*(1+2*snrlinearprac))*(2*variance)));
+pdpracor = 1-(1-pdprac).^4;
+pdpracand = pdprac.^4;
+tmp1 =  (1-pdprac).^2;
+tmp2 = (1-pdprac);
+pdpracmjr = (6*pdprac.^2).*tmp1+(4*pdprac.^3).*tmp2+pdprac.^4;
 
-!LD_LIBRARY_PATH=""   &&   /home/sdruser/COLLINS/SS/top_block_SS_R.py
+pfapracor = 1-(1-pfa).^4;
+pfapracand = pfa.^4;
+tmp1 =  (1-pfa).^2;
+tmp2 = (1-pfa);
+pfapracmjr = (6*pfa.^2).*tmp1+(4*pfa.^3).*tmp2+pfa.^4;
 
-%% Spectral Subtraction
-addpath('/home/sdruser/GNURadio/gnuradio/gnuradio-core/src/utils');
-received=read_complex_binary('received.txt');
-received_GMSK=read_float_binary('received_GMSK.txt');
-
-known=read_complex_binary('known_modulated.txt').*0.1;
-
-%remove startup transient
-cut=20001;
-received=received(cut:end);
-recSig=received;
-
-%% Timing Recovery
-L=2;
-g=0.07;
-hSync = comm.MuellerMullerTimingSynchronizer('SamplesPerSymbol', L, ...
-    'ErrorUpdateGain', g);
-
-% Estimate the delay from the received signal
-[sig, phase] = step(hSync, recSig);
-
-% apply phase
-recSig=recSig.*exp(1i*phase(end)*pi/180);
-
-
-%% find data
-r=double(sign(received_GMSK));
-                
-                
-s_saved=[ -1     1     1     1     1    -1     1    -1];
-s_saved=[s_saved s_saved s_saved]';
-prea=s_saved;
-s=s_saved.';
-
-% Find Preambles
-indexs=[];
-for i=1:length(r)-length(s_saved)-2000
-    x=sum(r(i:i+length(s_saved)-1)==s_saved);
-    %if x>10
-    %    disp(x);
-    %end
-   if sum(r(i:i+length(s_saved)-1)==s_saved)==length(s_saved)
-        indexs=[indexs i]; 
-   end
-end
-
-
-% Retry is no signal found
-if isempty(indexs)
-    disp('Looped');
-    SS_Final;
-    break
-end
-
-%% calculated channel coefficients
-loc=indexs(1);
-w=zeros(10,1);
-%Real message
-dd=read_char_binary('/home/sdruser/COLLINS/SS/input.txt');
-true_message=de2bi(dd',8,'left-msb');
-mbits=reshape(true_message',size(true_message,2)*size(true_message,1),1);
-mu=0.001;
-e_s=[];
-for i=length(w)+1:length(mbits)-length(w)
-    rr=mbits(i:-1:i-length(w)+1);
-    
-    disp([w'*rr received_GMSK(loc+i-1) mbits(i)]);
-    
-    e=w'*rr-received_GMSK(loc+i-1);
-    e_s=[e_s e];
-    
-    w=w-mu*rr*conj(e);
-
-end
-
-%% Section of Signal
-large_SR=recSig;
-frames=20;
-sample=18*8*2*frames;
-section=filter(w,1,known);
-error_saved=[];
-for i=1:sample:length(large_SR)-sample
-
-recSig=large_SR(i:i+sample-1);
-
-%% Find position of Frame in full signal
-section=filter(w,1,known);
-xc = xcorr(recSig,section);
-middle=ceil(length(xc)/2);
-xc=xc(middle:end);
-%stem(real(xc));
-[~,index]=max(real(xc));
-section=filter(w,1,known);
-
-if index+length(section)>sample
-   continue 
-end
-% Spectral Subtract
-subtraction=1;
-result=[];
-section=recSig(index:index+length(section)-1);
-
-for i=index:length(section):length(recSig)-length(section)
-    
-    result=[result;recSig(i:i+length(section)-1)-section.*subtraction];
-    
-end
-
-% Try Catch if no signal found
-if isempty(result)
-    continue
-end
-
-%% Plots
-figure;
-plot(real(recSig(index:index+length(result)-1)));
+%% ROC Characteristics...
+figure(1)
 hold on;
-plot(real(result),'r');
-plot(real(section*subtraction),'g');
-xlabel('Samples')
-ylabel('Magnitude')
-title(['Spectral Subtraction Over Subtraction Factor ',num2str(subtraction)]);
-legend('Original Signal','Subtracted Result','Estimate of Original');
+grid on;
+plot(pfapracor,pdpracor(:,5),'-->','LineWidth',2,'MarkerFaceColor','auto');
+plot(pfapracor,pdpracor(:,7),'-->','LineWidth',2,'MarkerFaceColor','auto');
+plot(pfapracand,pdpracand(:,5),'-d','LineWidth',2,'MarkerFaceColor','auto');
+plot(pfapracand,pdpracand(:,7),'-d','LineWidth',2,'MarkerFaceColor','auto');
+plot(pfapracmjr,pdpracmjr(:,5),'--','LineWidth',2,'MarkerFaceColor','auto');
+plot(pfapracmjr,pdpracmjr(:,7),'--','LineWidth',2,'MarkerFaceColor','auto');
+xlabel('Average Probability Of False Alarm');
+ylabel('Average Probability of Detection');
+title('ROC Characterisitcs of Hard Decision Combining');
 hold off;
-%refreshdata
-%drawnow
+set(gca,'fontsize',30,'box','on','LineWidth',2,'GridLineStyle','--','GridAlpha',0.7);
+lgd = legend('OR SNR=-10.35dB','OR SNR=-5.3dB','AND SNR=-10.35dB',...
+    'AND SNR=-5.3dB','Majority SNR=-10.35dB','Majority SNR=-5.3dB');
+lgd.FontSize=20;
 
-disp('Paused');
-pause(.1);
-error_saved=[error_saved sum(abs(result))];
+%% Probability of detection
+figure(2)
+hold on;
+grid on;
+plot(snrpracticalavg,pdpracor,'->','LineWidth',2);
+plot(snrpracticalavg,pdpracand,'-<','LineWidth',2);
+plot(snrpracticalavg,pdpracmjr,'-d','LineWidth',2);
+xlabel('SNR_{avg} in (dB)');
+ylabel('Average Probability of Detection');
+title('P_{davg} vs SNR_{avg} for Hard Decision Combining');
+hold off;
+set(gca,'fontsize',30,'box','on','LineWidth',2,'GridLineStyle','--','GridAlpha',0.7);
+lgd = legend('OR Decision','AND Decision','Majority Rule Decision');
+lgd.FontSize=20;
+axis([-18.23 15.77 0 1])
+\end{lstlisting}
 
+
+\section{softharddecisionpd.m}
+\begin{lstlisting}[breaklines]
+% Soft Decision Combining for sensor nodes...
+%% Initializing parameters..
+close all;
+clear all;
+N = [100,200,300,400];% Different sum factor
+k=4;% Number of Sensor Nodes
+variance = [24.025e-9,23.695e-9,25.678e-9,0.0323e-9];
+pfa = 0.05;%Probability of false alarm
+for i=1:4
+threshold(i) = (qfuncinv(pfa)+sqrt(N(i)))*sqrt(N(i))*2*variance(i);
+end
+% SNR Values from four sensor nodes
+snrpractical = [-21.45,-18.23,-15.45,-13.3,-12.67,-9.35,-2.23,-4.32,2.98,6.95,13.57,21.78;...
+                -22.23,-20.22,-17.34,-15.32,-13.45,-11.27,-7.75,-5.67,2.53,4.78,12.67,20.32;...
+                -25.34,-23.34,-21.67,-20.33,-16.76,-13.38,-8.56,-6.53,0.38,1.34,7.89,16.54;...
+                -27.32,-24.97,-22.34,-22.23,-17.34,-14.32,-11.35,-7.85,-2.35,-0.98,2.38,5.98];
+for i=1:4
+    snrlinearprac(i,:) = 10.^(snrpractical(i,:)/10);
+end
+for i=1:4
+pdprac(i,:) = qfunc((threshold(i)-2*N(i)*variance(i).*(1+snrlinearprac(i,:)))./...
+    (sqrt(N(i)*(1+2*snrlinearprac(i,:)))*(2*variance(i))));
+end
+for i=1:12
+snravg(i) = mean(snrpractical(:,i));
+end
+%% MNE based CS..
+pdpracmne = 1-(1-pdprac(1,:)).*(1-pdprac(2,:)).*(1-pdprac(3,:)).*(1-pdprac(4,:));
+pdpracand = mean(pdprac).^4;
+pdpracm = mean(pdprac);
+pdpracor = 1-(1-pdpracm).^4;
+tmp1 =  (1-pdpracm).^(k-2);
+tmp2 = (1-pdpracm);
+pdpracmjr = (6*pdpracm.^(k-2)).*tmp1+(4*pdpracm.^(k-1)).*tmp2+pdpracm.^k;
+figure(1)
+hold on;
+grid on;
+plot(snravg,pdpracmne,'-<','LineWidth',2,'MarkerFaceColor','auto');
+axis([-20 10 0 1])
+%% EGC based CS..
+snrlinearmean = 10.^(snravg/10);
+snrlinear = 10.^(snrpractical/10);
+pfa = 0.01;
+M= mean(N);
+threshold = mean(threshold);
+for i=1:length(snravg)
+    num(i) = threshold-snrlinearmean(i);
+    den(i) = (1/16)*((1+2*snrlinear(1,i))/N(1)+variance(1)+(1+2*snrlinear(2,i))/N(2)+variance(2)+(1+2*snrlinear(3,i))/N(3)+variance(3)+(1+2*snrlinear(4,i))/N(4)+variance(4));
+    pdegc(i) = qfunc(num(i)/sqrt(den(i)));
 end
 
-%% Plots
-figure;
-plot(error_saved(1:300));
-title('Error Across Transmission Frames')
-xlabel('Frames');
-ylabel('Error');
-
-
-
+%% Plotting the data..
+plot(snravg,pdegc,'-d','LineWidth',2,'MarkerFaceColor','auto');
+plot(snravg,pdpracand,'-s','LineWidth',2,'MarkerFaceColor','auto');
+plot(snravg,pdpracor,'-s','LineWidth',2,'MarkerFaceColor','auto');
+plot(snravg,pdpracmjr,'->','LineWidth',2,'MarkerFaceColor','auto');
+title('P_{davg} vs SNR_{avg} for Soft and Hard Decision Combining');
+xlabel('SNR_{avg} in (dB)');
+ylabel('Average Probability of Detection');
+set(gca,'fontsize',30,'box','on','LineWidth',2,'GridLineStyle','--','GridAlpha',0.7);
+legend('MNE Combining','EGC Combining','AND Rule','OR Rule','Majority Rule');
 \end{lstlisting}
+
+\section{spectrumsenseusrp.py}
+\begin{lstlisting}[breaklines]
+#!/usr/bin/env python
+#
+# Copyright 2005,2007,2011 Free Software Foundation, Inc.
+#
+# This file is part of GNU Radio
+#
+# GNU Radio is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 3, or (at your option)
+# any later version.
+#
+# GNU Radio is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with GNU Radio; see the file COPYING.  If not, write to
+# the Free Software Foundation, Inc., 51 Franklin Street,
+# Boston, MA 02110-1301, USA.
+#
+
+from gnuradio import gr, eng_notation
+from gnuradio import blocks
+from gnuradio import audio
+from gnuradio import filter
+from gnuradio import fft
+from gnuradio import uhd
+from gnuradio.eng_option import eng_option
+from optparse import OptionParser
+import sys
+import math
+import struct
+import threading
+from datetime import datetime
+import time
+from gnuradio.wxgui import stdgui2, fftsink2, form
+import wx
+
+sys.stderr.write("Warning: this may have issues on some machines+Python version combinations to seg fault due to the callback in bin_statitics.\n\n")
+
+class ThreadClass(threading.Thread):
+    def run(self):
+        return
+
+class tune(gr.feval_dd):
+    """
+    This class allows C++ code to callback into python.
+    """
+    def __init__(self, tb):
+        gr.feval_dd.__init__(self)
+        self.tb = tb
+
+    def eval(self, ignore):
+        """
+        This method is called from blocks.bin_statistics_f when it wants
+        to change the center frequency.  This method tunes the front
+        end to the new center frequency, and returns the new frequency
+        as its result.
+        """
+
+        try:
+            new_freq = self.tb.set_next_freq()
+            while(self.tb.msgq.full_p()):
+                time.sleep(0.1)
+            return new_freq
+
+        except Exception, e:
+            print "tune: Exception: ", e
+
+
+class parse_msg(object):
+    def __init__(self, msg):
+        self.center_freq = msg.arg1()
+        self.vlen = int(msg.arg2())
+        assert(msg.length() == self.vlen * gr.sizeof_float)
+        t = msg.to_string()
+        self.raw_data = t
+        self.data = struct.unpack('%df' % (self.vlen,), t)
+
+
+class my_top_block(gr.top_block):
+
+    def __init__(self):
+        gr.top_block.__init__(self)
+
+        usage = "usage: %prog [options] min_freq max_freq"
+        parser = OptionParser(option_class=eng_option, usage=usage)
+        parser.add_option("-a", "--args", type="string", default="",
+                          help="UHD device device address args [default=%default]")
+        parser.add_option("", "--spec", type="string", default=None,
+	                  help="Subdevice of UHD device where appropriate")
+        parser.add_option("-A", "--antenna", type="string", default=None,
+                          help="select Rx Antenna where appropriate")
+        parser.add_option("-s", "--samp-rate", type="eng_float", default=1e6,
+                          help="set sample rate [default=%default]")
+        parser.add_option("-g", "--gain", type="eng_float", default=None,
+                          help="set gain in dB (default is midpoint)")
+        parser.add_option("", "--tune-delay", type="eng_float",
+                          default=0.25, metavar="SECS",
+                          help="time to delay (in seconds) after changing frequency [default=%default]")
+        parser.add_option("", "--dwell-delay", type="eng_float",
+                          default=0.25, metavar="SECS",
+                          help="time to dwell (in seconds) at a given frequency [default=%default]")
+        parser.add_option("-b", "--channel-bandwidth", type="eng_float",
+                          default=6.25e3, metavar="Hz",
+                          help="channel bandwidth of fft bins in Hz [default=%default]")
+        parser.add_option("-l", "--lo-offset", type="eng_float",
+                          default=0, metavar="Hz",
+                          help="lo_offset in Hz [default=%default]")
+        parser.add_option("-q", "--squelch-threshold", type="eng_float",
+                          default=None, metavar="dB",
+                          help="squelch threshold in dB [default=%default]")
+        parser.add_option("-F", "--fft-size", type="int", default=None,
+                          help="specify number of FFT bins [default=samp_rate/channel_bw]")
+        parser.add_option("", "--real-time", action="store_true", default=False,
+                          help="Attempt to enable real-time scheduling")
+
+        (options, args) = parser.parse_args()
+        if len(args) != 2:
+            parser.print_help()
+            sys.exit(1)
+
+        self.channel_bandwidth = options.channel_bandwidth
+
+        self.min_freq = eng_notation.str_to_num(args[0])
+        self.max_freq = eng_notation.str_to_num(args[1])
+
+        if self.min_freq > self.max_freq:
+            # swap them
+            self.min_freq, self.max_freq = self.max_freq, self.min_freq
+
+        if not options.real_time:
+            realtime = False
+        else:
+            # Attempt to enable realtime scheduling
+            r = gr.enable_realtime_scheduling()
+            if r == gr.RT_OK:
+                realtime = True
+            else:
+                realtime = False
+                print "Note: failed to enable realtime scheduling"
+
+        # build graph
+        self.u = uhd.usrp_source(device_addr=options.args,
+                                 stream_args=uhd.stream_args('fc32'))
+
+        # Set the subdevice spec
+        if(options.spec):
+            self.u.set_subdev_spec(options.spec, 0)
+
+        # Set the antenna
+        if(options.antenna):
+            self.u.set_antenna(options.antenna, 0)
+
+        self.u.set_samp_rate(options.samp_rate)
+        self.usrp_rate = usrp_rate = self.u.get_samp_rate()
+
+        self.lo_offset = options.lo_offset
+
+        if options.fft_size is None:
+            self.fft_size = int(self.usrp_rate/self.channel_bandwidth)
+        else:
+            self.fft_size = options.fft_size
+
+        self.squelch_threshold = options.squelch_threshold
+
+        s2v = blocks.stream_to_vector(gr.sizeof_gr_complex, self.fft_size)
+
+        mywindow = filter.window.blackmanharris(self.fft_size)
+        ffter = fft.fft_vcc(self.fft_size, True, mywindow, True)
+        power = 0
+        for tap in mywindow:
+            power += tap*tap
+        c2mag = blocks.complex_to_mag_squared(self.fft_size)
+        self.freq_step = self.nearest_freq((0.75 * self.usrp_rate), self.channel_bandwidth)
+        self.min_center_freq = self.min_freq + (self.freq_step/2)
+        nsteps = math.ceil((self.max_freq - self.min_freq) / self.freq_step)
+        self.max_center_freq = self.min_center_freq + (nsteps * self.freq_step)
+        self.next_freq = self.min_center_freq
+        tune_delay  = max(0, int(round(options.tune_delay * usrp_rate / self.fft_size)))  # in fft_frames
+        dwell_delay = max(1, int(round(options.dwell_delay * usrp_rate / self.fft_size))) # in fft_frames
+        self.msgq = gr.msg_queue(1)
+        self._tune_callback = tune(self)        # hang on to this to keep it from being GC'd
+        stats = blocks.bin_statistics_f(self.fft_size, self.msgq,
+                                        self._tune_callback, tune_delay,
+                                        dwell_delay)
+	self.connect(self.u, s2v, ffter, c2mag, stats)
+
+        if options.gain is None:
+
+            g = self.u.get_gain_range()
+            options.gain = float(g.start()+g.stop())/2.0
+
+        self.set_gain(options.gain)
+        print "gain =", options.gain
+
+    def set_next_freq(self):
+        target_freq = self.next_freq
+        self.next_freq = self.next_freq + self.freq_step
+        if self.next_freq >= self.max_center_freq:
+            self.next_freq = self.min_center_freq
+
+        if not self.set_freq(target_freq):
+            print "Failed to set frequency to", target_freq
+            sys.exit(1)
+
+        return target_freq
+
+
+    def set_freq(self, target_freq):
+        """
+        Set the center frequency we're interested in.
+
+        Args:
+            target_freq: frequency in Hz
+        @rypte: bool
+        """
+
+        r = self.u.set_center_freq(uhd.tune_request(target_freq, rf_freq=(target_freq + self.lo_offset),rf_freq_policy=uhd.tune_request.POLICY_MANUAL))
+        if r:
+            return True
+
+        return False
+
+    def set_gain(self, gain):
+        self.u.set_gain(gain)
+
+    def nearest_freq(self, freq, channel_bandwidth):
+        freq = round(freq / channel_bandwidth, 0) * channel_bandwidth
+        return freq
+
+def main_loop(tb):
+
+    def bin_freq(i_bin, center_freq):
+        freq = center_freq - (tb.usrp_rate / 2) + (tb.channel_bandwidth * i_bin)
+        return freq
+
+    bin_start = int(tb.fft_size * ((1 - 0.25) / 2))
+    bin_stop = int(tb.fft_size - bin_start)
+    fid = open("./usrp.dat","wb")
+    while 1:
+	m = parse_msg(tb.msgq.delete_head())
+        for i_bin in range(bin_start, bin_stop):
+            center_freq = m.center_freq
+            freq = bin_freq(i_bin, center_freq)
+	    power_db = 10*math.log10(m.data[i_bin]/tb.usrp_rate)
+	    signal = m.data[i_bin]/(tb.usrp_rate)
+
+            if (power_db > tb.squelch_threshold) and (freq >= tb.min_freq) and (freq <= tb.max_freq):
+		print freq,signal,power_db
+		fid.write(struct.pack('<f',signal))
+    fid.close()#closing the file
+
+if __name__ == '__main__':
+    t = ThreadClass()
+    t.start()
+
+    tb = my_top_block()
+    try:
+        tb.start()
+        main_loop(tb)
+
+    except KeyboardInterrupt:
+        pass
+\end{lstlisting}
+
+\section{gnuradiortlsdrsense.py}
+\begin{lstlisting}[breaklines]
+#!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+##################################################
+# GNU Radio Python Flow Graph
+# Title: DTv Spectrum Sensing
+# Author: Gill
+# Description: Frequency Sweep for UHF White Spaces
+# Generated: Fri Mar 10 14:30:20 2017
+##################################################
+
+if __name__ == '__main__':
+    import ctypes
+    import sys
+    if sys.platform.startswith('linux'):
+        try:
+            x11 = ctypes.cdll.LoadLibrary('libX11.so')
+            x11.XInitThreads()
+        except:
+            print "Warning: failed to XInitThreads()"
+
+from PyQt4 import Qt
+from gnuradio import blocks
+from gnuradio import eng_notation
+from gnuradio import fft
+from gnuradio import gr
+from gnuradio import qtgui
+from gnuradio.eng_option import eng_option
+from gnuradio.fft import window
+from gnuradio.filter import firdes
+from optparse import OptionParser
+import numpy as np
+import osmosdr
+import sip
+import sys
+import time
+
+
+class spectrum_sensing(gr.top_block, Qt.QWidget):
+
+    def __init__(self):
+        gr.top_block.__init__(self, "DTv Spectrum Sensing")
+        Qt.QWidget.__init__(self)
+        self.setWindowTitle("DTv Spectrum Sensing")
+        try:
+            self.setWindowIcon(Qt.QIcon.fromTheme('gnuradio-grc'))
+        except:
+            pass
+        self.top_scroll_layout = Qt.QVBoxLayout()
+        self.setLayout(self.top_scroll_layout)
+        self.top_scroll = Qt.QScrollArea()
+        self.top_scroll.setFrameStyle(Qt.QFrame.NoFrame)
+        self.top_scroll_layout.addWidget(self.top_scroll)
+        self.top_scroll.setWidgetResizable(True)
+        self.top_widget = Qt.QWidget()
+        self.top_scroll.setWidget(self.top_widget)
+        self.top_layout = Qt.QVBoxLayout(self.top_widget)
+        self.top_grid_layout = Qt.QGridLayout()
+        self.top_layout.addLayout(self.top_grid_layout)
+
+        self.settings = Qt.QSettings("GNU Radio", "spectrum_sensing")
+        self.restoreGeometry(self.settings.value("geometry").toByteArray())
+
+        ##################################################
+        # Variables
+        ##################################################
+        self.samp_rate = samp_rate = int(2e6)
+        self.freq = freq = 450e6
+        self.N = N = 1000
+
+        ##################################################
+        # Blocks
+        ##################################################
+        self.rtlsdr_source_0 = osmosdr.source( args="numchan=" + str(1) + " " + '' )
+        self.rtlsdr_source_0.set_time_source('external', 0)
+        self.rtlsdr_source_0.set_sample_rate(samp_rate)
+        self.rtlsdr_source_0.set_center_freq(freq, 0)
+        self.rtlsdr_source_0.set_freq_corr(0, 0)
+        self.rtlsdr_source_0.set_dc_offset_mode(2, 0)
+        self.rtlsdr_source_0.set_iq_balance_mode(0, 0)
+        self.rtlsdr_source_0.set_gain_mode(True, 0)
+        self.rtlsdr_source_0.set_gain(15, 0)
+        self.rtlsdr_source_0.set_if_gain(15, 0)
+        self.rtlsdr_source_0.set_bb_gain(15, 0)
+        self.rtlsdr_source_0.set_antenna('', 0)
+        self.rtlsdr_source_0.set_bandwidth(0, 0)
+          
+        self.qtgui_freq_sink_x_0 = qtgui.freq_sink_c(
+        	1024, #size
+        	firdes.WIN_BLACKMAN_hARRIS, #wintype
+        	0, #fc
+        	samp_rate, #bw
+        	"Recieved Signal", #name
+        	1 #number of inputs
+        )
+        self.qtgui_freq_sink_x_0.set_update_time(0.10)
+        self.qtgui_freq_sink_x_0.set_y_axis(-120, 0)
+        self.qtgui_freq_sink_x_0.set_y_label('Relative Gain', 'dB')
+        self.qtgui_freq_sink_x_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, 0.0, 0, "")
+        self.qtgui_freq_sink_x_0.enable_autoscale(True)
+        self.qtgui_freq_sink_x_0.enable_grid(True)
+        self.qtgui_freq_sink_x_0.set_fft_average(1.0)
+        self.qtgui_freq_sink_x_0.enable_axis_labels(True)
+        self.qtgui_freq_sink_x_0.enable_control_panel(False)
+        
+        if not True:
+          self.qtgui_freq_sink_x_0.disable_legend()
+        
+        if "complex" == "float" or "complex" == "msg_float":
+          self.qtgui_freq_sink_x_0.set_plot_pos_half(not True)
+        
+        labels = ['', '', '', '', '',
+                  '', '', '', '', '']
+        widths = [2, 1, 1, 1, 1,
+                  1, 1, 1, 1, 1]
+        colors = ["blue", "red", "green", "black", "cyan",
+                  "magenta", "yellow", "dark red", "dark green", "dark blue"]
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
+                  1.0, 1.0, 1.0, 1.0, 1.0]
+        for i in xrange(1):
+            if len(labels[i]) == 0:
+                self.qtgui_freq_sink_x_0.set_line_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_freq_sink_x_0.set_line_label(i, labels[i])
+            self.qtgui_freq_sink_x_0.set_line_width(i, widths[i])
+            self.qtgui_freq_sink_x_0.set_line_color(i, colors[i])
+            self.qtgui_freq_sink_x_0.set_line_alpha(i, alphas[i])
+        
+        self._qtgui_freq_sink_x_0_win = sip.wrapinstance(self.qtgui_freq_sink_x_0.pyqwidget(), Qt.QWidget)
+        self.top_layout.addWidget(self._qtgui_freq_sink_x_0_win)
+        self.fft_vxx_0 = fft.fft_vcc(1024, True, (window.blackmanharris(1024)), True, 1)
+        self.blocks_vector_to_stream_0 = blocks.vector_to_stream(gr.sizeof_float*1, 1024)
+        self.blocks_stream_to_vector_0 = blocks.stream_to_vector(gr.sizeof_gr_complex*1, 1024)
+        self.blocks_moving_average_xx_0 = blocks.moving_average_ff(N, 1, 4000)
+        self.blocks_file_sink_2_0 = blocks.file_sink(gr.sizeof_float*1, '/home/gill/Desktop/ms-thesis/gr-spectrumsensing/grc/rtl-sdr_sensing/Results/snr_check.dat', False)
+        self.blocks_file_sink_2_0.set_unbuffered(False)
+        self.blocks_complex_to_mag_squared_0 = blocks.complex_to_mag_squared(1024)
+
+        ##################################################
+        # Connections
+        ##################################################
+        self.connect((self.blocks_complex_to_mag_squared_0, 0), (self.blocks_vector_to_stream_0, 0))    
+        self.connect((self.blocks_moving_average_xx_0, 0), (self.blocks_file_sink_2_0, 0))    
+        self.connect((self.blocks_stream_to_vector_0, 0), (self.fft_vxx_0, 0))    
+        self.connect((self.blocks_vector_to_stream_0, 0), (self.blocks_moving_average_xx_0, 0))    
+        self.connect((self.fft_vxx_0, 0), (self.blocks_complex_to_mag_squared_0, 0))    
+        self.connect((self.rtlsdr_source_0, 0), (self.blocks_stream_to_vector_0, 0))    
+        self.connect((self.rtlsdr_source_0, 0), (self.qtgui_freq_sink_x_0, 0))    
+
+    def closeEvent(self, event):
+        self.settings = Qt.QSettings("GNU Radio", "spectrum_sensing")
+        self.settings.setValue("geometry", self.saveGeometry())
+        event.accept()
+
+    def get_samp_rate(self):
+        return self.samp_rate
+
+    def set_samp_rate(self, samp_rate):
+        self.samp_rate = samp_rate
+        self.rtlsdr_source_0.set_sample_rate(self.samp_rate)
+        self.qtgui_freq_sink_x_0.set_frequency_range(0, self.samp_rate)
+
+    def get_freq(self):
+        return self.freq
+
+    def set_freq(self, freq):
+        self.freq = freq
+        self.rtlsdr_source_0.set_center_freq(self.freq, 0)
+
+    def get_N(self):
+        return self.N
+
+    def set_N(self, N):
+        self.N = N
+        self.blocks_moving_average_xx_0.set_length_and_scale(self.N, 1)
+
+
+def main(top_block_cls=spectrum_sensing, options=None):
+
+    from distutils.version import StrictVersion
+    if StrictVersion(Qt.qVersion()) >= StrictVersion("4.5.0"):
+        style = gr.prefs().get_string('qtgui', 'style', 'raster')
+        Qt.QApplication.setGraphicsSystem(style)
+    qapp = Qt.QApplication(sys.argv)
+
+    tb = top_block_cls()
+    tb.start()
+    tb.show()
+
+    def quitting():
+        tb.stop()
+        tb.wait()
+    qapp.connect(qapp, Qt.SIGNAL("aboutToQuit()"), quitting)
+    qapp.exec_()
+
+
+if __name__ == '__main__':
+    main()
+\end{lstlisting}
+
+

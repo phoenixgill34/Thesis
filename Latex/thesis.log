@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.31)  1 NOV 2017 17:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.31)  5 NOV 2017 21:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -187,12 +187,8 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
  (./thesis.aux
-(./chapter2.aux) (./chapter3.aux
-
-LaTeX Warning: Label `fig:2' multiply defined.
-
-) (./chapter4.aux) (./chapter5.aux) (./chapter6.aux) (./conclusion.aux)
-(./appendixb.aux))
+(./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter5.aux)
+(./chapter6.aux) (./conclusion.aux) (./appendixb.aux) (./appendixc.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -231,48 +227,59 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [4]
+ [4] [5]
 (./thesis.lof
 Overfull \hbox (13.38773pt too wide) in paragraph at lines 2--2
  [][] []\OT1/cmr/m/n/10.95 Heterogeneous sen-sor net-work em-ploy-ing co-op-er-
 a-tive spec-trum sens-ing. $\OML/cmm/m/it/10.95 RFFE[]$ 
  []
 
-)
+
+Overfull \hbox (2.43279pt too wide) in paragraph at lines 23--23
+ [][] []\OT1/cmr/m/n/10.95 HST chan-nel model con-sist-ing of time-series K-fac
+tor and Doppler shift caused 
+ []
+
+[6
+
+])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [5
-
-] (./thesis.lot)
+ [7] (./thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
- [6
+ [8
 
 ] (./introduction.tex
 Chapter 1.
 [1
 
 ]
-File: images/Gill/figs/introdiag.eps Graphic file (type eps)
- <images/Gill/figs/introdiag.eps> [2]
-File: images/Gill/lte_figs/3dtunnel.eps Graphic file (type eps)
- <images/Gill/lte_figs/3dtunnel.eps>
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
 
-[3]
+LaTeX Warning: Reference `fig:1' on page 2 undefined on input line 14.
+
+File: images/Gill/figs/introdiag.eps Graphic file (type eps)
+<images/Gill/figs/introdiag.eps> [2]
+
+LaTeX Warning: Reference `fig:2' on page 3 undefined on input line 26.
+
+File: images/Gill/lte_figs/3dtunnel.eps Graphic file (type eps)
+<images/Gill/lte_figs/3dtunnel.eps>
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [3]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
@@ -290,7 +297,9 @@ File: images/Gill/figs/cognitive_radio.eps Graphic file (type eps)
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
- [9]
+File: images/Gill/figs/softwaredefinedradio.eps Graphic file (type eps)
+
+<images/Gill/figs/softwaredefinedradio.eps> [9]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -306,16 +315,23 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [10]
+File: images/Gill/figs/usrp.eps Graphic file (type eps)
+ <images/Gill/figs/usrp.eps>
+[10]
+File: images/Gill/figs/rtlsdr.eps Graphic file (type eps)
+ <images/Gill/figs/rtlsdr.eps> [11]
+File: images/Gill/figs/gnuradio.eps Graphic file (type eps)
+ <images/Gill/figs/gnuradio.eps>
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-)
-Underfull \hbox (badness 10000) in paragraph at lines 80--91
+
+[12])
+Underfull \hbox (badness 10000) in paragraph at lines 109--91
 
  []
 
-[11] [12]
+[13] [14]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
@@ -336,11 +352,11 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 File: images/Gill/lte_figs/lter_architecture.eps Graphic file (type eps)
-<images/Gill/lte_figs/lter_architecture.eps> [13
+<images/Gill/lte_figs/lter_architecture.eps> [15
 
 
 
-] [14]
+] [16]
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no ≠ in font cmr10!
 
@@ -349,7 +365,8 @@ Overfull \hbox (17.3532pt too wide) in paragraph at lines 40--44
 GongpuWang/HSRCommunications] 
  []
 
-[15]
+File: images/Gill/lte_figs/leakycoax.eps Graphic file (type eps)
+<images/Gill/lte_figs/leakycoax.eps> [17] [18]
 Missing character: There is no œ in font cmr10!
 Missing character: There is no Ñ in font cmr10!
 Missing character: There is no Œ in font cmr10!
@@ -365,111 +382,184 @@ Missing character: There is no Œ in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no Œ in font cmr10!
 Missing character: There is no ± in font cmr10!
- [16])
-Underfull \hbox (badness 10000) in paragraph at lines 90--94
+File: images/Gill/lte_figs/dopplerspectrum.eps Graphic file (type eps)
+
+<images/Gill/lte_figs/dopplerspectrum.eps>)
+Underfull \hbox (badness 10000) in paragraph at lines 110--94
 
  []
 
-[17]
+[19] [20]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 4.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 16--97
+File: images/Gill/figs/setup.eps Graphic file (type eps)
+<images/Gill/figs/setup.eps>
+File: images/Gill/figs/transmitter.eps Graphic file (type eps)
+ <images/Gill/figs/transmitter.eps>
+File: images/Gill/figs/normalizedenergy.eps Graphic file (type eps)
+
+<images/Gill/figs/normalizedenergy.eps> [21
+
+
+
+]
+File: images/Gill/figs/hardfusion.eps Graphic file (type eps)
+ <images/Gill/figs/hardfusion.eps>
+[22]
+File: images/Gill/figs/mnescheme.eps Graphic file (type eps)
+ <images/Gill/figs/mnescheme.eps>
+File: images/Gill/figs/egcscheme.eps Graphic file (type eps)
+ <images/Gill/figs/egcscheme.eps>)
+Underfull \hbox (badness 10000) in paragraph at lines 83--97
 
  []
 
-[18
-
-
-
-] [19]
+[23] [24] [25]
 \openout2 = `chapter5.aux'.
 
  (./chapter5.tex
 Chapter 5.
+File: images/Gill/lte_figs/finalblock.eps Graphic file (type eps)
+<images/Gill/lte_figs/finalblock.eps>
+File: images/Gill/lte_figs/subblock.eps Graphic file (type eps)
+ <images/Gill/lte_figs/subblock.eps>
+File: images/Gill/lte_figs/receivedsignal.eps Graphic file (type eps)
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
+<images/Gill/lte_figs/receivedsignal.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-[20
+[26
 
 
 
-]) [21]
+] [27]) [28] [29]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
 Chapter 6.
+File: images/Gill/figs/hardecisionpd.eps Graphic file (type eps)
+<images/Gill/figs/hardecisionpd.eps>
+File: images/Gill/figs/hardecisioroc.eps Graphic file (type eps)
+ <images/Gill/figs/hardecisioroc.eps>
+File: images/Gill/figs/softnhardecisionpd.eps Graphic file (type eps)
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+<images/Gill/figs/softnhardecisionpd.eps>
+File: images/Gill/lte_figs/kfactordist.eps Graphic file (type eps)
+
+<images/Gill/lte_figs/kfactordist.eps>
+File: images/Gill/lte_figs/qpskricean.eps Graphic file (type eps)
+ <images/Gill/lte_figs/qpskricean.eps>
+File: images/Gill/lte_figs/16qamricean.eps Graphic file (type eps)
+
+<images/Gill/lte_figs/16qamricean.eps>
+File: images/Gill/lte_figs/64qamricean.eps Graphic file (type eps)
+ <images/Gill/lte_figs/64qamricean.eps>
+File: images/Gill/lte_figs/mqamricean.eps Graphic file (type eps)
+
+<images/Gill/lte_figs/mqamricean.eps>
+File: images/Gill/lte_figs/kfactorcontinuous.eps Graphic file (type eps)
+
+<images/Gill/lte_figs/kfactorcontinuous.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
-[22
+[30
 
 
 
-]) [23]
+]) [31] [32] [33] [34] [35] [36] [37]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
 Chapter 7.
-) [24
+) [38
 
 
 
-] (./thesis.bbl [25
+] (./thesis.bbl [39
 
 
 ]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
- [26]
+ [40]
 Underfull \hbox (badness 1953) in paragraph at lines 139--142
 []\OT1/cmr/m/n/10.95 Usrp. [On-line]. Avail-able: $https : / / www . ettus . co
 m / product / category /
  []
 
-[27]) [28]
+[41]) [42]
 \openout2 = `appendixb.aux'.
 
  (./appendixb.tex
 Appendix A.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
- [29
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
+ [43
 
 
 ]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 48.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 39.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 48.
- [30] [31] [32]
-[33]) [34] (./thesis.aux (./chapter2.aux) (./chapter3.aux) (./chapter4.aux)
-(./chapter5.aux) (./chapter6.aux) (./conclusion.aux) (./appendixb.aux))
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 39.
+ [44] [45]
+Overfull \hbox (98.84534pt too wide) in paragraph at lines 86--87
+[][] 
+ []
 
-LaTeX Warning: There were multiply-defined labels.
+
+Overfull \hbox (190.5365pt too wide) in paragraph at lines 87--88
+[][][][] 
+ []
+
+
+Overfull \hbox (183.96643pt too wide) in paragraph at lines 88--89
+[][][][] 
+ []
+
+
+Overfull \hbox (183.96643pt too wide) in paragraph at lines 89--90
+[][][][] 
+ []
+
+[46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60]
+[61] [62] [63] [64] [65] [66]) [67]
+\openout2 = `appendixc.aux'.
+
+ (./appendixc.tex
+Appendix B.
+[68
+
+
+
+] [69] [70] [71] [72] [73] [74] [75] [76] [77] [78]) [79] (./thesis.aux
+(./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter5.aux)
+(./chapter6.aux) (./conclusion.aux) (./appendixb.aux) (./appendixc.aux))
+
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3656 strings out of 494930
- 48533 string characters out of 6180168
- 157068 words of memory out of 5000000
- 6853 multiletter control sequences out of 15000+600000
+ 3748 strings out of 494930
+ 50211 string characters out of 6180168
+ 198698 words of memory out of 5000000
+ 6915 multiletter control sequences out of 15000+600000
  11665 words of font info for 43 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 29i,6n,32p,1363b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,32p,1363b,1427s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (41 pages, 90784 bytes).
+Output written on thesis.dvi (88 pages, 236464 bytes).

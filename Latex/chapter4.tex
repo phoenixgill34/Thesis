@@ -18,7 +18,7 @@
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/transmitter.eps}
     \caption{GNU Radio Flowgraph For Transmitter Running on USRP N210.} 
-\label{expsetup}      
+\label{transmitter}      
 \end{figure}
 
 \subsection{Sensor Nodes Setup}
@@ -27,7 +27,7 @@
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/normalizedenergy.eps}
     \caption{GNURadio Flowgraph For USRP and RTL-SDR sensor nodes.} 
-\label{expsetup}      
+\label{receiver}      
 \end{figure}
 
 The central frequency is kept at 450 MHz and the operating parameters of each sensor node is provided in the table.
@@ -53,9 +53,9 @@ USRP N210  & 7.2 Msps  & 10 dB & 512     &  14.062 KHz\\
 The flowchart describes the three hard data fusion schemes.
 \begin{figure}[ht!]
 	\centering
-	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/hardfusion.eps}
-    \caption{Flowchart showing AND, OR and Majority Rule Fusion schemes..} 
-\label{expsetup}      
+	\includegraphics[width=\textwidth,height=10cm,keepaspectratio]{images/Gill/figs/hardfusion.eps}
+\caption{Flowchart showing AND, OR and Majority Rule Fusion schemes..} 
+\label{hard}      
 \end{figure}
 
 
@@ -63,7 +63,21 @@ The flowchart describes the three hard data fusion schemes.
 
 \subsection{Maximum Normalized Energy Scheme}
 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth,height=10cm,keepaspectratio]{images/Gill/figs/mnescheme.eps}
+\caption{Flowchart showing Equal Gain Combining Scheme.} 
+\label{mnescheme}      
+\end{figure}
+
 \subsection{M Scheme}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth,height=10cm,keepaspectratio]{images/Gill/figs/egcscheme.eps}
+\caption{Flowchart showing Maximum Normalized Energy Scheme.} 
+\label{egcscheme}      
+\end{figure}
+
 
 \section{Summary}
 This chapter outlined and examined the topics of jamming and anti-jamming techniques, and provided a foundation in communication system theory and advanced equalizer design.  Secondly it setup an understanding of Software-Defined Radio, the power of such an architecture, and examples of implementations and existing software for future designs.  Next, this thesis will consider a new anti-jamming technique and design an implementation of such a system.  After the implementation is investigated, the result of specific experiments on such an implementation will be analyzed.\\
