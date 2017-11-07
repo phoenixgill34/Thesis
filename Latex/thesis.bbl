@@ -176,4 +176,15 @@ T.~R. Newman, R.~Rajbanshi, A.~M. Wyglinski, J.~B. Evans, and G.~J. Minden,
   ``Population adaptation for genetic algorithm-based cognitive radios,''
   \emph{Mobile networks and applications}, vol.~13, no.~5, pp. 442--451, 2008.
 
+\bibitem{arhtn13}
+G.~Yang, J.~Wang, J.~Luo, O.~Y. Wen, H.~Li, Q.~Li, and S.~Li, ``Cooperative
+  spectrum sensing in heterogeneous cognitive radio networks based on
+  normalized energy detection,'' \emph{IEEE Transactions on vehicular
+  technology}, vol.~65, no.~3, pp. 1452--1463, 2016.
+
+\bibitem{arhtn14}
+Y.~Zeng and Y.-C. Liang, ``Eigenvalue-based spectrum sensing algorithms for
+  cognitive radio,'' \emph{IEEE transactions on communications}, vol.~57,
+  no.~6, 2009.
+
 \end{thebibliography}

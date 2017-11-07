@@ -9,55 +9,59 @@ A level-1 auxiliary file: chapter6.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: IEEEtran.bst
 A level-1 auxiliary file: appendixb.aux
+A level-1 auxiliary file: appendixc.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: mybib.bib
+Warning--I didn't find a database entry for "267870"
+Warning--I didn't find a database entry for "392998"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 29 entries,
+You've used 31 entries,
             4024 wiz_defined-function locations,
-            981 strings with 12499 characters,
-and the built_in function-call counts, 21598 in all, are:
-= -- 1743
-> -- 479
-< -- 188
-+ -- 260
-- -- 79
-* -- 1028
-:= -- 3233
-add.period$ -- 66
-call.type$ -- 29
-change.case$ -- 27
-chr.to.int$ -- 417
-cite$ -- 29
-duplicate$ -- 1565
-empty$ -- 1800
-format.name$ -- 102
-if$ -- 4995
+            995 strings with 12935 characters,
+and the built_in function-call counts, 23239 in all, are:
+= -- 1880
+> -- 527
+< -- 203
++ -- 286
+- -- 88
+* -- 1111
+:= -- 3480
+add.period$ -- 70
+call.type$ -- 31
+change.case$ -- 29
+chr.to.int$ -- 447
+cite$ -- 31
+duplicate$ -- 1683
+empty$ -- 1916
+format.name$ -- 113
+if$ -- 5370
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 277
-newline$ -- 114
-num.names$ -- 27
-pop$ -- 635
+int.to.str$ -- 31
+missing$ -- 299
+newline$ -- 120
+num.names$ -- 29
+pop$ -- 680
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1675
+skip$ -- 1803
 stack$ -- 0
-substring$ -- 1003
-swap$ -- 1274
-text.length$ -- 49
+substring$ -- 1075
+swap$ -- 1377
+text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 29
+type$ -- 31
 warning$ -- 0
-while$ -- 106
-width$ -- 31
-write$ -- 301
+while$ -- 112
+width$ -- 33
+write$ -- 322
+(There were 2 warnings)
