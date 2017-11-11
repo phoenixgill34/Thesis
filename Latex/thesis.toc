@@ -11,9 +11,9 @@
 \contentsline {section}{\numberline {2.3}Software Defined Radios}{11}
 \contentsline {subsection}{\numberline {2.3.1}Universal Software Radio Peripheral (USRP) N210}{12}
 \contentsline {subsection}{\numberline {2.3.2}RTL-SDR Software-Defined Radio}{13}
-\contentsline {subsection}{\numberline {2.3.3}GNURadio and Software-Defined Radio}{13}
-\contentsline {subsection}{\numberline {2.3.4}MATLAB}{15}
-\contentsline {section}{\numberline {2.4}Summary}{16}
+\contentsline {subsection}{\numberline {2.3.3}GNURadio and Software-Defined Radio}{14}
+\contentsline {subsection}{\numberline {2.3.4}MATLAB}{14}
+\contentsline {section}{\numberline {2.4}Summary}{15}
 \contentsline {chapter}{\numberline {3}Long Term Evolution for Railways (LTE-R)}{17}
 \contentsline {section}{\numberline {3.1}LTE-R Communication System}{17}
 \contentsline {section}{\numberline {3.2}Leaky Coaxial Cable}{19}

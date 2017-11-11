@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.31)  6 NOV 2017 22:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.31)  10 NOV 2017 10:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**thesis.tex
+**thesis
 (./thesis.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 4 language(s) loaded.
@@ -291,23 +291,14 @@ File: images/Gill/figs/cognitive_radio.eps Graphic file (type eps)
  <images/Gill/figs/cognitive_radio.eps> [8] [9] [10]
 File: images/Gill/figs/softwaredefinedradio.eps Graphic file (type eps)
 
-<images/Gill/figs/softwaredefinedradio.eps>
-
-LaTeX Warning: Citation `267870' on page 11 undefined on input line 95.
-
-
-LaTeX Warning: Citation `392998' on page 11 undefined on input line 97.
-
-
-LaTeX Warning: Citation `392998' on page 11 undefined on input line 97.
-
-[11]
+<images/Gill/figs/softwaredefinedradio.eps> [11]
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no Æ in font cmr10!
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no Æ in font cmr10!
 File: images/Gill/figs/usrp.eps Graphic file (type eps)
- <images/Gill/figs/usrp.eps> [12]
+ <images/Gill/figs/usrp.eps>
+[12]
 File: images/Gill/figs/rtlsdr.eps Graphic file (type eps)
  <images/Gill/figs/rtlsdr.eps>
 Missing character: There is no ‚ in font cmr10!
@@ -318,12 +309,12 @@ Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
  [13]
 File: images/Gill/figs/gnuradio.eps Graphic file (type eps)
-
-<images/Gill/figs/gnuradio.eps>
+ <images/Gill/figs/gnuradio.eps>
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [14])
+
+[14])
 Underfull \hbox (badness 10000) in paragraph at lines 153--91
 
  []
@@ -545,18 +536,14 @@ Appendix B.
 
 ] [71] [72] [73] [74] [75] [76] [77] [78] [79] [80]) [81] (./thesis.aux
 (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter5.aux)
-(./chapter6.aux) (./conclusion.aux) (./appendixb.aux) (./appendixc.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(./chapter6.aux) (./conclusion.aux) (./appendixb.aux) (./appendixc.aux)) ) 
 Here is how much of TeX's memory you used:
  3761 strings out of 494930
  50311 string characters out of 6180168
- 198781 words of memory out of 5000000
+ 198788 words of memory out of 5000000
  6926 multiletter control sequences out of 15000+600000
  12286 words of font info for 45 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 27i,11n,32p,1363b,1427s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,11n,32p,1359b,1427s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (89 pages, 243108 bytes).
+Output written on thesis.dvi (89 pages, 243588 bytes).
