@@ -196,4 +196,10 @@ J.~Mitola, ``Software radios-survey, critical evaluation and future
 R.~I. Lackey and D.~W. Upmal, ``Speakeasy: the military software radio,''
   \emph{IEEE Communications Magazine}, vol.~33, no.~5, pp. 56--61, May 1995.
 
+\bibitem{xilinx}
+\BIBentryALTinterwordspacing
+Xilinx spartan 3a. [Online]. Available:
+  \url{https://www.xilinx.com/products/silicon-devices/fpga/xa-spartan-3a.html}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
