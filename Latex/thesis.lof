@@ -2,7 +2,7 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Heterogeneous sensor network employing cooperative spectrum sensing. $RFFE_i$ and $SR_i$ represents different front end and sampling rates for the SDR units.}}{10}{figure.1.1}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces High speed train inside a tunnel for LTE-R. $D_{LOS}$ is the distance between transmitter and receiver, $d$ is the distance between the LCX cable transmission slots.}}{12}{figure.1.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces 5G Architecture}}{18}{figure.2.1}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 5G Architecture}}{17}{figure.2.1}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces The block diagram explaining the basic parts of Cognitive Radio system. The operating parameters are configured based on the characterization of the wireless environment.}}{21}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Software defined radio pushes all the adaptive elements and data manipulation operation into software. The goal of SDR is to provide or define all of the radio operation in software.}}{24}{figure.3.2}
