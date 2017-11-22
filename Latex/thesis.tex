@@ -5,10 +5,13 @@
 \usepackage{float}
 \usepackage{cite}
 \usepackage{url}
+\usepackage[breaklinks = true]{hyperref}
+\hypersetup{%
+  colorlinks = true,
+  linkcolor  = red
+}
 \usepackage{fancyvrb}
 \usepackage{listings}
-\graphicspath{ {images/} }
-
 %%%%%%%%%%%%%%%%%%%%% SET UP ALL THE TITLE PAGE VARIABLES %%%%%%%%%%%%%%%%%%
 
 \title{\scshape \mbox{Implementation of 5G Technologies with}\\
@@ -74,11 +77,11 @@
 
 \end{acknowledgements}
 
-\begin{frontmatter}
+%\begin{frontmatter}
 \tableofcontents
 \listoffigures
 \listoftables
-\end{frontmatter}
+%\end{frontmatter}
 
 %%%%%%%%%%%%%%%%%%%% INCLUDE THE REST OF THE DOCUMENT %%%%%%%%%%%%%%%%%%%%%%
 
@@ -110,7 +113,7 @@
 \bibliography{mybib}
 
 \appendix
-\addtocontents{toc}{\protect\contentsline{chapter}{Appendix:}{}}
+%\addtocontents{toc}{\protect\contentsline{chapter}{\protect\numberline{}Appendix:}{}{}}
 \include{appendixb}
 \include{appendixc}
 \end{document}
