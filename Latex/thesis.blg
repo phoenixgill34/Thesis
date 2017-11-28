@@ -16,49 +16,51 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: mybib.bib
+Warning--I didn't find a database entry for "Boccardi20140"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 38 entries,
+You've used 54 entries,
             4024 wiz_defined-function locations,
-            1033 strings with 14022 characters,
-and the built_in function-call counts, 29018 in all, are:
-= -- 2356
-> -- 669
-< -- 259
-+ -- 365
-- -- 112
-* -- 1395
-:= -- 4337
-add.period$ -- 83
-call.type$ -- 38
-change.case$ -- 36
-chr.to.int$ -- 567
-cite$ -- 38
-duplicate$ -- 2093
-empty$ -- 2350
-format.name$ -- 142
-if$ -- 6711
+            1117 strings with 17082 characters,
+and the built_in function-call counts, 42915 in all, are:
+= -- 3466
+> -- 1042
+< -- 397
++ -- 570
+- -- 176
+* -- 2069
+:= -- 6334
+add.period$ -- 114
+call.type$ -- 54
+change.case$ -- 51
+chr.to.int$ -- 879
+cite$ -- 54
+duplicate$ -- 3059
+empty$ -- 3420
+format.name$ -- 218
+if$ -- 9950
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 372
-newline$ -- 145
-num.names$ -- 35
-pop$ -- 836
+int.to.str$ -- 54
+missing$ -- 547
+newline$ -- 195
+num.names$ -- 50
+pop$ -- 1232
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2248
+skip$ -- 3319
 stack$ -- 0
-substring$ -- 1361
-swap$ -- 1741
-text.length$ -- 70
+substring$ -- 2094
+swap$ -- 2587
+text.length$ -- 104
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 38
+type$ -- 54
 warning$ -- 0
-while$ -- 138
-width$ -- 40
-write$ -- 397
+while$ -- 204
+width$ -- 56
+write$ -- 558
+(There was 1 warning)

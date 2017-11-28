@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.31)  22 NOV 2017 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.31)  27 NOV 2017 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -132,9 +132,76 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+
+Package subfig Warning: Your document class has a bad definition
+ of \endfigure, most likely
+ \let\endfigure=\end@float
+ which has now been changed to
+ \def\endfigure{\end@float}
+ because otherwise subsequent changes to \end@float
+ (like done by several packages changing float behaviour)
+ can't take effect on \endfigure.
+ Please complain to your document class author.
+
+
+Package subfig Warning: Your document class has a bad definition
+ of \endtable, most likely
+ \let\endtable=\end@float
+ which has now been changed to
+ \def\endtable{\end@float}
+ because otherwise subsequent changes to \end@float
+ (like done by several packages changing float behaviour)
+ can't take effect on \endtable.
+ Please complain to your document class author.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen114
+\captionmargin@=\dimen115
+\captionwidth=\dimen116
+\caption@tempdima=\dimen117
+\caption@indent=\dimen118
+\caption@parindent=\dimen119
+\caption@hangindent=\dimen120
+\abovecaptionskip=\skip44
+\belowcaptionskip=\skip45
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\par \ifdim \prevdepth 
+>-\p@ \vskip 10\p@ \relax \fi \setbox \@tempboxa \hbox {\vbox to\topskip {}#1: 
+#2\unskip \strut }\ifdim \wd \@tempboxa >\hsize {\ssp #1: #2\unskip \strut \par
+ } \else \hbox to\hsize {\hfil \unhbox \@tempboxa \hfil }\fi .
+\c@ContinuedFloat=\count106
+)
+\c@KVtest=\count107
+\sf@farskip=\skip46
+\sf@captopadj=\dimen121
+\sf@capskip=\skip47
+\sf@nearskip=\skip48
+\c@subfigure=\count108
+\c@subfigure@save=\count109
+\c@lofdepth=\count110
+\c@subtable=\count111
+\c@subtable@save=\count112
+\c@lotdepth=\count113
+\sf@top=\skip49
+\sf@bottom=\skip50
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count106
+\c@float@type=\count114
 \float@exts=\toks23
 \float@box=\box28
 \@float@everytoks=\toks24
@@ -205,14 +272,14 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen114
-\Hy@linkcounter=\count107
-\Hy@pagecounter=\count108
+\@linkdim=\dimen122
+\Hy@linkcounter=\count115
+\Hy@pagecounter=\count116
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count109
+\Hy@SavedSpaceFactor=\count117
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -225,12 +292,12 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count110
+\c@Hy@tempcnt=\count118
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen115
-\Fld@menulength=\count111
-\Field@Width=\dimen116
-\Fld@charsize=\dimen117
+\XeTeXLinkMargin=\dimen123
+\Fld@menulength=\count119
+\Field@Width=\dimen124
+\Fld@charsize=\dimen125
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -240,9 +307,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count112
-\c@Item=\count113
-\c@Hfootnote=\count114
+\Hy@abspage=\count120
+\c@Item=\count121
+\c@Hfootnote=\count122
 )
 
 Package hyperref Message: Driver (default): hdvips.
@@ -262,15 +329,15 @@ Package hyperref Warning: You have enabled option `breaklinks'.
 \pdf@box=\box30
 \pdf@toks=\toks26
 \pdf@defaulttoks=\toks27
-\HyField@AnnotCount=\count115
-\Fld@listcount=\count116
-\c@bookmark@seq@number=\count117
+\HyField@AnnotCount=\count123
+\Fld@listcount=\count124
+\c@bookmark@seq@number=\count125
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip44
+\Hy@SectionHShift=\skip51
 ))
 Package hyperref Info: Option `colorlinks' set `true' on input line 12.
 
@@ -279,11 +346,11 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count118
+\FV@CodeLineNo=\count126
 \FV@InFile=\read2
 \FV@TabBox=\box31
-\c@FancyVerbLine=\count119
-\FV@StepNumber=\count120
+\c@FancyVerbLine=\count127
+\FV@StepNumber=\count128
 \FV@OutFile=\write3
 ) (./mcode.sty
 -- Package: `mcode' 2.7 <2015/11/11> --
@@ -310,25 +377,23 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count121
+\lst@mode=\count129
 \lst@gtempboxa=\box32
 \lst@token=\toks28
-\lst@length=\count122
-\lst@currlwidth=\dimen118
-\lst@column=\count123
-\lst@pos=\count124
-\lst@lostspace=\dimen119
-\lst@width=\dimen120
-\lst@newlines=\count125
-\lst@lineno=\count126
-\abovecaptionskip=\skip45
-\belowcaptionskip=\skip46
-\lst@maxwidth=\dimen121
+\lst@length=\count130
+\lst@currlwidth=\dimen126
+\lst@column=\count131
+\lst@pos=\count132
+\lst@lostspace=\dimen127
+\lst@width=\dimen128
+\lst@newlines=\count133
+\lst@lineno=\count134
+\lst@maxwidth=\dimen129
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count127
-\lst@skipnumbers=\count128
+\c@lstnumber=\count135
+\lst@skipnumbers=\count136
 \lst@framebox=\box33
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -443,6 +508,12 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 63.
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 63.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box34
 
 
@@ -456,7 +527,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count129
+\c@section@level=\count137
 )
 LaTeX Info: Redefining \ref on input line 63.
 LaTeX Info: Redefining \pageref on input line 63.
@@ -466,7 +537,7 @@ LaTeX Info: Redefining \nameref on input line 63.
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
-\c@lstlisting=\count130
+\c@lstlisting=\count138
 
 Underfull \hbox (badness 10000) in paragraph at lines 68--68
 
@@ -486,21 +557,21 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3
 
-] [4])
+])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [5]
+ [4]
 (./thesis.lof
 Overfull \hbox (13.38773pt too wide) in paragraph at lines 2--2
  [][] [][][]\OT1/cmr/m/n/10.95 Heterogeneous sen-sor net-work em-ploy-ing co-op
 -er-a-tive spec-trum sens-ing. $\OML/cmm/m/it/10.95 RFFE[]$ 
  []
 
-[6
+[5
 
 ]
-Overfull \hbox (2.43279pt too wide) in paragraph at lines 24--24
+Overfull \hbox (2.43279pt too wide) in paragraph at lines 32--32
  [][] [][][]\OT1/cmr/m/n/10.95 HST chan-nel model con-sist-ing of time-series K
 -factor and Doppler shift caused 
  []
@@ -509,99 +580,142 @@ Overfull \hbox (2.43279pt too wide) in paragraph at lines 24--24
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [7] (./thesis.lot)
+ [6] (./thesis.lot)
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- (./introduction.tex [8
+ (./introduction.tex [7
 
 ]
 Chapter 1.
-[9
+[8
 
 ]
-File: images/Gill/figs/introdiag.eps Graphic file (type eps)
- <images/Gill/figs/introdiag.eps> [10]
-File: images/Gill/lte_figs/3dtunnel.eps Graphic file (type eps)
- <images/Gill/lte_figs/3dtunnel.eps>
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
 
-[11]
+Package caption Warning: \label without proper reference on input line 17.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:css' on page 9 undefined on input line 14.
+
+File: images/Gill/figs/introdiag.eps Graphic file (type eps)
+<images/Gill/figs/introdiag.eps> [9]
+
+Package caption Warning: \label without proper reference on input line 29.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ltertunnel' on page 10 undefined on input line 26
+.
+
+File: images/Gill/lte_figs/3dtunnel.eps Graphic file (type eps)
+<images/Gill/lte_figs/3dtunnel.eps>
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [10]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [12] [13]) [14]
+ [11] [12]) [13]
 \openout2 = `chapter2.aux'.
 
  (./chapter2.tex
 Chapter 2.
-[15
+
+Package caption Warning: \label without proper reference on input line 9.
+See the caption package documentation for explanation.
 
 
-] [16]
+LaTeX Warning: Reference `tableG' on page 14 undefined on input line 5.
+
+[14
+
+
+] [15]
 File: images/Gill/5G/5gsystemarch.eps Graphic file (type eps)
- <images/Gill/5G/5gsystemarch.eps>
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ì in font cmr10!
- [17])
-Underfull \hbox (badness 10000) in paragraph at lines 55--94
+ <images/Gill/5G/5gsystemarch.eps> [16] [17]
 
+LaTeX Warning: Citation `Boccardi20140' on page 18 undefined on input line 34.
+
+
+Overfull \hbox (12.60704pt too wide) in paragraph at lines 34--35
+[]\OT1/cmr/m/n/10.95 To un-der-stand the en-gi-neer-ing chal-lenges fac-ing 5G 
+cel-lu-lar com-mu-ni-ca-tion, it is paramount
  []
 
-[18] [19]
+[18]
+File: images/Gill/5G/beams.eps Graphic file (type eps)
+ <images/Gill/5G/beams.eps> [19]
+File: images/Gill/5G/n_4_9_23.eps Graphic file (type eps)
+ <images/Gill/5G/n_4_9_23.eps>
+File: images/Gill/5G/n_8_12_3.eps Graphic file (type eps)
+
+<images/Gill/5G/n_8_12_3.eps>
+File: images/Gill/5G/n_14_1.eps Graphic file (type eps)
+ <images/Gill/5G/n_14_1.eps>
+File: images/Gill/5G//n_16_15_3.eps Graphic file (type eps)
+
+<images/Gill/5G//n_16_15_3.eps>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20] [21]
+File: images/Gill/5G/device2device.eps Graphic file (type eps)
+ <images/Gill/5G/device2device.eps> [22] [23]
+File: images/Gill/5G/specalloc.eps Graphic file (type eps)
+
+<images/Gill/5G/specalloc.eps> [24] [25]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+File: images/Gill/5G/pathloss.eps Graphic file (type eps)
+ <images/Gill/5G/pathloss.eps> [26]
+[27] [28]
+File: images/Gill/5G/vehiclecomm.eps Graphic file (type eps)
+ <images/Gill/5G/vehiclecomm.eps> [29]) [30]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
 Chapter 3.
-[20
+[31
 
 
 
 ]
 File: images/Gill/figs/cognitive_radio.eps Graphic file (type eps)
- <images/Gill/figs/cognitive_radio.eps> [21] [22] [23]
+ <images/Gill/figs/cognitive_radio.eps> [32] [33] [34]
 File: images/Gill/figs/softwaredefinedradio.eps Graphic file (type eps)
 
-<images/Gill/figs/softwaredefinedradio.eps> [24]
-File: images/Gill/figs/usrp.eps Graphic file (type eps)
- <images/Gill/figs/usrp.eps>
-[25]
-File: images/Gill/figs/rtlsdr.eps Graphic file (type eps)
- <images/Gill/figs/rtlsdr.eps>
+<images/Gill/figs/softwaredefinedradio.eps> [35]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [26]
+ [36]
 File: images/Gill/figs/gnuradio.eps Graphic file (type eps)
- <images/Gill/figs/gnuradio.eps>
+
+<images/Gill/figs/gnuradio.eps>
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
-
-[27])
-Underfull \hbox (badness 10000) in paragraph at lines 153--97
+ [37])
+Underfull \hbox (badness 10000) in paragraph at lines 135--97
 
  []
 
-[28] [29]
+[38] [39]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
@@ -622,11 +736,11 @@ Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ì in font cmr10!
 File: images/Gill/lte_figs/lter_architecture.eps Graphic file (type eps)
-<images/Gill/lte_figs/lter_architecture.eps> [30
+<images/Gill/lte_figs/lter_architecture.eps> [40
 
 
 
-] [31]
+] [41]
 Missing character: There is no ¬ in font cmr10!
 Missing character: There is no ≠ in font cmr10!
 
@@ -636,7 +750,7 @@ GongpuWang/HSRCommunications]
  []
 
 File: images/Gill/lte_figs/leakycoax.eps Graphic file (type eps)
-<images/Gill/lte_figs/leakycoax.eps> [32] [33]
+<images/Gill/lte_figs/leakycoax.eps> [42] [43]
 Missing character: There is no œ in font cmr10!
 Missing character: There is no Ñ in font cmr10!
 Missing character: There is no Œ in font cmr10!
@@ -659,7 +773,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--100
 
  []
 
-[34] [35]
+[44] [45] [46]
 \openout2 = `chapter5.aux'.
 
  (./chapter5.tex
@@ -673,7 +787,7 @@ File: images/Gill/figs/normalizedenergy.eps Graphic file (type eps)
 <images/Gill/figs/normalizedenergy.eps>
 File: images/Gill/figs/hardfusion.eps Graphic file (type eps)
  <images/Gill/figs/hardfusion.eps>
-[36
+[47
 
 
 
@@ -681,20 +795,20 @@ File: images/Gill/figs/hardfusion.eps Graphic file (type eps)
 File: images/Gill/figs/mnescheme.eps Graphic file (type eps)
  <images/Gill/figs/mnescheme.eps>
 File: images/Gill/figs/egcscheme.eps Graphic file (type eps)
- <images/Gill/figs/egcscheme.eps> [37]
+ <images/Gill/figs/egcscheme.eps> [48]
 File: images/Gill/lte_figs/finalblock.eps Graphic file (type eps)
 
 <images/Gill/lte_figs/finalblock.eps>
 File: images/Gill/lte_figs/subblock.eps Graphic file (type eps)
  <images/Gill/lte_figs/subblock.eps>
-[38]
+[49]
 File: images/Gill/lte_figs/receivedsignal.eps Graphic file (type eps)
  <images/Gill/lte_figs/receivedsignal.eps>)
 Underfull \hbox (badness 10000) in paragraph at lines 124--103
 
  []
 
-[39] [40] [41] [42] [43]
+[50] [51] [52] [53] [54]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
@@ -726,38 +840,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
-[44
+[55
 
 
 
-]) [45] [46] [47] [48] [49] [50] [51]
+]) [56] [57] [58] [59] [60] [61] [62] [63]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
 Chapter 7.
-) [52
+) [64
 
 
 
-] (./thesis.bbl [53
+] (./thesis.bbl [65
 
 
 ]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
- [54]
+ [66]
 Overfull \hbox (39.96436pt too wide) in paragraph at lines 139--142
 []\OT1/cmr/m/n/10.95 Usrp. [On-line]. Avail-able: [][][]$https : / / www . ettu
 s . com / product / category / USRP-[]Embedded-[]Series/$[][][][] 
  []
 
-[55]
-Underfull \hbox (badness 10000) in paragraph at lines 226--229
-[]\OT1/cmr/m/n/10.95 Xilinx spar-tan 3a. [On-line]. Avail-able:
+[67] [68] [69]
+Overfull \hbox (131.04536pt too wide) in paragraph at lines 311--314
+[]\OT1/cmr/m/n/10.95 Xilinx-spartan-3a. [On-line]. Avail-able: [][][]$https : /
+ / www . xilinx . com / products / silicon-[]devices / fpga / xa-[]spartan-[]3a
+ . html$[][][][] 
  []
 
-[56]) [57]
+) [70]
 \openout2 = `appendixb.aux'.
 
  (./appendixb.tex
@@ -770,7 +886,7 @@ LaTeX Font Info:    Try loading font information for TS1+pcr on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [58
+) [71
 
 
 ]
@@ -781,7 +897,7 @@ File: omlpcr.fd
 )
 LaTeX Font Info:    Font shape `OML/pcr/m/n' in size <9> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 39.
- [59]
+ [72]
 LaTeX Font Info:    Try loading font information for OMS+pcr on input line 61.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
@@ -789,18 +905,18 @@ File: omspcr.fd
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
- [60] [61] [62]
-[63] [64] [65] [66] [67] [68] [69] [70] [71] [72] [73] [74]) [75]
+ [73] [74] [75]
+[76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86] [87]) [88]
 \openout2 = `appendixc.aux'.
 
 
 (./appendixc.tex
 Appendix B.
-[76
+[89
 
 
 
-] [77] [78]
+] [90] [91]
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 114.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
@@ -811,8 +927,8 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 114.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [79] [80] [81]
-[82] [83]) [84]
+) [92] [93] [94]
+[95] [96]) [97]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
  (./thesis.aux (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter5.a
@@ -821,16 +937,20 @@ ux) (./chapter6.aux) (./conclusion.aux) (./appendixb.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 120.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 31F20B2F60C0DBCE26FBB7BD6D5A1669;4919.
+(rerunfilecheck)             Checksum: 57B1E9D2DCA55A10394C9408C60B0E1B;4764.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
  ) 
 Here is how much of TeX's memory you used:
- 9438 strings out of 494930
- 134690 string characters out of 6180168
- 350017 words of memory out of 5000000
- 12514 multiletter control sequences out of 15000+600000
- 15085 words of font info for 54 fonts, out of 8000000 for 9000
+ 10652 strings out of 494930
+ 156458 string characters out of 6180168
+ 369203 words of memory out of 5000000
+ 13707 multiletter control sequences out of 15000+600000
+ 16363 words of font info for 60 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 35i,12n,42p,1950b,1752s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,12n,51p,3712b,1753s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (85 pages, 561536 bytes).
+Output written on thesis.dvi (98 pages, 618144 bytes).
