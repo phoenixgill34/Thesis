@@ -1,8 +1,12 @@
 % MS-Thesis
 \documentclass[11pt]{mvlthesis}
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{verbatim,amssymb,amsmath,subfig}
+\usepackage{verbatim,amssymb,amsmath,subfig,tabularx,ragged2e,booktabs}
 \usepackage{float}
+\usepackage{adjustbox}
+%\usepackage{wrapfig}
+%\usepackage{lscape}
+\usepackage{rotating}
 \usepackage{cite}
 \usepackage{url}
 \usepackage[breaklinks = true]{hyperref}
@@ -30,7 +34,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%% INCLUDE USER DEFINED COMMANDS %%%%%%%%%%%%%%%%%%%%%%%
-
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
 \newcommand{\bi}{\begin{itemize}}
 \newcommand{\ei}{\end{itemize}}
 \newcommand{\ii}{\item}

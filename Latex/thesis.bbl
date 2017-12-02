@@ -312,4 +312,111 @@ Xilinx-spartan-3a. [Online]. Available:
   \url{https://www.xilinx.com/products/silicon-devices/fpga/xa-spartan-3a.html}
 \BIBentrySTDinterwordspacing
 
+\bibitem{gnradio}
+\BIBentryALTinterwordspacing
+Gnu radio. [Online]. Available: \url{http://gnuradio.org/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bose1999virtual}
+V.~Bose, M.~Ismert, M.~Welborn, and J.~Guttag, ``Virtual radios,'' \emph{IEEE
+  Journal on selected areas in communications}, vol.~17, no.~4, pp. 591--602,
+  1999.
+
+\bibitem{collins2013implementation}
+T.~F. Collins, ``Implementation and analysis of spectral subtraction and signal
+  separation in deterministic wide-band anti-jamming scenarios,'' Ph.D.
+  dissertation, Worcester Polytechnic Institute, 2013.
+
+\bibitem{matlab}
+\BIBentryALTinterwordspacing
+Matlab2017a. [Online]. Available:
+  \url{https://www.mathworks.com/products/matlab.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{tingting2010high}
+G.~Tingting and S.~Bin, ``A high-speed railway mobile communication system
+  based on lte,'' in \emph{Electronics and Information Engineering (ICEIE),
+  2010 International Conference On}, vol.~1.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2010, pp. V1--414.
+
+\bibitem{n1974leaky}
+\BIBentryALTinterwordspacing
+K.~N, N.~T, and N.~T, ``Leaky coaxial cable,'' May~7 1974, uS Patent 3,810,186.
+  [Online]. Available: \url{https://www.google.com/patents/US3810186}
+\BIBentrySTDinterwordspacing
+
+\bibitem{motley1983directed}
+A.~Motley and D.~Palmer, ``Directed radio coverage within buildings,'' in
+  \emph{Proc. IEE Conf. Radio spectrum conversion techniques}, 1983.
+
+\bibitem{saleh1987distributed}
+A.~A. Saleh, A.~Rustako, and R.~Roman, ``Distributed antennas for indoor radio
+  communications,'' \emph{IEEE Transactions on Communications}, vol.~35,
+  no.~12, pp. 1245--1251, 1987.
+
+\bibitem{cao1999radio}
+H.~Cao and Y.~Zhang, ``Radio propagation along a radiated mode leaky coaxial
+  cable in tunnels,'' in \emph{Microwave Conference, 1999 Asia Pacific},
+  vol.~2.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 1999, pp. 270--272.
+
+\bibitem{takatsu2007history}
+T.~Takatsu, ``The history and future of high-speed railways in japan,''
+  \emph{Japan Railway \& Transport Review}, vol.~48, pp. 6--21, 2007.
+
+\bibitem{booklter13}
+M.~P{\"a}tzold, \emph{Mobile radio channels}.\hskip 1em plus 0.5em minus
+  0.4em\relax John Wiley \& Sons, 2011.
+
+\bibitem{arlter10}
+H.~Wang, F.~R. Yu, and H.~Jiang, ``Modeling of radio channels with leaky
+  coaxial cable for lte-m based cbtc systems,'' \emph{IEEE Communications
+  Letters}, vol.~20, no.~5, pp. 1038--1041, 2016.
+
+\bibitem{inplter12}
+F.~F. Digham, M.-S. Alouini, and M.~K. Simon, ``On the energy detection of
+  unknown signals over fading channels,'' in \emph{Communications, 2003.
+  ICC'03. IEEE International Conference on}, vol.~5.\hskip 1em plus 0.5em minus
+  0.4em\relax Ieee, 2003, pp. 3575--3579.
+
+\bibitem{trlter14}
+3rd Generation Partnership~Project, ``technical specification group radio
+  access network;spatial channel model for mimo simulations,'' 3GPP, Sophia
+  Antipolis, France, Tech. Rep. TR 25.996 V6.1.0, 2003.
+
+\bibitem{inlter15}
+P.~V.~R. Ferreira and A.~M. Wyglinski, ``Performance analysis of uhf mobile
+  satellite communication system experiencing ionospheric scintillation and
+  terrestrial multipath fading,'' in \emph{Vehicular Technology Conference (VTC
+  Fall), 2015 IEEE 82nd}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2015,
+  pp. 1--5.
+
+\bibitem{booklter16}
+D.~Jordane \emph{et~al.}, \emph{Electromagnetic waves and radiating
+  systems}.\hskip 1em plus 0.5em minus 0.4em\relax Prentice-Hall Of Lndia
+  Private Limited; New Delhi, 1967.
+
+\bibitem{ghasemi2005collaborative}
+A.~Ghasemi and E.~S. Sousa, ``Collaborative spectrum sensing for opportunistic
+  access in fading environments,'' in \emph{New Frontiers in Dynamic Spectrum
+  Access Networks, 2005. DySPAN 2005. 2005 First IEEE International Symposium
+  on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2005, pp. 131--136.
+
+\bibitem{duan2010performance}
+J.~Duan and Y.~Li, ``Performance analysis of cooperative spectrum sensing in
+  different fading channels,'' in \emph{Computer Engineering and Technology
+  (ICCET), 2010 2nd International Conference on}, vol.~3.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2010, pp. V3--64.
+
+\bibitem{inphtn15}
+S.~Nallagonda, S.~D. Roy, A.~Chandra, and S.~Kundu, ``Performance of
+  cooperative spectrum sensing in hoyt fading channel under hard decision
+  fusion rules,'' in \emph{Computers and Devices for Communication (CODEC),
+  2012 5th International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax
+  IEEE, 2012, pp. 1--4.
+
+\bibitem{lter17}
+K.~Arshad, F.~Katsriku, A.~Lasebae \emph{et~al.}, ``Effects of different
+  parameters on attenuation rates in circular and arch tunnels,'' \emph{PIERS
+  Online}, vol.~3, no.~5, pp. 607--611, 2007.
+
 \end{thebibliography}
