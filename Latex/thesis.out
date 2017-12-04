@@ -5,59 +5,55 @@
 \BOOKMARK [1][-]{section.1.2}{State of the Art}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.3}{Thesis Contributions}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.4}{Thesis Organization}{chapter.1}% 7
-\BOOKMARK [0][-]{chapter.2}{Introduction to 5G and Key Technologies}{}% 8
-\BOOKMARK [1][-]{section.2.1}{5G Cellular Architecture}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.2}{Key Technologies of 5G System}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.1}{Massive MIMO}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.2}{Machine-to-Machine \(M2M\) Communication}{section.2.2}% 12
-\BOOKMARK [2][-]{subsection.2.2.3}{Spectrum Regulation for 5G}{section.2.2}% 13
-\BOOKMARK [1][-]{section.2.3}{5G using Millimeter Wave \(mmWave\)}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.4}{Vehicular Communication Using 5G}{chapter.2}% 15
-\BOOKMARK [1][-]{section.2.5}{Summary}{chapter.2}% 16
-\BOOKMARK [0][-]{chapter.3}{Heterogeneous Cooperative Spectrum Sensing \(CSS\)}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Cognitive Radios}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{CSS in Heterogeneous Networks}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.3}{Software Defined Radios}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.3.1}{USRP N210 and RTL-SDR}{section.3.3}% 21
-\BOOKMARK [2][-]{subsection.3.3.2}{GNU Radio and Software-Defined Radio}{section.3.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.3}{MATLAB}{section.3.3}% 23
-\BOOKMARK [1][-]{section.3.4}{Summary}{chapter.3}% 24
-\BOOKMARK [0][-]{chapter.4}{Long Term Evolution for Railways \(LTE-R\)}{}% 25
-\BOOKMARK [1][-]{section.4.1}{LTE-R Communication System}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.2}{Leaky Coaxial Cable for LTE-R}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.3}{Channel Impairements Inside a Tunnel}{chapter.4}% 28
-\BOOKMARK [2][-]{subsection.4.3.1}{Multipath Fading}{section.4.3}% 29
-\BOOKMARK [2][-]{subsection.4.3.2}{Doppler Shift}{section.4.3}% 30
-\BOOKMARK [1][-]{section.4.4}{Proposed Channel Model}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.5}{Summary}{chapter.4}% 32
-\BOOKMARK [0][-]{chapter.5}{Implementation}{}% 33
-\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.2}{Experimental Setup for Heterogeneous CSS}{chapter.5}% 35
-\BOOKMARK [2][-]{subsection.5.2.1}{Sensor Node and Signal Source Setup}{section.5.2}% 36
-\BOOKMARK [1][-]{section.5.3}{Hard-Data Fusion Scheme}{chapter.5}% 37
-\BOOKMARK [1][-]{section.5.4}{Soft-Data Fusion Scheme}{chapter.5}% 38
-\BOOKMARK [2][-]{subsection.5.4.1}{Maximum Normalized Energy Scheme}{section.5.4}% 39
-\BOOKMARK [2][-]{subsection.5.4.2}{Equal Gain Combining Scheme}{section.5.4}% 40
-\BOOKMARK [1][-]{section.5.5}{LTE-R Testbed in Matlab}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.6}{Summary}{chapter.5}% 42
-\BOOKMARK [0][-]{chapter.6}{Experimental Results}{}% 43
-\BOOKMARK [1][-]{section.6.1}{Overview}{chapter.6}% 44
-\BOOKMARK [1][-]{section.6.2}{Heterogeneous CSS Results}{chapter.6}% 45
-\BOOKMARK [2][-]{subsection.6.2.1}{Hard Decision Combining}{section.6.2}% 46
-\BOOKMARK [2][-]{subsection.6.2.2}{Soft Decision Combining}{section.6.2}% 47
-\BOOKMARK [1][-]{section.6.3}{HST LTE-R in a Tunnel}{chapter.6}% 48
-\BOOKMARK [2][-]{subsection.6.3.1}{K-factor in a Tunnel}{section.6.3}% 49
-\BOOKMARK [2][-]{subsection.6.3.2}{BER Performance}{section.6.3}% 50
-\BOOKMARK [1][-]{section.6.4}{Summary}{chapter.6}% 51
-\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 52
-\BOOKMARK [1][-]{section.7.1}{Research Outcomes}{chapter.7}% 53
-\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 54
-\BOOKMARK [0][-]{chapter*.38}{Bibliography}{}% 55
-\BOOKMARK [0][-]{appendix.A}{Appendix: Heterogeneous Cooperative Spectrum Sensing Code}{}% 56
-\BOOKMARK [1][-]{section.A.1}{harddecisionpdroc.m}{appendix.A}% 57
-\BOOKMARK [1][-]{section.A.2}{softharddecisionpd.m}{appendix.A}% 58
-\BOOKMARK [1][-]{section.A.3}{spectrumsenseusrp.py}{appendix.A}% 59
-\BOOKMARK [1][-]{section.A.4}{gnuradiortlsdrsense.py}{appendix.A}% 60
-\BOOKMARK [0][-]{appendix.B}{Appendix: LTE-R Analysis Code}{}% 61
-\BOOKMARK [1][-]{section.B.1}{kfactordist.m}{appendix.B}% 62
-\BOOKMARK [1][-]{section.B.2}{bercalculation.m}{appendix.B}% 63
+\BOOKMARK [0][-]{chapter.2}{Introduction to Smart Railway System}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Spectrum Sensing}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Spectrum Regulation for 5G}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Vehicular Communication Using LTE}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.3.1}{Internet of Things \(IoT\) for Railways}{section.2.3}% 12
+\BOOKMARK [0][-]{chapter.3}{Heterogeneous Cooperative Spectrum Sensing \(CSS\)}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Cognitive Radios}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.2}{CSS in Heterogeneous Networks}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Software Defined Radios}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.1}{USRP N210 and RTL-SDR}{section.3.3}% 17
+\BOOKMARK [2][-]{subsection.3.3.2}{GNU Radio and Software-Defined Radio}{section.3.3}% 18
+\BOOKMARK [2][-]{subsection.3.3.3}{MATLAB}{section.3.3}% 19
+\BOOKMARK [1][-]{section.3.4}{Summary}{chapter.3}% 20
+\BOOKMARK [0][-]{chapter.4}{Long Term Evolution for Railways \(LTE-R\)}{}% 21
+\BOOKMARK [1][-]{section.4.1}{LTE-R Communication System}{chapter.4}% 22
+\BOOKMARK [1][-]{section.4.2}{Leaky Coaxial Cable for LTE-R}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.3}{Channel Impairements Inside a Tunnel}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.3.1}{Multipath Fading}{section.4.3}% 25
+\BOOKMARK [2][-]{subsection.4.3.2}{Doppler Shift}{section.4.3}% 26
+\BOOKMARK [1][-]{section.4.4}{Proposed Channel Model}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.5}{Summary}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{CSS Implementation and Results}{}% 29
+\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.2}{Experimental Setup for Heterogeneous CSS}{chapter.5}% 31
+\BOOKMARK [2][-]{subsection.5.2.1}{Sensor Node and Signal Source Setup}{section.5.2}% 32
+\BOOKMARK [1][-]{section.5.3}{Hard-Data Fusion Scheme}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.4}{Soft-Data Fusion Scheme}{chapter.5}% 34
+\BOOKMARK [2][-]{subsection.5.4.1}{Maximum Normalized Energy Scheme}{section.5.4}% 35
+\BOOKMARK [2][-]{subsection.5.4.2}{Equal Gain Combining Scheme}{section.5.4}% 36
+\BOOKMARK [1][-]{section.5.5}{Heterogeneous CSS Results}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.5.1}{Hard Decision Combining}{section.5.5}% 38
+\BOOKMARK [2][-]{subsection.5.5.2}{Soft Decision Combining}{section.5.5}% 39
+\BOOKMARK [1][-]{section.5.6}{Summary}{chapter.5}% 40
+\BOOKMARK [0][-]{chapter.6}{LTE-R Implementation and Results}{}% 41
+\BOOKMARK [1][-]{section.6.1}{Overview}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.2}{LTE-R Testbed in Matlab}{chapter.6}% 43
+\BOOKMARK [1][-]{section.6.3}{HST LTE-R in a Tunnel}{chapter.6}% 44
+\BOOKMARK [2][-]{subsection.6.3.1}{K-factor in a Tunnel}{section.6.3}% 45
+\BOOKMARK [2][-]{subsection.6.3.2}{BER Performance}{section.6.3}% 46
+\BOOKMARK [1][-]{section.6.4}{Summary}{chapter.6}% 47
+\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 48
+\BOOKMARK [1][-]{section.7.1}{Research Outcomes}{chapter.7}% 49
+\BOOKMARK [1][-]{section.7.2}{Future Work}{chapter.7}% 50
+\BOOKMARK [0][-]{chapter*.33}{Bibliography}{}% 51
+\BOOKMARK [0][-]{appendix.A}{Heterogeneous Cooperative Spectrum Sensing Code}{}% 52
+\BOOKMARK [1][-]{section.A.1}{harddecisionpdroc.m}{appendix.A}% 53
+\BOOKMARK [1][-]{section.A.2}{softharddecisionpd.m}{appendix.A}% 54
+\BOOKMARK [1][-]{section.A.3}{spectrumsenseusrp.py}{appendix.A}% 55
+\BOOKMARK [1][-]{section.A.4}{gnuradiortlsdrsense.py}{appendix.A}% 56
+\BOOKMARK [0][-]{appendix.B}{LTE-R Analysis Code}{}% 57
+\BOOKMARK [1][-]{section.B.1}{kfactordist.m}{appendix.B}% 58
+\BOOKMARK [1][-]{section.B.2}{bercalculation.m}{appendix.B}% 59

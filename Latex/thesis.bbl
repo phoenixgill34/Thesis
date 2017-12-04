@@ -150,74 +150,17 @@ T.~S. Rappaport \emph{et~al.}, \emph{Wireless communications: principles and
   practice}.\hskip 1em plus 0.5em minus 0.4em\relax prentice hall PTR New
   Jersey, 1996, vol.~2.
 
-\bibitem{4561570}
-A.~Hashimoto, H.~Yoshino, and H.~Atarashi, ``Roadmap of imt-advanced
-  development,'' \emph{IEEE Microwave Magazine}, vol.~9, no.~4, pp. 80--88, Aug
-  2008.
-
-\bibitem{4623708}
-V.~Chandrasekhar, J.~G. Andrews, and A.~Gatherer, ``Femtocell networks: a
-  survey,'' \emph{IEEE Communications Magazine}, vol.~46, no.~9, pp. 59--67,
-  September 2008.
-
-\bibitem{Boccardi2014}
-F.~Boccardi, R.~Heath, A.~Lozano, T.~L. Marzetta, and P.~Popovski, ``{Five
-  disruptive technology directions for 5G},'' \emph{IEEE Communications
-  Magazine}, vol.~52, no.~2, pp. 74--80, 2014.
-
-\bibitem{Wang2014}
+\bibitem{corridor}
 \BIBentryALTinterwordspacing
-C.-X. Wang, F.~Haider, X.~Gao, X.-H. You, Y.~Yang, D.~Yuan, H.~Aggoune,
-  H.~Haas, S.~Fletcher, and E.~Hepsaydir, ``{Cellular architecture and key
-  technologies for 5G wireless communication networks},'' \emph{IEEE
-  Communications Magazine}, vol.~52, no.~2, pp. 122--130, 2014. [Online].
-  Available:
-  \url{http://ieeexplore.ieee.org/lpdocs/epic03/wrapper.htm?arnumber=6736752}
+``Corridor: Cognitive radio for railway through dynamic and opportunistic
+  spectrum reuse.'' ~11 2014. [Online]. Available:
+  \url{http://corridor.ifsttar.fr}
 \BIBentrySTDinterwordspacing
 
-\bibitem{6515173}
-T.~S. Rappaport, S.~Sun, R.~Mayzus, H.~Zhao, Y.~Azar, K.~Wang, G.~N. Wong,
-  J.~K. Schulz, M.~Samimi, and F.~Gutierrez, ``Millimeter wave mobile
-  communications for 5g cellular: It will work!'' \emph{IEEE Access}, vol.~1,
-  pp. 335--349, 2013.
-
-\bibitem{4212879}
-H.~Elgala, R.~Mesleh, H.~Haas, and B.~Pricope, ``Ofdm visible light wireless
-  communication based on white leds,'' in \emph{2007 IEEE 65th Vehicular
-  Technology Conference - VTC2007-Spring}, April 2007, pp. 2185--2189.
-
-\bibitem{502029}
-S.~Y. Seidel and H.~W. Arnold, ``Propagation measurements at 28 ghz to
-  investigate the performance of local multipoint distribution service
-  (lmds),'' in \emph{Global Telecommunications Conference, 1995. GLOBECOM '95.,
-  IEEE}, vol.~1, Nov 1995, pp. 754--757 vol.1.
-
-\bibitem{4211144}
-M.~Nekovee, ``Dynamic spectrum access with cognitive radios: Future
-  architectures and research challenges,'' in \emph{2006 1st International
-  Conference on Cognitive Radio Oriented Wireless Networks and Communications},
-  June 2006, pp. 1--5.
-
-\bibitem{819467}
-J.~Mitola, ``Cognitive radio for flexible mobile multimedia communications,''
-  in \emph{Mobile Multimedia Communications, 1999. (MoMuC '99) 1999 IEEE
-  International Workshop on}, 1999, pp. 3--10.
-
-\bibitem{massivemimo}
-\BIBentryALTinterwordspacing
-Mimo. [Online]. Available: \url{https://massivemimo.eu/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{laya2014random}
-A.~Laya, L.~Alonso, and J.~Alonso-Zarate, ``Is the random access channel of lte
-  and lte-a suitable for m2m communications? a survey of alternatives.''
-  \emph{IEEE Communications Surveys and Tutorials}, vol.~16, no.~1, pp. 4--16,
-  2014.
-
-\bibitem{chen2014survey}
-M.~Chen, J.~Wan, S.~Gonz{\'a}lez-Valenzuela, X.~Liao, and V.~C. Leung, ``A
-  survey of recent developments in home m2m networks.'' \emph{IEEE
-  Communications Surveys and Tutorials}, vol.~16, no.~1, pp. 98--114, 2014.
+\bibitem{5621621}
+A.~Amanna, M.~Gadnhiok, M.~J. Price, J.~H. Reed, W.~P. Siriwongpairat, and
+  T.~K. Himsoon, ``Railway cognitive radio,'' \emph{IEEE Vehicular Technology
+  Magazine}, vol.~5, no.~3, pp. 82--89, Sept 2010.
 
 \bibitem{rusek2013scaling}
 F.~Rusek, D.~Persson, B.~K. Lau, E.~G. Larsson, T.~L. Marzetta, O.~Edfors, and
@@ -235,16 +178,6 @@ X.~Hong, C.-X. Wang, M.~Uysal, X.~Ge, and S.~Ouyang, ``Capacity of hybrid
   cognitive radio networks with distributed vaas,'' \emph{IEEE Transactions on
   Vehicular Technology}, vol.~59, no.~7, pp. 3510--3523, 2010.
 
-\bibitem{roh2014millimeter}
-W.~Roh, J.-Y. Seol, J.~Park, B.~Lee, J.~Lee, Y.~Kim, J.~Cho, K.~Cheun, and
-  F.~Aryanfar, ``Millimeter-wave beamforming as an enabling technology for 5g
-  cellular communications: Theoretical feasibility and prototype results,''
-  \emph{IEEE communications magazine}, vol.~52, no.~2, pp. 106--113, 2014.
-
-\bibitem{friis1946note}
-H.~T. Friis, ``A note on a simple transmission formula,'' \emph{Proceedings of
-  the IRE}, vol.~34, no.~5, pp. 254--256, 1946.
-
 \bibitem{ge2016vehicular}
 X.~Ge, H.~Cheng, G.~Mao, Y.~Yang, and S.~Tu, ``Vehicular communications for 5g
   cooperative small-cell networks,'' \emph{IEEE Transactions on Vehicular
@@ -259,6 +192,17 @@ G.~Araniti, C.~Campolo, M.~Condoluci, A.~Iera, and A.~Molinaro, ``Lte for
 S.~Mumtaz, K.~M.~S. Huq, and J.~Rodriguez, ``Direct mobile-to-mobile
   communication: Paradigm for 5g,'' \emph{IEEE Wireless Communications},
   vol.~21, no.~5, pp. 14--23, 2014.
+
+\bibitem{laya2014random}
+A.~Laya, L.~Alonso, and J.~Alonso-Zarate, ``Is the random access channel of lte
+  and lte-a suitable for m2m communications? a survey of alternatives.''
+  \emph{IEEE Communications Surveys and Tutorials}, vol.~16, no.~1, pp. 4--16,
+  2014.
+
+\bibitem{chen2014survey}
+M.~Chen, J.~Wan, S.~Gonz{\'a}lez-Valenzuela, X.~Liao, and V.~C. Leung, ``A
+  survey of recent developments in home m2m networks.'' \emph{IEEE
+  Communications Surveys and Tutorials}, vol.~16, no.~1, pp. 98--114, 2014.
 
 \bibitem{cogjm}
 J.~Mitola and G.~Q. Maguire, ``Cognitive radio: making software radios more

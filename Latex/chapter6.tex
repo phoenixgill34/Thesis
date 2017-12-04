@@ -1,43 +1,34 @@
-\chapter{Experimental Results}
+\chapter{LTE-R Implementation and Results}
 \label{chapter6}
 \section{Overview} 
 This chapter outlines the outcomes of the cooperative spectrum sensing using soft and hard decision fusion schemes. The $P_{davg}$ vs $SNR$ plot is generated for both the schemes to compare their performance in a real fading scenario on a hardware test-bed. The data files generated using gnuradio are imported in MATLAB for all sensor nodes and the results are derived. As it is expected soft-fusion schemes outperform hard-fusion scheme but as we go to higher SNRs both the schemes generally converges to the same results. For LTE-R performance analysis we have the plot for K-factor variation inside a tunnel for high speed tunnel. We also generated the ber curves for all three modulation schemes proposed for LTE-R and it is evident from the plots for higher K-values we have good connectivity. As the train moves away from the LCXs slot, the K-factor goes down and bit-error rate increases. Finally, we generated the continuous ber curve to test the performance of LTE-R in a discrete timestep manner.
 
-\section{Heterogeneous CSS Results}
-In this thesis, we implemented the heterogeneous cooperative spectrum sensing (CSS) using both hard and soft data fusion schemes. We start by collecting the data across 450 MHz band for all sensor nodes in a distributed manner. The spectrum sensing data is normalized for both soft and hard data fusion schemes using the same operational parameters to compare their performance accurately. The measurements are performed using software-defined radios (SDRs) and the post processing is conducted on desktop computers. The desktop computer consists of i7 Intel processor with eight cores and 3.41 GHz clock cycle running Ubuntu 16.04. The sensor node network is implemented using RTL-SDR dongles and Ettus Research USRP N210 on GNU Radio Software platform.
-These sensor nodes collect the spectral data, normalize it and then transmit it to the FC for the detection. For soft data fusion, the data is quantized in the local sensor nodes before it is transmitted to FC due to the limited bandwidth of the overhead channel. 
+\section{LTE-R Testbed in Matlab}
 
-\subsection{Hard Decision Combining}
-The Figure~\ref{hardres} shows the shows the $P_{davg}$ versus $SNR_{avg}$ for all four sensor nodes. It can be seen that OR performs the best while AND performs
-the worst in a fading channel. The SN R avg was computed by taking the mean of all the SNRs for the sensor nodes. The SNR
-was varied for each sensor node by varying the transmitter amplitude and gain in the gnuradio flowgraph.
+We have implemented the simulation testbed in MATLAB, consisting of a transmitter, a channel and a receiver. The K-factor values for the channel model are obtained from Eq.(\ref{kfactor}) and are used to generate a time-series BER curve for different modulation schemes used in LTE-R. The values used for the electrical material properties for tunnel walls~\cite{lter17} and its
+specifications are given in Table~\ref{tablelter}. The relative permittivity for the tunnel walls is taken as $\varepsilon_r = 5$ and $\sigma$ is set to 0.1. The simulation is conducted for velocity of $v (Km/h) = $ 300, 400 and 500 Km/h. Since the frequency band allocation for LTE-R will most probably be from 2--6 GHz, hence the $f_c$ values chose are 2, 3 and 5 GHz. The height of the receiver is assumed to be around the length of the train and height of tunnel is chosen as the size of the leaky coaxial cable.
 
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/hardecisionpd.eps}
-    \caption{Probability of Detection versus $SNR_avg$ For Hard Decision Combining.} 
-\label{hardres}      
-\end{figure}
-In Figure~\ref{hardroc} the ROC characteristics for the hard decision combining at two different $SNR_{avg}$ for all three hard data fusion schemes are provided. It is pretty evident from the plot that OR scheme performs better than both AND and majority rule scheme. The AND scheme performs the worst because it depends on all sensor nodes to have same decision which is very difficult in a real fading environment. For lower SNR values OR outperform majority rule by a large margin but as we go to higher SNR values their performance converges.
+\begin{table*}[t!]
+\centering
+\caption{Tunnel and Tx/Rx Characteristics}
+\begin{tabular}{c  c  c }
+   & Dimensions & Simulation Parameters\\\hline
+Tunnel & Width = 8.6 m, Height = 7.3 m & $\varepsilon_r = 5$, $\sigma = 0.1~\textrm{Sm}^{-1}$\\\hline
+Leaky Feeder Cable (Tx) & Height = 6.1 m & $f_c$ (GHz) = 2, 3, 5\\\hline
+Train (Rx) & Height = 4.2 m &  v (km/h) = 300, 400, 500\\
+\hline
+\end{tabular}
+\label{tablelter}
+\end{table*}
 
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/hardecisioroc.eps}
-    \caption{ROC Characteristics for Hard Decision Combining with Different SNRs.} 
-\label{hardroc}      
-\end{figure}
-
-\subsection{Soft Decision Combining}
-The Figure~\ref{softpd} shows the $P_{davg}$ vs $SNR_{avg}$ for both soft and hard data fusion schemes. MNE and OR scheme overlap on the plot because in MNE scheme we take the maximum normalized energy and compare it the global test statistic, whereas in OR scheme we estimate the signal source by either of sensor node decision. This makes both the scheme almost same and this is visible in the results. The EGC scheme performs the best because it takes into consideration all the sensor nodes and it's global test statistic gives equal weightage to all sensor nodes. AND scheme performs the worst as it was expected. It is very important to understand that at higher SNR values, $SNR_{avg}$ > 2 dB, we see all schemes converging to the same decisions. This tells us that in noiseless environment we can choose hard fusion schemes because of their implementation complexity and we can select soft fusion in severe fading environment as they tend to be more accurate in these scenarios.
-\begin{figure}[ht!]
-	\centering
-	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/softnhardecisionpd.eps}
-    \caption{Probability of Detection versus $SNR_avg$ For Soft and Hard Decision Combining.} 
-\label{softpd}      
+\begin{figure}[!ht]
+\label{finalblock}
+\centering
+\includegraphics[width=\textwidth,height=8cm,keepaspectratio]{images/Gill/lte_figs/finalblock.eps} 
+\caption{Block diagram of a communication system through a HST channel using QPSK, 16-QAM and 64-QAM.}
 \end{figure}
 
-
-
+Figure~\ref{finalblock} shows the block diagram of the simulation test-bed used for the performance analysis of LTE-R. The random source block generate the symbol between 0 and M-1, where M = 4,16,64 for QPSK, 16QAM and 64QAM respectively. The data is then modulated with specific modulation type and then pass through the proposed HST channel model. The additive white gaussian noise is added after applying the channel coefficients to the signal data. We then demodulate the data packets and pass it to the ber calculator object which then computes the bit-error rate. The simulations are run for SNR values ranging from 0--20 dB and plots are generated for all three modulation schemes.
 
 \section{HST LTE-R in a Tunnel}
 Using LTE System Toolbox provided by MATLAB we generated Figure~\ref{lteofdma} which shows the received resource grid without equalization. The frame worth of data was modulated with QPSK, 16QAM and 64QAM for equal number of subcarriers and mapped to symbol in a subframe. We generate ten subframes individually and create one frame after merging all subframes. The frame is passed through our proposed high speed train channel model, with additive white gaussian noise added. We can see that without equalization the received resourced grid has lot of errrors and will lead to numerous retransmissions.

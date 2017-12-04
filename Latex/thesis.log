@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.8.31)  1 DEC 2017 06:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  3 DEC 2017 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -376,10 +376,11 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count128
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
 Package xcolor Info: Model `RGB' extended on input line 1353.
@@ -398,7 +399,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen156
-\pgfmath@count=\count128
+\pgfmath@count=\count129
 \pgfmath@box=\box32
 \pgfmath@toks=\toks36
 \pgfmath@stack@operand=\toks37
@@ -422,7 +423,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count129
+\c@pgfmathroundto@lastzeros=\count130
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
@@ -460,7 +461,7 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box33
 \pgf@hbox=\box34
 \pgf@layerbox@main=\box35
-\pgf@picture@serial@count=\count130
+\pgf@picture@serial@count=\count131
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -493,7 +494,7 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen180
-\pgf@sys@shading@range@num=\count131
+\pgf@sys@shading@range@num=\count132
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -531,7 +532,7 @@ Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 .sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 )))
-Package trimclip Info: No clipping driver 'tc-dvips.def' available.
+Package trimclip Info: No clipping driver 'tc-pdftex.def' available.
 (trimclip)             Using fall-back PGF driver.
 )
 \adjbox@Width=\dimen183
@@ -540,12 +541,12 @@ Package trimclip Info: No clipping driver 'tc-dvips.def' available.
 \adjbox@Totalheight=\dimen186
  (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count132
+\c@checkoddpage=\count133
 )
 (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box38
-\sift@deathcycles=\count133
+\sift@deathcycles=\count134
 \@vwid@loff=\dimen187
 \@vwid@roff=\dimen188
 ))
@@ -555,7 +556,7 @@ Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count134
+\c@r@tfl@t=\count135
 \rotFPtop=\skip67
 \rotFPbot=\skip68
 \rot@float@box=\box39
@@ -587,7 +588,7 @@ Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -600,7 +601,7 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -627,13 +628,13 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen189
-\Hy@linkcounter=\count135
-\Hy@pagecounter=\count136
+\Hy@linkcounter=\count136
+\Hy@pagecounter=\count137
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count137
+\Hy@SavedSpaceFactor=\count138
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -646,10 +647,10 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count138
+\c@Hy@tempcnt=\count139
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen190
-\Fld@menulength=\count139
+\Fld@menulength=\count140
 \Field@Width=\dimen191
 \Fld@charsize=\dimen192
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -661,38 +662,25 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count140
-\c@Item=\count141
-\c@Hfootnote=\count142
+\Hy@abspage=\count141
+\c@Item=\count142
+\c@Hfootnote=\count143
 )
 
-Package hyperref Message: Driver (default): hdvips.
+Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
-File: hdvips.def 2012/11/06 v6.83m Hyperref driver for dvips
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
-File: pdfmark.def 2012/11/06 v6.83m Hyperref definitions for pdfmark specials
-
-
-Package hyperref Warning: You have enabled option `breaklinks'.
-(hyperref)                But driver `hdvips.def' does not suppport this.
-(hyperref)                Expect trouble with the link areas of broken links.
-
-\pdf@docset=\toks40
-\pdf@box=\box40
-\pdf@toks=\toks41
-\pdf@defaulttoks=\toks42
-\HyField@AnnotCount=\count143
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count144
 \c@bookmark@seq@number=\count145
+
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip69
-))
+)
 Package hyperref Info: Option `colorlinks' set `true' on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
@@ -702,7 +690,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 <2008/02/07> (tvz)
 \FV@CodeLineNo=\count146
 \FV@InFile=\read3
-\FV@TabBox=\box41
+\FV@TabBox=\box40
 \c@FancyVerbLine=\count147
 \FV@StepNumber=\count148
 \FV@OutFile=\write4
@@ -712,8 +700,8 @@ Package: mcode 2015/11/11 2.7
  - settings optimized for display (colour formating)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count149
-\lst@gtempboxa=\box42
-\lst@token=\toks43
+\lst@gtempboxa=\box41
+\lst@token=\toks40
 \lst@length=\count150
 \lst@currlwidth=\dimen193
 \lst@column=\count151
@@ -728,7 +716,7 @@ Package: mcode 2015/11/11 2.7
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count155
 \lst@skipnumbers=\count156
-\lst@framebox=\box43
+\lst@framebox=\box42
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -849,6 +837,24 @@ LaTeX Font Info:    Try loading font information for TS1+cmr on input line 67.
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 67.
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+34.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
@@ -860,6 +866,20 @@ Package caption Info: End \AtBeginDocument code.
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 67.
  ABD: EveryShipout initializing macros
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count157
+\scratchdimen=\dimen197
+\scratchbox=\box43
+\nofMPsegments=\count158
+\nofMParguments=\count159
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count160
+\MPscratchDim=\dimen198
+\MPnumerator=\count161
+\makeMPintoPDFobject=\count162
+\everyMPtoPDFconversion=\toks42
+)
 \AtBeginShipoutBox=\box44
 
 
@@ -873,7 +893,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count157
+\c@section@level=\count163
 )
 LaTeX Info: Redefining \ref on input line 67.
 LaTeX Info: Redefining \pageref on input line 67.
@@ -883,7 +903,7 @@ LaTeX Info: Redefining \nameref on input line 67.
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
-\c@lstlisting=\count158
+\c@lstlisting=\count164
 
 Underfull \hbox (badness 10000) in paragraph at lines 72--72
 
@@ -891,7 +911,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--72
 
 [1
 
-] (./abstract.tex) [1] (./acknowledgement.tex) [2] (./thesis.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./abstract.tex)pdfTeX war
+ning (ext4): destination with the same identifier (name{page.1}) has been alrea
+dy used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.76 \end{abstract}
+                    [1] (./acknowledgement.tex) [2] (./thesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -915,7 +941,7 @@ Overfull \hbox (13.38773pt too wide) in paragraph at lines 2--2
  []
 
 
-Overfull \hbox (2.43279pt too wide) in paragraph at lines 24--24
+Overfull \hbox (2.43279pt too wide) in paragraph at lines 16--16
  [][] [][][]\OT1/cmr/m/n/10.95 HST chan-nel model con-sist-ing of time-series K
 -factor and Doppler shift caused 
  []
@@ -937,15 +963,26 @@ Chapter 1.
 [8
 
 ]
+Package epstopdf Info: Source file: <images/Gill/figs/introdiag.eps>
+(epstopdf)                    date: 2017-11-28 17:12:52
+(epstopdf)                    size: 4366384 bytes
+(epstopdf)             Output file: <images/Gill/figs/introdiag-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2017-12-02 13:12:32
+(epstopdf)                    size: 999120 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/introdiag
+-eps-converted-to.pdf images/Gill/figs/introdiag.eps>
+(epstopdf)             \includegraphics on input line 18.
+Package epstopdf Info: Output file is already uptodate.
 
-Package caption Warning: \label without proper reference on input line 17.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:css' on page 9 undefined on input line 14.
-
-File: images/Gill/figs/introdiag.eps Graphic file (type eps)
-<images/Gill/figs/introdiag.eps> [9]
+<images/Gill/figs/introdiag-eps-converted-to.pdf, id=438, 1483.5425pt x 617.306
+24pt>
+File: images/Gill/figs/introdiag-eps-converted-to.pdf Graphic file (type pdf)
+ <use images/Gill/figs/introdiag-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/introdiag-eps-converted-to.pdf used o
+n input line 18.
+(pdftex.def)             Requested size: 433.62pt x 180.42712pt.
+ [9 <./images/Gill/figs/introdiag-eps-converted-to.pdf>]
 
 Package caption Warning: \label without proper reference on input line 29.
 See the caption package documentation for explanation.
@@ -954,8 +991,26 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:ltertunnel' on page 10 undefined on input line 26
 .
 
-File: images/Gill/lte_figs/3dtunnel.eps Graphic file (type eps)
-<images/Gill/lte_figs/3dtunnel.eps>
+Package epstopdf Info: Source file: <images/Gill/lte_figs/3dtunnel.eps>
+(epstopdf)                    date: 2017-04-28 05:14:02
+(epstopdf)                    size: 4741832 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/3dtunnel-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:12:39
+(epstopdf)                    size: 835949 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/3dtun
+nel-eps-converted-to.pdf images/Gill/lte_figs/3dtunnel.eps>
+(epstopdf)             \includegraphics on input line 31.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/lte_figs/3dtunnel-eps-converted-to.pdf, id=459, 909.3975pt x 740.7
+675pt>
+File: images/Gill/lte_figs/3dtunnel-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use images/Gill/lte_figs/3dtunnel-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/3dtunnel-eps-converted-to.pdf use
+d on input line 31.
+(pdftex.def)             Requested size: 346.89731pt x 282.56837pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
@@ -972,286 +1027,748 @@ Missing character: There is no ù in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [11] [12]) [13]
+ [11 <./images/Gill/lte_figs/3dtunnel-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `chapter2' on page 12 undefined on input line 59.
+
+[12]) [13]
 \openout2 = `chapter2.aux'.
 
  (./chapter2.tex
 Chapter 2.
-
-Package caption Warning: \label without proper reference on input line 9.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `tableG' on page 14 undefined on input line 5.
-
 [14
 
 
-] [15]
-File: images/Gill/5G/5gsystemarch.eps Graphic file (type eps)
- <images/Gill/5G/5gsystemarch.eps> [16] [17]
+]
 
-LaTeX Warning: Citation `Boccardi20140' on page 18 undefined on input line 34.
+LaTeX Warning: Reference `5gcell' on page 15 undefined on input line 19.
 
+Package epstopdf Info: Source file: <images/Gill/5G/specalloc.eps>
+(epstopdf)                    date: 2017-11-27 16:28:36
+(epstopdf)                    size: 30191082 bytes
+(epstopdf)             Output file: <images/Gill/5G/specalloc-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2017-12-02 13:13:15
+(epstopdf)                    size: 12275289 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/5G/specalloc-e
+ps-converted-to.pdf images/Gill/5G/specalloc.eps>
+(epstopdf)             \includegraphics on input line 23.
+Package epstopdf Info: Output file is already uptodate.
 
-Overfull \hbox (12.60704pt too wide) in paragraph at lines 34--35
-[]\OT1/cmr/m/n/10.95 To un-der-stand the en-gi-neer-ing chal-lenges fac-ing 5G 
-cel-lu-lar com-mu-ni-ca-tion, it is paramount
- []
+<images/Gill/5G/specalloc-eps-converted-to.pdf, id=519, 2826.56pt x 1813.77625p
+t>
+File: images/Gill/5G/specalloc-eps-converted-to.pdf Graphic file (type pdf)
+ <use images/Gill/5G/specalloc-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/5G/specalloc-eps-converted-to.pdf used on 
+input line 23.
+(pdftex.def)             Requested size: 433.62pt x 278.22644pt.
+ [15] [16 <./images/Gill/5G/specalloc-eps-converted-to.pdf>] [17]
+Package epstopdf Info: Source file: <images/Gill/5G/vehiclecomm.eps>
+(epstopdf)                    date: 2017-11-27 20:02:51
+(epstopdf)                    size: 508109 bytes
+(epstopdf)             Output file: <images/Gill/5G/vehiclecomm-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:19
+(epstopdf)                    size: 167658 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/5G/vehiclecomm
+-eps-converted-to.pdf images/Gill/5G/vehiclecomm.eps>
+(epstopdf)             \includegraphics on input line 39.
+Package epstopdf Info: Output file is already uptodate.
 
-[18]
-File: images/Gill/5G/beams.eps Graphic file (type eps)
- <images/Gill/5G/beams.eps>
-File: images/Gill/5G/n_4_9_23.eps Graphic file (type eps)
- <images/Gill/5G/n_4_9_23.eps>
-File: images/Gill/5G/n_8_12_3.eps Graphic file (type eps)
+<images/Gill/5G/vehiclecomm-eps-converted-to.pdf, id=547, 565.11125pt x 263.986
+25pt>
+File: images/Gill/5G/vehiclecomm-eps-converted-to.pdf Graphic file (type pdf)
+ <use images/Gill/5G/vehiclecomm-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/5G/vehiclecomm-eps-converted-to.pdf used o
+n input line 39.
+(pdftex.def)             Requested size: 433.62pt x 202.56511pt.
+ [18 <./images/Gill/5G/vehiclecomm-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/Gill/5G/device2device.eps>
+(epstopdf)                    date: 2017-11-27 14:19:19
+(epstopdf)                    size: 6536513 bytes
+(epstopdf)             Output file: <images/Gill/5G/device2device-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:12:59
+(epstopdf)                    size: 1058339 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/5G/device2devi
+ce-eps-converted-to.pdf images/Gill/5G/device2device.eps>
+(epstopdf)             \includegraphics on input line 53.
+Package epstopdf Info: Output file is already uptodate.
 
-<images/Gill/5G/n_8_12_3.eps>
-File: images/Gill/5G/n_14_1.eps Graphic file (type eps)
- <images/Gill/5G/n_14_1.eps>
-File: images/Gill/5G//n_16_15_3.eps Graphic file (type eps)
+<images/Gill/5G/device2device-eps-converted-to.pdf, id=558, 1198.4775pt x 616.3
+025pt>
+File: images/Gill/5G/device2device-eps-converted-to.pdf Graphic file (type pdf)
 
-<images/Gill/5G//n_16_15_3.eps> [19]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[20] [21]
-File: images/Gill/5G/device2device.eps Graphic file (type eps)
- <images/Gill/5G/device2device.eps> [22] [23]
-File: images/Gill/5G/specalloc.eps Graphic file (type eps)
-
-<images/Gill/5G/specalloc.eps> [24] [25]
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ô in font cmr10!
-File: images/Gill/5G/pathloss.eps Graphic file (type eps)
- <images/Gill/5G/pathloss.eps> [26]
-[27] [28]
-File: images/Gill/5G/vehiclecomm.eps Graphic file (type eps)
- <images/Gill/5G/vehiclecomm.eps> [29]) [30]
+ <use images/Gill/5G/device2device-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/5G/device2device-eps-converted-to.pdf used
+ on input line 53.
+(pdftex.def)             Requested size: 433.62pt x 222.9784pt.
+ [19 <./images/Gill/5G/device2device-eps-converted-to.pdf>] [20]) [21]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
 Chapter 3.
-[31
+[22
 
 
 
 ]
-File: images/Gill/figs/cognitive_radio.eps Graphic file (type eps)
- <images/Gill/figs/cognitive_radio.eps> [32] [33] [34]
-File: images/Gill/figs/softwaredefinedradio.eps Graphic file (type eps)
+Package epstopdf Info: Source file: <images/Gill/figs/cognitive_radio.eps>
+(epstopdf)                    date: 2017-11-28 15:40:04
+(epstopdf)                    size: 839404 bytes
+(epstopdf)             Output file: <images/Gill/figs/cognitive_radio-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:20
+(epstopdf)                    size: 319000 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/cognitive
+_radio-eps-converted-to.pdf images/Gill/figs/cognitive_radio.eps>
+(epstopdf)             \includegraphics on input line 14.
+Package epstopdf Info: Output file is already uptodate.
 
-<images/Gill/figs/softwaredefinedradio.eps> [35]
+<images/Gill/figs/cognitive_radio-eps-converted-to.pdf, id=589, 570.13pt x 323.
+2075pt>
+File: images/Gill/figs/cognitive_radio-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use images/Gill/figs/cognitive_radio-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/cognitive_radio-eps-converted-to.pdf 
+used on input line 14.
+(pdftex.def)             Requested size: 433.62pt x 245.8178pt.
+ [23 <./images/Gill/figs/cognitive_radio-eps-converted-to.pdf>] [24] [25]
+Package epstopdf Info: Source file: <images/Gill/figs/softwaredefinedradio.eps>
+
+(epstopdf)                    date: 2017-11-05 10:13:31
+(epstopdf)                    size: 2174448 bytes
+(epstopdf)             Output file: <images/Gill/figs/softwaredefinedradio-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:24
+(epstopdf)                    size: 181816 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/softwared
+efinedradio-eps-converted-to.pdf images/Gill/figs/softwaredefinedradio.eps>
+(epstopdf)             \includegraphics on input line 90.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/figs/softwaredefinedradio-eps-converted-to.pdf, id=626, 1001.7425p
+t x 247.92625pt>
+File: images/Gill/figs/softwaredefinedradio-eps-converted-to.pdf Graphic file (
+type pdf)
+
+<use images/Gill/figs/softwaredefinedradio-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/softwaredefinedradio-eps-converted-to
+.pdf used on input line 90.
+(pdftex.def)             Requested size: 433.62pt x 107.31741pt.
+ [26 <./images/Gill/figs/softwaredefinedradio-eps-converted-to.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [36]
-File: images/Gill/figs/gnuradio.eps Graphic file (type eps)
+ [27]
+Package epstopdf Info: Source file: <images/Gill/figs/gnuradio.eps>
+(epstopdf)                    date: 2017-11-05 10:53:41
+(epstopdf)                    size: 3091858 bytes
+(epstopdf)             Output file: <images/Gill/figs/gnuradio-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:26
+(epstopdf)                    size: 324966 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/gnuradio-
+eps-converted-to.pdf images/Gill/figs/gnuradio.eps>
+(epstopdf)             \includegraphics on input line 111.
+Package epstopdf Info: Output file is already uptodate.
 
-<images/Gill/figs/gnuradio.eps>
+<images/Gill/figs/gnuradio-eps-converted-to.pdf, id=650, 644.4075pt x 373.395pt
+>
+File: images/Gill/figs/gnuradio-eps-converted-to.pdf Graphic file (type pdf)
+ <use images/Gill/figs/gnuradio-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/gnuradio-eps-converted-to.pdf used on
+ input line 111.
+(pdftex.def)             Requested size: 433.62pt x 251.26727pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [37])
+ [28])
 Underfull \hbox (badness 10000) in paragraph at lines 123--101
 
  []
 
-[38] [39]
+[29 <./images/Gill/figs/gnuradio-eps-converted-to.pdf>] [30]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 4.
-[40
+[31
 
 
 
 ]
-File: images/Gill/lte_figs/lter_architecture.eps Graphic file (type eps)
- <images/Gill/lte_figs/lter_architecture.eps> [41] [42]
+Package epstopdf Info: Source file: <images/Gill/lte_figs/lter_architecture.eps
+>
+(epstopdf)                    date: 2017-11-28 15:40:43
+(epstopdf)                    size: 3148276 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/lter_architecture-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:29
+(epstopdf)                    size: 1007550 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/lter_
+architecture-eps-converted-to.pdf images/Gill/lte_figs/lter_architecture.eps>
+(epstopdf)             \includegraphics on input line 13.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/lte_figs/lter_architecture-eps-converted-to.pdf, id=680, 1248.665p
+t x 679.53876pt>
+File: images/Gill/lte_figs/lter_architecture-eps-converted-to.pdf Graphic file 
+(type pdf)
+
+<use images/Gill/lte_figs/lter_architecture-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/lter_architecture-eps-converted-t
+o.pdf used on input line 13.
+(pdftex.def)             Requested size: 433.62pt x 235.97572pt.
+ [32 <./images/Gill/lte_figs/lter_architecture-eps-converted-to.pdf>] [33]
 
 Package caption Warning: \label without proper reference on input line 49.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:leakcoax' on page 43 undefined on input line 43.
+LaTeX Warning: Reference `fig:leakcoax' on page 34 undefined on input line 43.
 
-File: images/Gill/lte_figs/leakycoax.eps Graphic file (type eps)
-<images/Gill/lte_figs/leakycoax.eps> [43] [44] [45]
-File: images/Gill/lte_figs/dopplerspectrum.eps Graphic file (type eps)
+Package epstopdf Info: Source file: <images/Gill/lte_figs/leakycoax.eps>
+(epstopdf)                    date: 2017-11-05 13:48:45
+(epstopdf)                    size: 6458124 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/leakycoax-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:34
+(epstopdf)                    size: 518551 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/leaky
+coax-eps-converted-to.pdf images/Gill/lte_figs/leakycoax.eps>
+(epstopdf)             \includegraphics on input line 51.
+Package epstopdf Info: Output file is already uptodate.
 
-<images/Gill/lte_figs/dopplerspectrum.eps>
+<images/Gill/lte_figs/leakycoax-eps-converted-to.pdf, id=703, 924.45375pt x 507
+.8975pt>
+File: images/Gill/lte_figs/leakycoax-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use images/Gill/lte_figs/leakycoax-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/leakycoax-eps-converted-to.pdf us
+ed on input line 51.
+(pdftex.def)             Requested size: 433.62pt x 238.23137pt.
+ [34]
+[35 <./images/Gill/lte_figs/leakycoax-eps-converted-to.pdf>] [36]
+Package epstopdf Info: Source file: <images/Gill/lte_figs/dopplerspectrum.eps>
+(epstopdf)                    date: 2017-05-02 07:45:38
+(epstopdf)                    size: 37757 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/dopplerspectrum-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:34
+(epstopdf)                    size: 15671 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/doppl
+erspectrum-eps-converted-to.pdf images/Gill/lte_figs/dopplerspectrum.eps>
+(epstopdf)             \includegraphics on input line 95.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/lte_figs/dopplerspectrum-eps-converted-to.pdf, id=735, 1215.54124p
+t x 730.73pt>
+File: images/Gill/lte_figs/dopplerspectrum-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use images/Gill/lte_figs/dopplerspectrum-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/dopplerspectrum-eps-converted-to.
+pdf used on input line 95.
+(pdftex.def)             Requested size: 433.62pt x 260.66534pt.
+
 
 Package caption Warning: \label without proper reference on input line 93.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `doppler' on page 46 undefined on input line 99.
+LaTeX Warning: Reference `doppler' on page 37 undefined on input line 99.
 
-[46]
+[37]
 
 Package caption Warning: \label without proper reference on input line 106.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `subblock' on page 47 undefined on input line 103.
+LaTeX Warning: Reference `subblock' on page 38 undefined on input line 103.
 
-File: images/Gill/lte_figs/subblock.eps Graphic file (type eps)
-<images/Gill/lte_figs/subblock.eps> [47] [48])
+Package epstopdf Info: Source file: <images/Gill/lte_figs/subblock.eps>
+(epstopdf)                    date: 2017-05-02 07:54:36
+(epstopdf)                    size: 1569721 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/subblock-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:37
+(epstopdf)                    size: 194945 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/subbl
+ock-eps-converted-to.pdf images/Gill/lte_figs/subblock.eps>
+(epstopdf)             \includegraphics on input line 108.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/lte_figs/subblock-eps-converted-to.pdf, id=751, 544.0325pt x 369.3
+8pt>
+File: images/Gill/lte_figs/subblock-eps-converted-to.pdf Graphic file (type pdf
+)
+ <use images/Gill/lte_figs/subblock-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/subblock-eps-converted-to.pdf use
+d on input line 108.
+(pdftex.def)             Requested size: 251.43677pt x 170.71721pt.
+ [38 <./images/Gill/lte_figs/dopplerspectrum-eps-converted-to.pdf>] [39 <./imag
+es/Gill/lte_figs/subblock-eps-converted-to.pdf>])
 Underfull \hbox (badness 10000) in paragraph at lines 150--104
 
  []
 
-[49]
+[40]
 \openout2 = `chapter5.aux'.
 
  (./chapter5.tex
 Chapter 5.
-[50
+[41
 
 
 
 ]
-File: images/Gill/figs/setup.eps Graphic file (type eps)
- <images/Gill/figs/setup.eps> [51] [52]
-File: images/Gill/figs/transmitter.eps Graphic file (type eps)
- <images/Gill/figs/transmitter.eps>
-File: images/Gill/figs/normalizedenergy.eps Graphic file (type eps)
+Package epstopdf Info: Source file: <images/Gill/figs/setup.eps>
+(epstopdf)                    date: 2017-03-31 22:45:06
+(epstopdf)                    size: 29168811 bytes
+(epstopdf)             Output file: <images/Gill/figs/setup-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2017-12-02 13:13:43
+(epstopdf)                    size: 664757 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/setup-eps
+-converted-to.pdf images/Gill/figs/setup.eps>
+(epstopdf)             \includegraphics on input line 16.
+Package epstopdf Info: Output file is already uptodate.
 
-<images/Gill/figs/normalizedenergy.eps> [53] [54]
-File: images/Gill/figs/hardfusion.eps Graphic file (type eps)
+<images/Gill/figs/setup-eps-converted-to.pdf, id=793, 827.09pt x 225.84375pt>
+File: images/Gill/figs/setup-eps-converted-to.pdf Graphic file (type pdf)
 
-<images/Gill/figs/hardfusion.eps> [55]
+<use images/Gill/figs/setup-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/setup-eps-converted-to.pdf used on in
+put line 16.
+(pdftex.def)             Requested size: 607.22168pt x 165.80878pt.
+ [42] [43 <./images/Gill/figs/setup-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/Gill/figs/transmitter.eps>
+(epstopdf)                    date: 2017-03-19 04:25:38
+(epstopdf)                    size: 7183778 bytes
+(epstopdf)             Output file: <images/Gill/figs/transmitter-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:46
+(epstopdf)                    size: 332035 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/transmitt
+er-eps-converted-to.pdf images/Gill/figs/transmitter.eps>
+(epstopdf)             \includegraphics on input line 30.
+Package epstopdf Info: Output file is already uptodate.
 
-LaTeX Warning: Citation `ref:12' on page 56 undefined on input line 96.
+<images/Gill/figs/transmitter-eps-converted-to.pdf, id=808, 715.67375pt x 204.7
+65pt>
+File: images/Gill/figs/transmitter-eps-converted-to.pdf Graphic file (type pdf)
 
-[56]
-File: images/Gill/figs/mnescheme.eps Graphic file (type eps)
- <images/Gill/figs/mnescheme.eps> [57]
+ <use images/Gill/figs/transmitter-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/transmitter-eps-converted-to.pdf used
+ on input line 30.
+(pdftex.def)             Requested size: 433.62pt x 124.06596pt.
+Package epstopdf Info: Source file: <images/Gill/figs/normalizedenergy.eps>
+(epstopdf)                    date: 2017-03-19 04:22:22
+(epstopdf)                    size: 10686721 bytes
+(epstopdf)             Output file: <images/Gill/figs/normalizedenergy-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:50
+(epstopdf)                    size: 492270 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/normalize
+denergy-eps-converted-to.pdf images/Gill/figs/normalizedenergy.eps>
+(epstopdf)             \includegraphics on input line 37.
+Package epstopdf Info: Output file is already uptodate.
 
-LaTeX Warning: Reference `inphtn15' on page 58 undefined on input line 133.
+<images/Gill/figs/normalizedenergy-eps-converted-to.pdf, id=809, 796.9775pt x 2
+62.9825pt>
+File: images/Gill/figs/normalizedenergy-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use images/Gill/figs/normalizedenergy-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/normalizedenergy-eps-converted-to.pdf
+ used on input line 37.
+(pdftex.def)             Requested size: 433.62pt x 143.08385pt.
 
-File: images/Gill/figs/egcscheme.eps Graphic file (type eps)
-<images/Gill/figs/egcscheme.eps>
+[44] [45 <./images/Gill/figs/transmitter-eps-converted-to.pdf> <./images/Gill/f
+igs/normalizedenergy-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/Gill/figs/hardfusion.eps>
+(epstopdf)                    date: 2017-11-05 19:34:19
+(epstopdf)                    size: 2403950 bytes
+(epstopdf)             Output file: <images/Gill/figs/hardfusion-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:55
+(epstopdf)                    size: 240692 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/hardfusio
+n-eps-converted-to.pdf images/Gill/figs/hardfusion.eps>
+(epstopdf)             \includegraphics on input line 80.
+Package epstopdf Info: Output file is already uptodate.
 
-Package caption Warning: \label without proper reference on input line 56.
-See the caption package documentation for explanation.
+<images/Gill/figs/hardfusion-eps-converted-to.pdf, id=830, 491.8375pt x 616.302
+5pt>
+File: images/Gill/figs/hardfusion-eps-converted-to.pdf Graphic file (type pdf)
+ <use images/Gill/figs/hardfusion-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/hardfusion-eps-converted-to.pdf used 
+on input line 80.
+(pdftex.def)             Requested size: 227.06601pt x 284.52762pt.
+ [46pdfTeX warning (ext4): destination with the same identifier (name{equation.
+5.3.1}) has been already used, duplicate ignored
 
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.89 
+     ]
 
-LaTeX Warning: Reference `kfactor' on page 58 undefined on input line 144.
+LaTeX Warning: Citation `ref:12' on page 47 undefined on input line 96.
 
-[58]
-File: images/Gill/lte_figs/finalblock.eps Graphic file (type eps)
- <images/Gill/lte_figs/finalblock.eps>
+[47 <./images/Gill/figs/hardfusion-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/Gill/figs/mnescheme.eps>
+(epstopdf)                    date: 2017-11-05 14:14:24
+(epstopdf)                    size: 1263610 bytes
+(epstopdf)             Output file: <images/Gill/figs/mnescheme-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2017-12-02 13:13:58
+(epstopdf)                    size: 168123 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/mnescheme
+-eps-converted-to.pdf images/Gill/figs/mnescheme.eps>
+(epstopdf)             \includegraphics on input line 110.
+Package epstopdf Info: Output file is already uptodate.
 
-Package caption Warning: \label without proper reference on input line 161.
-See the caption package documentation for explanation.
+<images/Gill/figs/mnescheme-eps-converted-to.pdf, id=851, 147.55125pt x 638.385
+pt>
+File: images/Gill/figs/mnescheme-eps-converted-to.pdf Graphic file (type pdf)
+ <use images/Gill/figs/mnescheme-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/mnescheme-eps-converted-to.pdf used o
+n input line 110.
+(pdftex.def)             Requested size: 65.76253pt x 284.52364pt.
+ [48 <./images/Gill/figs/mnescheme-eps-converted-to.pdf>]
 
+LaTeX Warning: Reference `inphtn15' on page 49 undefined on input line 133.
 
-LaTeX Warning: Reference `finalblock' on page 59 undefined on input line 167.
+Package epstopdf Info: Source file: <images/Gill/figs/egcscheme.eps>
+(epstopdf)                    date: 2017-11-05 14:19:06
+(epstopdf)                    size: 1217002 bytes
+(epstopdf)             Output file: <images/Gill/figs/egcscheme-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:02
+(epstopdf)                    size: 166283 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/egcscheme
+-eps-converted-to.pdf images/Gill/figs/egcscheme.eps>
+(epstopdf)             \includegraphics on input line 137.
+Package epstopdf Info: Output file is already uptodate.
 
-[59])
-Underfull \hbox (badness 10000) in paragraph at lines 170--107
+<images/Gill/figs/egcscheme-eps-converted-to.pdf, id=863, 147.55125pt x 597.231
+25pt>
+File: images/Gill/figs/egcscheme-eps-converted-to.pdf Graphic file (type pdf)
+ <use images/Gill/figs/egcscheme-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/egcscheme-eps-converted-to.pdf used o
+n input line 137.
+(pdftex.def)             Requested size: 70.2947pt x 284.52618pt.
+ [49 <./images/Gill/figs/egcscheme-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/Gill/figs/hardecisionpd.eps>
+(epstopdf)                    date: 2017-03-12 04:36:20
+(epstopdf)                    size: 25751 bytes
+(epstopdf)             Output file: <images/Gill/figs/hardecisionpd-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:05
+(epstopdf)                    size: 11370 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/hardecisi
+onpd-eps-converted-to.pdf images/Gill/figs/hardecisionpd.eps>
+(epstopdf)             \includegraphics on input line 154.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/figs/hardecisionpd-eps-converted-to.pdf, id=875, 1215.54124pt x 73
+0.73pt>
+File: images/Gill/figs/hardecisionpd-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use images/Gill/figs/hardecisionpd-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/hardecisionpd-eps-converted-to.pdf us
+ed on input line 154.
+(pdftex.def)             Requested size: 433.62pt x 260.66534pt.
+Package epstopdf Info: Source file: <images/Gill/figs/hardecisioroc.eps>
+(epstopdf)                    date: 2017-03-12 04:36:56
+(epstopdf)                    size: 219436 bytes
+(epstopdf)             Output file: <images/Gill/figs/hardecisioroc-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:05
+(epstopdf)                    size: 13296 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/hardecisi
+oroc-eps-converted-to.pdf images/Gill/figs/hardecisioroc.eps>
+(epstopdf)             \includegraphics on input line 162.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/figs/hardecisioroc-eps-converted-to.pdf, id=877, 1215.54124pt x 73
+0.73pt>
+File: images/Gill/figs/hardecisioroc-eps-converted-to.pdf Graphic file (type pd
+f)
+ <use images/Gill/figs/hardecisioroc-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/hardecisioroc-eps-converted-to.pdf us
+ed on input line 162.
+(pdftex.def)             Requested size: 433.62pt x 260.66534pt.
+Package epstopdf Info: Source file: <images/Gill/figs/softnhardecisionpd.eps>
+(epstopdf)                    date: 2017-03-19 04:35:46
+(epstopdf)                    size: 31257 bytes
+(epstopdf)             Output file: <images/Gill/figs/softnhardecisionpd-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:06
+(epstopdf)                    size: 11688 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/figs/softnhard
+ecisionpd-eps-converted-to.pdf images/Gill/figs/softnhardecisionpd.eps>
+(epstopdf)             \includegraphics on input line 171.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/figs/softnhardecisionpd-eps-converted-to.pdf, id=879, 1215.54124pt
+ x 730.73pt>
+File: images/Gill/figs/softnhardecisionpd-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use images/Gill/figs/softnhardecisionpd-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/figs/softnhardecisionpd-eps-converted-to.p
+df used on input line 171.
+(pdftex.def)             Requested size: 433.62pt x 260.66534pt.
+
+[50])
+Underfull \hbox (badness 10000) in paragraph at lines 178--107
 
  []
 
-[60]
+[51 <./images/Gill/figs/hardecisionpd-eps-converted-to.pdf>] [52 <./images/Gill
+/figs/hardecisioroc-eps-converted-to.pdf>] [53 <./images/Gill/figs/softnhardeci
+sionpd-eps-converted-to.pdf>]
 \openout2 = `chapter6.aux'.
 
  (./chapter6.tex
 Chapter 6.
-[61
+
+Package caption Warning: \label without proper reference on input line 47.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `kfactor' on page 54 undefined on input line 8.
+
+[54
 
 
 
 ]
-File: images/Gill/figs/hardecisionpd.eps Graphic file (type eps)
- <images/Gill/figs/hardecisionpd.eps>
-File: images/Gill/figs/hardecisioroc.eps Graphic file (type eps)
- <images/Gill/figs/hardecisioroc.eps>
-File: images/Gill/figs/softnhardecisionpd.eps Graphic file (type eps)
+Package epstopdf Info: Source file: <images/Gill/lte_figs/finalblock.eps>
+(epstopdf)                    date: 2017-05-02 07:26:58
+(epstopdf)                    size: 1457983 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/finalblock-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:05
+(epstopdf)                    size: 160976 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/final
+block-eps-converted-to.pdf images/Gill/lte_figs/finalblock.eps>
+(epstopdf)             \includegraphics on input line 27.
+Package epstopdf Info: Output file is already uptodate.
 
-<images/Gill/figs/softnhardecisionpd.eps> [62]
+<images/Gill/lte_figs/finalblock-eps-converted-to.pdf, id=928, 474.77374pt x 37
+2.39125pt>
+File: images/Gill/lte_figs/finalblock-eps-converted-to.pdf Graphic file (type p
+df)
+ <use images/Gill/lte_figs/finalblock-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/finalblock-eps-converted-to.pdf u
+sed on input line 27.
+(pdftex.def)             Requested size: 290.21284pt x 227.62994pt.
 
-Package caption Warning: \label without proper reference on input line 46.
+
+Package caption Warning: \label without proper reference on input line 25.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `lteofdma' on page 63 undefined on input line 43.
+LaTeX Warning: Reference `finalblock' on page 55 undefined on input line 31.
 
-File: images/Gill/lte_figs/receivedsignal.eps Graphic file (type eps)
-<images/Gill/lte_figs/receivedsignal.eps> [63]
 
-Package caption Warning: \label without proper reference on input line 83.
+Package caption Warning: \label without proper reference on input line 37.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `kfactorber' on page 64 undefined on input line 53.
+LaTeX Warning: Reference `lteofdma' on page 55 undefined on input line 34.
 
-File: images/Gill/lte_figs/kfactordist.eps Graphic file (type eps)
-<images/Gill/lte_figs/kfactordist.eps> [64]
-File: images/Gill/lte_figs/qpskricean.eps Graphic file (type eps)
+[55]
+Package epstopdf Info: Source file: <images/Gill/lte_figs/receivedsignal.eps>
+(epstopdf)                    date: 2017-04-18 13:12:49
+(epstopdf)                    size: 4143490 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/receivedsignal-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:07
+(epstopdf)                    size: 382651 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/recei
+vedsignal-eps-converted-to.pdf images/Gill/lte_figs/receivedsignal.eps>
+(epstopdf)             \includegraphics on input line 39.
+Package epstopdf Info: Output file is already uptodate.
 
-<images/Gill/lte_figs/qpskricean.eps>
-File: images/Gill/lte_figs/16qamricean.eps Graphic file (type eps)
- <images/Gill/lte_figs/16qamricean.eps>
-File: images/Gill/lte_figs/64qamricean.eps Graphic file (type eps)
+<images/Gill/lte_figs/receivedsignal-eps-converted-to.pdf, id=936, 1215.54124pt
+ x 730.73pt>
+File: images/Gill/lte_figs/receivedsignal-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+ <use images/Gill/lte_figs/receivedsignal-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/receivedsignal-eps-converted-to.p
+df used on input line 39.
+(pdftex.def)             Requested size: 433.62pt x 260.66534pt.
 
-<images/Gill/lte_figs/64qamricean.eps>
-File: images/Gill/lte_figs/mqamricean.eps Graphic file (type eps)
- <images/Gill/lte_figs/mqamricean.eps>
 
-Package caption Warning: \label without proper reference on input line 83.
+Package caption Warning: \label without proper reference on input line 74.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `kfactorber' on page 65 undefined on input line 79.
+LaTeX Warning: Reference `kfactorber' on page 56 undefined on input line 44.
 
-File: images/Gill/lte_figs/kfactorcontinuous.eps Graphic file (type eps)
-<images/Gill/lte_figs/kfactorcontinuous.eps> [65]
+[56 <./images/Gill/lte_figs/finalblock-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/Gill/lte_figs/kfactordist.eps>
+(epstopdf)                    date: 2017-05-11 02:35:20
+(epstopdf)                    size: 47433 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/kfactordist-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:07
+(epstopdf)                    size: 15617 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/kfact
+ordist-eps-converted-to.pdf images/Gill/lte_figs/kfactordist.eps>
+(epstopdf)             \includegraphics on input line 49.
+Package epstopdf Info: Output file is already uptodate.
 
-LaTeX Warning: Text page 66 contains only floats.
+<images/Gill/lte_figs/kfactordist-eps-converted-to.pdf, id=945, 1215.54124pt x 
+730.73pt>
+File: images/Gill/lte_figs/kfactordist-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use images/Gill/lte_figs/kfactordist-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/kfactordist-eps-converted-to.pdf 
+used on input line 49.
+(pdftex.def)             Requested size: 378.63156pt x 227.61665pt.
+Package epstopdf Info: Source file: <images/Gill/lte_figs/qpskricean.eps>
+(epstopdf)                    date: 2017-04-23 05:27:36
+(epstopdf)                    size: 42211 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/qpskricean-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:08
+(epstopdf)                    size: 9030 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/qpskr
+icean-eps-converted-to.pdf images/Gill/lte_figs/qpskricean.eps>
+(epstopdf)             \includegraphics on input line 61.
+Package epstopdf Info: Output file is already uptodate.
 
-[66]) [67] [68]
+<images/Gill/lte_figs/qpskricean-eps-converted-to.pdf, id=950, 1215.54124pt x 7
+30.73pt>
+File: images/Gill/lte_figs/qpskricean-eps-converted-to.pdf Graphic file (type p
+df)
+ <use images/Gill/lte_figs/qpskricean-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/qpskricean-eps-converted-to.pdf u
+sed on input line 61.
+(pdftex.def)             Requested size: 199.4681pt x 119.9074pt.
+Package epstopdf Info: Source file: <images/Gill/lte_figs/16qamricean.eps>
+(epstopdf)                    date: 2017-04-23 05:28:04
+(epstopdf)                    size: 43222 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/16qamricean-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:08
+(epstopdf)                    size: 9301 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/16qam
+ricean-eps-converted-to.pdf images/Gill/lte_figs/16qamricean.eps>
+(epstopdf)             \includegraphics on input line 62.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/lte_figs/16qamricean-eps-converted-to.pdf, id=951, 1215.54124pt x 
+730.73pt>
+File: images/Gill/lte_figs/16qamricean-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use images/Gill/lte_figs/16qamricean-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/16qamricean-eps-converted-to.pdf 
+used on input line 62.
+(pdftex.def)             Requested size: 199.4681pt x 119.9074pt.
+Package epstopdf Info: Source file: <images/Gill/lte_figs/64qamricean.eps>
+(epstopdf)                    date: 2017-04-23 05:51:54
+(epstopdf)                    size: 43510 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/64qamricean-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:08
+(epstopdf)                    size: 9344 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/64qam
+ricean-eps-converted-to.pdf images/Gill/lte_figs/64qamricean.eps>
+(epstopdf)             \includegraphics on input line 63.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/lte_figs/64qamricean-eps-converted-to.pdf, id=952, 1215.54124pt x 
+730.73pt>
+File: images/Gill/lte_figs/64qamricean-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use images/Gill/lte_figs/64qamricean-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/64qamricean-eps-converted-to.pdf 
+used on input line 63.
+(pdftex.def)             Requested size: 199.4681pt x 119.9074pt.
+Package epstopdf Info: Source file: <images/Gill/lte_figs/mqamricean.eps>
+(epstopdf)                    date: 2017-04-23 05:40:44
+(epstopdf)                    size: 42741 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/mqamricean-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:08
+(epstopdf)                    size: 9427 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/mqamr
+icean-eps-converted-to.pdf images/Gill/lte_figs/mqamricean.eps>
+(epstopdf)             \includegraphics on input line 64.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/lte_figs/mqamricean-eps-converted-to.pdf, id=953, 1215.54124pt x 7
+30.73pt>
+File: images/Gill/lte_figs/mqamricean-eps-converted-to.pdf Graphic file (type p
+df)
+ <use images/Gill/lte_figs/mqamricean-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/mqamricean-eps-converted-to.pdf u
+sed on input line 64.
+(pdftex.def)             Requested size: 199.4681pt x 119.9074pt.
+
+
+Package caption Warning: \label without proper reference on input line 74.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `kfactorber' on page 57 undefined on input line 70.
+
+[57 <./images/Gill/lte_figs/receivedsignal-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <images/Gill/lte_figs/kfactorcontinuous.eps
+>
+(epstopdf)                    date: 2017-04-25 11:45:08
+(epstopdf)                    size: 83689 bytes
+(epstopdf)             Output file: <images/Gill/lte_figs/kfactorcontinuous-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2017-12-02 13:14:08
+(epstopdf)                    size: 20181 bytes
+(epstopdf)             Command: <repstopdf --outfile=images/Gill/lte_figs/kfact
+orcontinuous-eps-converted-to.pdf images/Gill/lte_figs/kfactorcontinuous.eps>
+(epstopdf)             \includegraphics on input line 76.
+Package epstopdf Info: Output file is already uptodate.
+
+<images/Gill/lte_figs/kfactorcontinuous-eps-converted-to.pdf, id=971, 1215.5412
+4pt x 730.73pt>
+File: images/Gill/lte_figs/kfactorcontinuous-eps-converted-to.pdf Graphic file 
+(type pdf)
+
+<use images/Gill/lte_figs/kfactorcontinuous-eps-converted-to.pdf>
+Package pdftex.def Info: images/Gill/lte_figs/kfactorcontinuous-eps-converted-t
+o.pdf used on input line 76.
+(pdftex.def)             Requested size: 433.62pt x 260.66534pt.
+) [58 <./images/Gill/lte_figs/kfactordist-eps-converted-to.pdf>] [59 <./images/
+Gill/lte_figs/qpskricean-eps-converted-to.pdf> <./images/Gill/lte_figs/16qamric
+ean-eps-converted-to.pdf> <./images/Gill/lte_figs/64qamricean-eps-converted-to.
+pdf> <./images/Gill/lte_figs/mqamricean-eps-converted-to.pdf>] [60 <./images/Gi
+ll/lte_figs/kfactorcontinuous-eps-converted-to.pdf>]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
 Chapter 7.
-[69
+[61
 
 
 
-]) [70] (./thesis.bbl [71
+]) [62] (./thesis.bbl [63
 
 
 ]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no î in font cmr10!
- [72]
-Overfull \hbox (39.96436pt too wide) in paragraph at lines 139--142
-[]\OT1/cmr/m/n/10.95 Usrp. [On-line]. Avail-able: [][][]$https : / / www . ettu
-s . com / product / category / USRP-[]Embedded-[]Series/$[][][][] 
+ [64]
+Underfull \hbox (badness 1953) in paragraph at lines 139--142
+[]\OT1/cmr/m/n/10.95 Usrp. [On-line]. Avail-able: [][]$https : / / www . ettus 
+. com / product / category /
  []
 
-[73] [74] [75]
-Overfull \hbox (131.04536pt too wide) in paragraph at lines 311--314
-[]\OT1/cmr/m/n/10.95 Xilinx-spartan-3a. [On-line]. Avail-able: [][][]$https : /
- / www . xilinx . com / products / silicon-[]devices / fpga / xa-[]spartan-[]3a
- . html$[][][][] 
- []
-
-[76]
-Overfull \hbox (2.49477pt too wide) in paragraph at lines 332--335
-[]\OT1/cmr/m/n/10.95 Matlab2017a. [On-line]. Avail-able: [][][]$https : / / www
- . mathworks . com / products / matlab . html$[][][][] 
- []
-
-[77]) [78]
+[65] [66] [67] [68]) [69]
 \openout2 = `appendixb.aux'.
 
  (./appendixb.tex
@@ -1264,7 +1781,7 @@ LaTeX Font Info:    Try loading font information for TS1+pcr on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1pcr.fd
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [79
+) [70
 
 
 ]
@@ -1275,7 +1792,7 @@ File: omlpcr.fd
 )
 LaTeX Font Info:    Font shape `OML/pcr/m/n' in size <9> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 39.
- [80]
+ [71]
 LaTeX Font Info:    Try loading font information for OMS+pcr on input line 61.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omspcr.fd
@@ -1283,18 +1800,18 @@ File: omspcr.fd
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
- [81] [82] [83]
-[84] [85] [86] [87] [88] [89] [90] [91] [92] [93] [94] [95]) [96]
+ [72] [73] [74]
+[75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85] [86]) [87]
 \openout2 = `appendixc.aux'.
 
 
 (./appendixc.tex
 Appendix B.
-[97
+[88
 
 
 
-] [98] [99]
+] [89] [90]
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 114.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
@@ -1305,17 +1822,17 @@ LaTeX Font Info:    Try loading font information for TS1+ptm on input line 114.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [100] [101] [102]
-[103] [104]) [105]
+) [91] [92] [93]
+[94] [95]) [96]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
- (./thesis.aux (./chapter2.aux) (./chapter3.aux)
-(./chapter4.aux) (./chapter5.aux) (./chapter6.aux) (./conclusion.aux)
-(./appendixb.aux) (./appendixc.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 124.
+ (./thesis.aux (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter5.a
+ux) (./chapter6.aux) (./conclusion.aux) (./appendixb.aux)
+(./appendixc.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: BA8B93BDDC549A5129A2A3BBAB929B36;4307.
+(rerunfilecheck)             Checksum: 1EBA062C4532920237A467A6A145A801;4019.
 
 
 LaTeX Warning: There were undefined references.
@@ -1326,12 +1843,36 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
  ) 
 Here is how much of TeX's memory you used:
- 18760 strings out of 494930
- 322693 string characters out of 6180168
- 514780 words of memory out of 5000000
- 21592 multiletter control sequences out of 15000+600000
- 16363 words of font info for 60 fonts, out of 8000000 for 9000
+ 20418 strings out of 494929
+ 351131 string characters out of 6180142
+ 523761 words of memory out of 5000000
+ 22105 multiletter control sequences out of 15000+600000
+ 16462 words of font info for 56 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 65i,19n,89p,3712b,1789s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,19n,89p,2137b,1804s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/gill/.texm
+f-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucr
+r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on thesis.pdf (97 pages, 20997906 bytes).
+PDF statistics:
+ 2357 PDF objects out of 2487 (max. 8388607)
+ 2153 compressed objects within 22 object streams
+ 1140 named destinations out of 1200 (max. 500000)
+ 618 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on thesis.dvi (106 pages, 689124 bytes).
