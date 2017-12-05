@@ -18,51 +18,53 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: mybib.bib
 Warning--string name "march" is undefined
 --line 739 of file mybib.bib
+Warning--entry type for "hassan2012blind" isn't style-file defined
+--line 755 of file mybib.bib
 Warning--I didn't find a database entry for "ref:12"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 64 entries,
+You've used 69 entries,
             4024 wiz_defined-function locations,
-            1159 strings with 18223 characters,
-and the built_in function-call counts, 47249 in all, are:
-= -- 3832
-> -- 1062
-< -- 418
-+ -- 580
-- -- 175
-* -- 2232
-:= -- 7070
-add.period$ -- 140
-call.type$ -- 64
-change.case$ -- 60
-chr.to.int$ -- 930
-cite$ -- 64
-duplicate$ -- 3411
-empty$ -- 3890
-format.name$ -- 224
-if$ -- 10929
+            1183 strings with 19295 characters,
+and the built_in function-call counts, 51406 in all, are:
+= -- 4153
+> -- 1167
+< -- 456
++ -- 638
+- -- 192
+* -- 2425
+:= -- 7645
+add.period$ -- 153
+call.type$ -- 69
+change.case$ -- 65
+chr.to.int$ -- 1026
+cite$ -- 69
+duplicate$ -- 3703
+empty$ -- 4247
+format.name$ -- 246
+if$ -- 11907
 int.to.chr$ -- 0
-int.to.str$ -- 64
-missing$ -- 606
-newline$ -- 229
-num.names$ -- 58
-pop$ -- 1391
+int.to.str$ -- 69
+missing$ -- 657
+newline$ -- 244
+num.names$ -- 63
+pop$ -- 1521
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 3675
+skip$ -- 3995
 stack$ -- 0
-substring$ -- 2227
-swap$ -- 2804
-text.length$ -- 108
+substring$ -- 2456
+swap$ -- 3044
+text.length$ -- 114
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 64
+type$ -- 69
 warning$ -- 0
-while$ -- 226
-width$ -- 66
-write$ -- 642
-(There were 2 warnings)
+while$ -- 247
+width$ -- 71
+write$ -- 687
+(There were 3 warnings)

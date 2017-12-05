@@ -13,6 +13,28 @@ Gradually we are moving towards context awareness among automotive devices, wher
 In the following section we discuss spectrum sensing, spectrum regulation, vehicular communication using LTE and Internet-of-Things (IoT) for railways which are important technologies for achieving smart railway transportation system.
 
 \section{Spectrum Sensing}
+Spectrum sensing plays a key role in the decision-making part of cognitive radio network. It is required by CR to detect the presence of spectrum white space and also to estimate accurately the presence of incumbent users (PUs). Since the primary users have prerogative on the spectrum band usage, so it is of paramount importance to avoid interfering with the PU. It is very challenging to get an accurate estimate under a practical fading environment based on conventional spectrum sensing techniques. Various non-idealities such as shadowing, multipath and fluctuating noise variance can make it difficult to detect the primary user. In the case of fast  varying  channels over time, some works focus on improving the peformance of spectrum sensing and signal identification~\cite{hassan2012blind,kharbech2013blind,hassan2009automatic}. To combat the Doppler shift caused due to high-speed environments algorithms~\cite{simon2013iterative} have been proposed for channel estimation and equalization. Cooperative spectrum sensing~\cite{ksgill} can be use to tackle lot of the problems caused due to multipath, shadowing and high Doppler shift. In the paper we tested the performance of cooperative spectrum sensing using soft and hard data fusion schemes on software-defined radio test-bed. The experiment confirmed that cooperation among sensor nodes improved the spectrum sensing performance as a result of increased spatial-temporal diversity in received signal source. The various types of spectrum sensing schemes are discussed below in the following subsections.
+
+\subsection{Energy Detection}
+In energy detection (ED) we use the energy spectra of the received signal and compare it against a predefined threshold level to estimate the presence of the signal.In ED scheme we only rely on the energy of the signal in the frequency channel, and no phase information is required. The key advantage of the ED scheme is that it doesn't require any prior information of the signal, i.e. type of modulation scheme, phase information or any other signal parameter. Energy detection can be considered as binary hypothesis testing scheme and is given by:
+
+\begin{equation}
+     \left\{
+     \begin{aligned}
+   \Hmat_0:&y(t)= n_{r},\\
+   \Hmat_1:&y(t) =\int_{-\infty}^{\infty}h(\tau,t)x(t-\tau)\mathrm{d}x+n_{r}
+    \end{aligned}
+    \right.
+\end{equation}
+where $y(t)$ is the received signal, $\Hmat_0$
+
+\subsection{Cyclostationary Method}
+
+
+\subsection{Matched Filter Detection}
+
+
+\subsection{Wavelet Detection}
 
 \section{Spectrum Regulation for 5G}
 

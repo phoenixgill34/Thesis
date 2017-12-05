@@ -162,6 +162,35 @@ A.~Amanna, M.~Gadnhiok, M.~J. Price, J.~H. Reed, W.~P. Siriwongpairat, and
   T.~K. Himsoon, ``Railway cognitive radio,'' \emph{IEEE Vehicular Technology
   Magazine}, vol.~5, no.~3, pp. 82--89, Sept 2010.
 
+\bibitem{hassan2012blind}
+K.~Hassan, I.~Dayoub, W.~Hamouda, C.~N. Nzeza, and M.~Berbineau, ``Blind
+  digital modulation identification for spatially-correlated mimo systems,''
+  pp. 683--693, 2012.
+
+\bibitem{kharbech2013blind}
+S.~Kharbech, I.~Dayoub, E.~Simon, and M.~Zwingelstein-Colin, ``Blind digital
+  modulation detector for mimo systems over high-speed railway channels,'' in
+  \emph{International Workshop on Communication Technologies for
+  Vehicles}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2013, pp.
+  232--241.
+
+\bibitem{hassan2009automatic}
+K.~Hassan, I.~Dayoub, W.~Hamouda, and M.~Berbineau, ``Automatic modulation
+  recognition using wavelet transform and neural network,'' in
+  \emph{Intelligent Transport Systems Telecommunications,(ITST), 2009 9th
+  International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2009, pp. 234--238.
+
+\bibitem{simon2013iterative}
+E.~P. Simon and M.~A. Khalighi, ``Iterative soft-kalman channel estimation for
+  fast time-varying mimo-ofdm channels,'' \emph{IEEE Wireless Communications
+  Letters}, vol.~2, no.~6, pp. 599--602, 2013.
+
+\bibitem{ksgill}
+K.~Gill and A.~Wyglinski, ``Heterogeneous cooperative spectrum sensing test-bed
+  using software-defined radios,'' in \emph{2017 IEEE 86th Vehicular Technology
+  Conference (VTC-Fall)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2017.
+
 \bibitem{rusek2013scaling}
 F.~Rusek, D.~Persson, B.~K. Lau, E.~G. Larsson, T.~L. Marzetta, O.~Edfors, and
   F.~Tufvesson, ``Scaling up mimo: Opportunities and challenges with very large
