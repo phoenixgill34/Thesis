@@ -162,34 +162,11 @@ A.~Amanna, M.~Gadnhiok, M.~J. Price, J.~H. Reed, W.~P. Siriwongpairat, and
   T.~K. Himsoon, ``Railway cognitive radio,'' \emph{IEEE Vehicular Technology
   Magazine}, vol.~5, no.~3, pp. 82--89, Sept 2010.
 
-\bibitem{hassan2012blind}
-K.~Hassan, I.~Dayoub, W.~Hamouda, C.~N. Nzeza, and M.~Berbineau, ``Blind
-  digital modulation identification for spatially-correlated mimo systems,''
-  pp. 683--693, 2012.
-
-\bibitem{kharbech2013blind}
-S.~Kharbech, I.~Dayoub, E.~Simon, and M.~Zwingelstein-Colin, ``Blind digital
-  modulation detector for mimo systems over high-speed railway channels,'' in
-  \emph{International Workshop on Communication Technologies for
-  Vehicles}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2013, pp.
-  232--241.
-
-\bibitem{hassan2009automatic}
-K.~Hassan, I.~Dayoub, W.~Hamouda, and M.~Berbineau, ``Automatic modulation
-  recognition using wavelet transform and neural network,'' in
-  \emph{Intelligent Transport Systems Telecommunications,(ITST), 2009 9th
-  International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
-  2009, pp. 234--238.
-
-\bibitem{simon2013iterative}
-E.~P. Simon and M.~A. Khalighi, ``Iterative soft-kalman channel estimation for
-  fast time-varying mimo-ofdm channels,'' \emph{IEEE Wireless Communications
-  Letters}, vol.~2, no.~6, pp. 599--602, 2013.
-
-\bibitem{ksgill}
-K.~Gill and A.~Wyglinski, ``Heterogeneous cooperative spectrum sensing test-bed
-  using software-defined radios,'' in \emph{2017 IEEE 86th Vehicular Technology
-  Conference (VTC-Fall)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2017.
+\bibitem{tingting2010high}
+G.~Tingting and S.~Bin, ``A high-speed railway mobile communication system
+  based on lte,'' in \emph{Electronics and Information Engineering (ICEIE),
+  2010 International Conference On}, vol.~1.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2010, pp. V1--414.
 
 \bibitem{rusek2013scaling}
 F.~Rusek, D.~Persson, B.~K. Lau, E.~G. Larsson, T.~L. Marzetta, O.~Edfors, and
@@ -233,6 +210,64 @@ M.~Chen, J.~Wan, S.~Gonz{\'a}lez-Valenzuela, X.~Liao, and V.~C. Leung, ``A
   survey of recent developments in home m2m networks.'' \emph{IEEE
   Communications Surveys and Tutorials}, vol.~16, no.~1, pp. 98--114, 2014.
 
+\bibitem{n1974leaky}
+\BIBentryALTinterwordspacing
+K.~N, N.~T, and N.~T, ``Leaky coaxial cable,'' May~7 1974, uS Patent 3,810,186.
+  [Online]. Available: \url{https://www.google.com/patents/US3810186}
+\BIBentrySTDinterwordspacing
+
+\bibitem{motley1983directed}
+A.~Motley and D.~Palmer, ``Directed radio coverage within buildings,'' in
+  \emph{Proc. IEE Conf. Radio spectrum conversion techniques}, 1983.
+
+\bibitem{saleh1987distributed}
+A.~A. Saleh, A.~Rustako, and R.~Roman, ``Distributed antennas for indoor radio
+  communications,'' \emph{IEEE Transactions on Communications}, vol.~35,
+  no.~12, pp. 1245--1251, 1987.
+
+\bibitem{cao1999radio}
+H.~Cao and Y.~Zhang, ``Radio propagation along a radiated mode leaky coaxial
+  cable in tunnels,'' in \emph{Microwave Conference, 1999 Asia Pacific},
+  vol.~2.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 1999, pp. 270--272.
+
+\bibitem{takatsu2007history}
+T.~Takatsu, ``The history and future of high-speed railways in japan,''
+  \emph{Japan Railway \& Transport Review}, vol.~48, pp. 6--21, 2007.
+
+\bibitem{hassan2012blind}
+K.~Hassan, I.~Dayoub, W.~Hamouda, C.~N. Nzeza, and M.~Berbineau, ``Blind
+  digital modulation identification for spatially-correlated mimo systems,''
+  pp. 683--693, 2012.
+
+\bibitem{kharbech2013blind}
+S.~Kharbech, I.~Dayoub, E.~Simon, and M.~Zwingelstein-Colin, ``Blind digital
+  modulation detector for mimo systems over high-speed railway channels,'' in
+  \emph{International Workshop on Communication Technologies for
+  Vehicles}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2013, pp.
+  232--241.
+
+\bibitem{hassan2009automatic}
+K.~Hassan, I.~Dayoub, W.~Hamouda, and M.~Berbineau, ``Automatic modulation
+  recognition using wavelet transform and neural network,'' in
+  \emph{Intelligent Transport Systems Telecommunications,(ITST), 2009 9th
+  International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE,
+  2009, pp. 234--238.
+
+\bibitem{simon2013iterative}
+E.~P. Simon and M.~A. Khalighi, ``Iterative soft-kalman channel estimation for
+  fast time-varying mimo-ofdm channels,'' \emph{IEEE Wireless Communications
+  Letters}, vol.~2, no.~6, pp. 599--602, 2013.
+
+\bibitem{ksgill}
+K.~Gill and A.~Wyglinski, ``Heterogeneous cooperative spectrum sensing test-bed
+  using software-defined radios,'' in \emph{2017 IEEE 86th Vehicular Technology
+  Conference (VTC-Fall)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2017.
+
+\bibitem{arhtn14}
+Y.~Zeng and Y.-C. Liang, ``Eigenvalue-based spectrum sensing algorithms for
+  cognitive radio,'' \emph{IEEE transactions on communications}, vol.~57,
+  no.~6, 2009.
+
 \bibitem{cogjm}
 J.~Mitola and G.~Q. Maguire, ``Cognitive radio: making software radios more
   personal,'' \emph{IEEE Personal Communications}, vol.~6, no.~4, pp. 13--18,
@@ -264,11 +299,6 @@ G.~Yang, J.~Wang, J.~Luo, O.~Y. Wen, H.~Li, Q.~Li, and S.~Li, ``Cooperative
   spectrum sensing in heterogeneous cognitive radio networks based on
   normalized energy detection,'' \emph{IEEE Transactions on vehicular
   technology}, vol.~65, no.~3, pp. 1452--1463, 2016.
-
-\bibitem{arhtn14}
-Y.~Zeng and Y.-C. Liang, ``Eigenvalue-based spectrum sensing algorithms for
-  cognitive radio,'' \emph{IEEE transactions on communications}, vol.~57,
-  no.~6, 2009.
 
 \bibitem{267870}
 J.~Mitola, ``Software radios-survey, critical evaluation and future
@@ -306,35 +336,10 @@ Matlab2017a. [Online]. Available:
   \url{https://www.mathworks.com/products/matlab.html}
 \BIBentrySTDinterwordspacing
 
-\bibitem{tingting2010high}
-G.~Tingting and S.~Bin, ``A high-speed railway mobile communication system
-  based on lte,'' in \emph{Electronics and Information Engineering (ICEIE),
-  2010 International Conference On}, vol.~1.\hskip 1em plus 0.5em minus
-  0.4em\relax IEEE, 2010, pp. V1--414.
-
-\bibitem{n1974leaky}
-\BIBentryALTinterwordspacing
-K.~N, N.~T, and N.~T, ``Leaky coaxial cable,'' May~7 1974, uS Patent 3,810,186.
-  [Online]. Available: \url{https://www.google.com/patents/US3810186}
-\BIBentrySTDinterwordspacing
-
-\bibitem{motley1983directed}
-A.~Motley and D.~Palmer, ``Directed radio coverage within buildings,'' in
-  \emph{Proc. IEE Conf. Radio spectrum conversion techniques}, 1983.
-
-\bibitem{saleh1987distributed}
-A.~A. Saleh, A.~Rustako, and R.~Roman, ``Distributed antennas for indoor radio
-  communications,'' \emph{IEEE Transactions on Communications}, vol.~35,
-  no.~12, pp. 1245--1251, 1987.
-
-\bibitem{cao1999radio}
-H.~Cao and Y.~Zhang, ``Radio propagation along a radiated mode leaky coaxial
-  cable in tunnels,'' in \emph{Microwave Conference, 1999 Asia Pacific},
-  vol.~2.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 1999, pp. 270--272.
-
-\bibitem{takatsu2007history}
-T.~Takatsu, ``The history and future of high-speed railways in japan,''
-  \emph{Japan Railway \& Transport Review}, vol.~48, pp. 6--21, 2007.
+\bibitem{lter17}
+K.~Arshad, F.~Katsriku, A.~Lasebae \emph{et~al.}, ``Effects of different
+  parameters on attenuation rates in circular and arch tunnels,'' \emph{PIERS
+  Online}, vol.~3, no.~5, pp. 607--611, 2007.
 
 \bibitem{booklter13}
 M.~P{\"a}tzold, \emph{Mobile radio channels}.\hskip 1em plus 0.5em minus
@@ -386,10 +391,5 @@ S.~Nallagonda, S.~D. Roy, A.~Chandra, and S.~Kundu, ``Performance of
   fusion rules,'' in \emph{Computers and Devices for Communication (CODEC),
   2012 5th International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax
   IEEE, 2012, pp. 1--4.
-
-\bibitem{lter17}
-K.~Arshad, F.~Katsriku, A.~Lasebae \emph{et~al.}, ``Effects of different
-  parameters on attenuation rates in circular and arch tunnels,'' \emph{PIERS
-  Online}, vol.~3, no.~5, pp. 607--611, 2007.
 
 \end{thebibliography}

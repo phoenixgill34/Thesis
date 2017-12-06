@@ -3,6 +3,83 @@
 
 This chapter provides the background information needed to understand the chapters that follows. It examines the basic outlines of a heterogeneous networks and how cooperative spectrum sensing (CSS) can help in enhancing the accuracy of signal source estimation. The fusion center (FC) collects the data from the sensor node network and process it to make the reliable decision. Secondly, this chapter investigates various algorithms which can be used in heterogeneous network to estimate signal source. Finally, it also outlines the necessary hardware and software tools used in the implementation of heterogeneous CSS chapter.
 
+\section{Spectrum Sensing}
+Spectrum sensing plays a key role in the decision-making part of cognitive radio network. It is required by CR to detect the presence of spectrum white space and also to estimate accurately the presence of incumbent users (PUs). Since the primary users have prerogative on the spectrum band usage, so it is of paramount importance to avoid interfering with the PU. It is very challenging to get an accurate estimate under a practical fading environment based on conventional spectrum sensing techniques. Various non-idealities such as shadowing, multipath and fluctuating noise variance can make it difficult to detect the primary user. In the case of fast  varying  channels over time, some works focus on improving the peformance of spectrum sensing and signal identification~\cite{hassan2012blind,kharbech2013blind,hassan2009automatic}. To combat the Doppler shift caused due to high-speed environments algorithms~\cite{simon2013iterative} have been proposed for channel estimation and equalization. Cooperative spectrum sensing~\cite{ksgill} can be use to tackle lot of the problems caused due to multipath, shadowing and high Doppler shift. In the paper we tested the performance of cooperative spectrum sensing using soft and hard data fusion schemes on software-defined radio test-bed. The experiment confirmed that cooperation among sensor nodes improved the spectrum sensing performance as a result of increased spatial-temporal diversity in received signal source. The various types of spectrum sensing schemes are discussed below in the following subsections.
+
+\subsection{Energy Detection}
+In energy detection (ED) we use the energy spectra of the received signal and compare it against a predefined threshold level to estimate the presence of the signal.In ED scheme we only rely on the energy of the signal in the frequency channel, and no phase information is required. The key advantage of the ED scheme is that it doesn't require any prior information of the signal, i.e. type of modulation scheme, phase information or any other signal parameter. Energy detection can be considered as binary hypothesis testing scheme and is given by:
+
+\begin{equation}
+	\label{eq:1}
+     y(n) = 
+     \left\{
+     \begin{aligned}
+   &w(n),~~~~~~~~~\Hmat_0\\
+   &s(n) + w(n),~\Hmat_1
+    \end{aligned}
+    \right.
+\end{equation}
+where $y(n)$ represents the received signal, $s(n)$ represents the signal source (PU), and $w(n)$ is the white Gaussian noise $w(n) \sim N(0,\sigma_n^2) $. $\Hmat_0$ describes the hypothesis when there is no signal present, while the hypothesis $\Hmat_1$ is the presence of signal.
+
+The decision whether the signal is present or absent is decided by evaluating a local test statistic $L$ to see whether it is above or below certain fixed threshold $\tau$. 
+The local test statistic $L$, which is the complex-magnitude squared of the FFT samples, is compared with $\tau$ using equation:
+
+\begin{equation}
+\label{eq:2}
+	L = \sum_{n=1}^{M}{|y(n)|^2} = 
+	\left\{
+	\begin{aligned}
+		<\tau,~\Hmat_0 \\
+		>\tau,~\Hmat_1		
+	\end{aligned}
+	\right.
+\end{equation}
+where $|y(n)|^2$ is the energy of a specific FFT bin and n=1,2,3...M are the number of samples received.
+
+The probability of false alarm $P_{fa}$ and probability of detection $P_d$ are given by:
+\begin{equation}
+\label{eq:3}
+P_f = Q\Bigg(\dfrac{\tau-M(2\sigma_n^2)}{\sqrt{M}(2\sigma_n^2)}\Bigg),
+\end{equation}
+
+\begin{equation}
+\label{eq:4}
+~~~~~~~P_d = Q\Bigg(\dfrac{\tau-M(2\sigma_n^2)(1+\gamma)}{\sqrt{M(1+2\gamma)}(2\sigma_n^2)}\Bigg).
+\end{equation}
+In cooperative spectrum sensing, each sensor node transmits the local sensing data to the fusion center for signal source detection. The local sensing data has to be quantized, thus yielding quantization errors. To minimize the quantization error in local test statistic $L$ and to reduce the effect of noise variance, the energy of the received signal $y(n)$ is normalized\cite{ref:13}. The local test statistic $L$ for the $r^{th}$ sensor node is given as:
+\begin{equation}
+	\label{eq:5}
+	L_r = \dfrac{1}{M_r\sigma_{n,r}^2}\sum_{r=1}^{M_r}|y(n)|^2
+\end{equation}
+where $M_r$ is the number of samples used to estimate the power of the signal source in the node,  $\sigma_{n,r}$ is the noise power variance.
+
+In Eq~(\ref{eq:1}) $s(n)$ is considered as a deterministic signal and $w(n)$ is a Gaussian random variable with a variance of $\sigma_n^2$. Based on CLT, $L_r$ will have a following distribution~\cite{inphtn7}:
+
+\begin{equation}
+	\label{eq:6}
+	L_r = 
+	\left\{
+	\begin{aligned}
+		& N(1,\dfrac{1}{M_r}),~~~~~~~~~~~~\Hmat_0 \\
+		& N(\gamma_r+1,\dfrac{1+2\gamma_r}{M_r}),~\Hmat_1		
+	\end{aligned}
+	\right.
+\end{equation}
+where $\gamma_r$ is the received SNR of the $r^{th}$ SU. The local decision statistic $L_r$ is quantized before transmission due to the bandwidth constraint, and this can lead to quantization errors. The values of $L_r$ received by FC can be modeled as:
+\begin{equation}
+	\label{eq:7}
+	 \beta_r = L_r + w_{q,r},
+\end{equation}
+where $\beta_r$ is the decision statistic received by the FC and $w_q$ is the noise added to the signal due to fading and quantization error. In \cite{arhtn14}, the $w_q$ is modeled as a Gaussian noise with zero mean and $\sigma_q^2$ variance. Figure~{} explains the normalized energy detection scheme in the block diagram form.
+
+\subsection{Cyclostationary Method}
+
+
+\subsection{Matched Filter Detection}
+
+
+\subsection{Wavelet Detection}
+
 \section{Cognitive Radios}
 Cognitive radio (CR)~\cite{cogjm} is a communication systems paradigm that focuses on employing highly agile, environmentally aware, intelligent wireless platforms in
 order to autonomously select and configure device operating parameters based on the prevailing radio and network environmental conditions~\cite{bookhtn1}. In general the cognitive radio may be expected to look at parameters such as channel occupancy rate, available channels, bandwidth required for data transmission and the modulation types that may be used. It must also look at the regulatory requirements set by the Federal Communications Commission. In some instances a knowledge of geography and this may alter what it may be allowed to do. Software-defined radios (SDR) are mainly responsible for making cognitive radios used in wireless communications system a reality. Software radios provide a vast untapped potential to personalize services, and they make the process of modifying the radio characteristics extremely simple. 

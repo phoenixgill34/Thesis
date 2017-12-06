@@ -5,7 +5,6 @@ A level-1 auxiliary file: chapter2.aux
 A level-1 auxiliary file: chapter3.aux
 A level-1 auxiliary file: chapter4.aux
 A level-1 auxiliary file: chapter5.aux
-A level-1 auxiliary file: chapter6.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: IEEEtran.bst
 A level-1 auxiliary file: appendixb.aux
@@ -20,6 +19,7 @@ Warning--string name "march" is undefined
 --line 739 of file mybib.bib
 Warning--entry type for "hassan2012blind" isn't style-file defined
 --line 755 of file mybib.bib
+Warning--I didn't find a database entry for "ref:13"
 Warning--I didn't find a database entry for "ref:12"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
@@ -28,7 +28,7 @@ Warning--I didn't find a database entry for "ref:12"
 Done.
 You've used 69 entries,
             4024 wiz_defined-function locations,
-            1183 strings with 19295 characters,
+            1183 strings with 19289 characters,
 and the built_in function-call counts, 51406 in all, are:
 = -- 4153
 > -- 1167
@@ -67,4 +67,4 @@ warning$ -- 0
 while$ -- 247
 width$ -- 71
 write$ -- 687
-(There were 3 warnings)
+(There were 4 warnings)

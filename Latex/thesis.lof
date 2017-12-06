@@ -2,38 +2,37 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Heterogeneous sensor network employing cooperative spectrum sensing. $RFFE_i$ and $SR_i$ represents different front end and sampling rates for the SDR units.\relax }}{9}{figure.caption.4}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces High speed train inside a tunnel for LTE-R. $D_{LOS}$ is the distance between transmitter and receiver, $d$ is the distance between the LCX cable transmission slots.\relax }}{11}{figure.caption.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Machine-to-Machine communication paradigm in 5G Cellular System.\relax }}{17}{figure.caption.6}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Vehicular communication using D2D 5G cellular communication technology.\relax }}{19}{figure.caption.7}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Machine-to-Machine communication paradigm in 5G Cellular System.\relax }}{21}{figure.caption.8}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Proposed LTE-R Architecture for next generation High-speed Railways consisting of EPA and E-UTRAN.\relax }}{16}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Machine-to-Machine communication paradigm in 5G Cellular System.\relax }}{18}{figure.caption.8}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Vehicular communication using D2D 5G cellular communication technology.\relax }}{21}{figure.caption.9}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Machine-to-Machine communication paradigm in 5G Cellular System.\relax }}{22}{figure.caption.10}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Leaky Coaxial Cable\relax }}{25}{figure.caption.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The block diagram explaining the basic parts of Cognitive Radio system. The operating parameters are configured based on the characterization of the wireless environment.\relax }}{24}{figure.caption.9}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Software defined radio pushes all the adaptive elements and data manipulation operation into software. The goal of SDR is to provide or define all of the radio operation in software.\relax }}{27}{figure.caption.10}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces GNURadio and Software-Defined Radio\relax }}{30}{figure.caption.11}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The block diagram explaining the basic parts of Cognitive Radio system. The operating parameters are configured based on the characterization of the wireless environment.\relax }}{30}{figure.caption.12}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Software defined radio pushes all the adaptive elements and data manipulation operation into software. The goal of SDR is to provide or define all of the radio operation in software.\relax }}{33}{figure.caption.13}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces GNURadio and Software-Defined Radio\relax }}{35}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Proposed LTE-R Architecture for next generation High-speed Railways consisting of EPA and E-UTRAN.\relax }}{33}{figure.caption.12}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Leaky Coaxial Cable\relax }}{36}{figure.caption.14}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Doppler spectrum for LTE-R at different train velocities $v$ (km/h) = 300, 400 and 500 and $f_c$ = 5 GHz.\relax }}{39}{figure.caption.15}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces HST channel model consisting of time-series K-factor and Doppler shift caused due to velocity of the train.\relax }}{40}{figure.caption.16}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of a communication system through a HST channel using QPSK, 16-QAM and 64-QAM.\relax }}{38}{figure.caption.16}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Received LTE-R OFDM signal under HST Ricean Fading Environment. \relax }}{39}{figure.caption.17}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces K-factor versus $D_{LOS}$ for different center frequencies $f_c$ = 2, 3 and 5 GHz.\relax }}{40}{figure.caption.18}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparison of $E_b/N_0$ verus BER for LTE-R OFDM modulation with different $K$-factors. The first three sub-figures shows the $E_b/N_0$ versus BER for individual modulation schemes employed in LTE-R and in last plot we compare all the modulation schemes for different $K$-factors.\relax }}{41}{figure.caption.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {OFDM-QPSK}}}{41}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OFDM-16QAM}}}{41}{subfigure.4.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {OFDM-64QAM}}}{41}{subfigure.4.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {OFDM-MQAM}}}{41}{subfigure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces BER variation with time for HST with different modulation schemes of LTE-R. As the train moves towards the antenna the general trend of BER goes down with small-scale fluctuations due to varying K-factor.\relax }}{42}{figure.caption.20}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Doppler spectrum for LTE-R at different train velocities $v$ (km/h) = 300, 400 and 500 and $f_c$ = 5 GHz.\relax }}{44}{figure.caption.21}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces HST channel model consisting of time-series K-factor and Doppler shift caused due to velocity of the train.\relax }}{45}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Experimental Test-Bed For Cooperative Sensing in Heterogeneous Network. Sensors 1, 2 and 4 are RTL-SDR units, sensor 3 is USRP N210 and TX is another USRP N210 unit which is used as a signal source for this work.\relax }}{44}{figure.caption.17}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces GNU Radio Flowgraph For Transmitter Running on USRP N210.\relax }}{46}{figure.caption.18}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces GNURadio Flowgraph For USRP and RTL-SDR sensor nodes.\relax }}{46}{figure.caption.19}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Flowchart showing AND, OR and Majority Rule Fusion schemes.\relax }}{48}{figure.caption.21}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Flowchart describing Maximum Normalized Energy Scheme in detail.\relax }}{49}{figure.caption.22}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Flowchart describing Equal Gain Combining Scheme in detail.\relax }}{50}{figure.caption.23}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Probability of Detection versus $SNR_avg$ For Hard Decision Combining.\relax }}{52}{figure.caption.24}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces ROC Characteristics for Hard Decision Combining with Different SNRs.\relax }}{53}{figure.caption.25}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Probability of Detection versus $SNR_avg$ For Soft and Hard Decision Combining.\relax }}{54}{figure.caption.26}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Block diagram of a communication system through a HST channel using QPSK, 16-QAM and 64-QAM.\relax }}{57}{figure.caption.28}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Received LTE-R OFDM signal under HST Ricean Fading Environment. \relax }}{58}{figure.caption.29}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces K-factor versus $D_{LOS}$ for different center frequencies $f_c$ = 2, 3 and 5 GHz.\relax }}{59}{figure.caption.30}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Comparison of $E_b/N_0$ verus BER for LTE-R OFDM modulation with different $K$-factors. The first three sub-figures shows the $E_b/N_0$ versus BER for individual modulation schemes employed in LTE-R and in last plot we compare all the modulation schemes for different $K$-factors.\relax }}{60}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {OFDM-QPSK}}}{60}{subfigure.4.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OFDM-16QAM}}}{60}{subfigure.4.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {OFDM-64QAM}}}{60}{subfigure.4.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {OFDM-MQAM}}}{60}{subfigure.4.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces BER variation with time for HST with different modulation schemes of LTE-R. As the train moves towards the antenna the general trend of BER goes down with small-scale fluctuations due to varying K-factor.\relax }}{61}{figure.caption.32}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Experimental Test-Bed For Cooperative Sensing in Heterogeneous Network. Sensors 1, 2 and 4 are RTL-SDR units, sensor 3 is USRP N210 and TX is another USRP N210 unit which is used as a signal source for this work.\relax }}{50}{figure.caption.23}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces GNU Radio Flowgraph For Transmitter Running on USRP N210.\relax }}{52}{figure.caption.24}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces GNURadio Flowgraph For USRP and RTL-SDR sensor nodes.\relax }}{52}{figure.caption.25}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Flowchart showing AND, OR and Majority Rule Fusion schemes.\relax }}{54}{figure.caption.27}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Flowchart describing Maximum Normalized Energy Scheme in detail.\relax }}{55}{figure.caption.28}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Flowchart describing Equal Gain Combining Scheme in detail.\relax }}{56}{figure.caption.29}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Probability of Detection versus $SNR_avg$ For Hard Decision Combining.\relax }}{58}{figure.caption.30}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces ROC Characteristics for Hard Decision Combining with Different SNRs.\relax }}{59}{figure.caption.31}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Probability of Detection versus $SNR_avg$ For Soft and Hard Decision Combining.\relax }}{60}{figure.caption.32}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
