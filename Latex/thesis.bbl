@@ -162,6 +162,16 @@ A.~Amanna, M.~Gadnhiok, M.~J. Price, J.~H. Reed, W.~P. Siriwongpairat, and
   T.~K. Himsoon, ``Railway cognitive radio,'' \emph{IEEE Vehicular Technology
   Magazine}, vol.~5, no.~3, pp. 82--89, Sept 2010.
 
+\bibitem{5338992}
+R.~Lindsey, ``Positive train control in north america,'' \emph{IEEE Vehicular
+  Technology Magazine}, vol.~4, no.~4, pp. 22--26, December 2009.
+
+\bibitem{wibro}
+\BIBentryALTinterwordspacing
+``Wibro standard phase–i,'' 2004, tTAS.KO-06.0065R1. [Online]. Available:
+  \url{http://corridor.ifsttar.fr}
+\BIBentrySTDinterwordspacing
+
 \bibitem{tingting2010high}
 G.~Tingting and S.~Bin, ``A high-speed railway mobile communication system
   based on lte,'' in \emph{Electronics and Information Engineering (ICEIE),
@@ -263,10 +273,12 @@ K.~Gill and A.~Wyglinski, ``Heterogeneous cooperative spectrum sensing test-bed
   using software-defined radios,'' in \emph{2017 IEEE 86th Vehicular Technology
   Conference (VTC-Fall)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2017.
 
-\bibitem{arhtn14}
-Y.~Zeng and Y.-C. Liang, ``Eigenvalue-based spectrum sensing algorithms for
-  cognitive radio,'' \emph{IEEE transactions on communications}, vol.~57,
-  no.~6, 2009.
+\bibitem{weidling2005framework}
+F.~Weidling, D.~Datla, V.~Petty, P.~Krishnan, and G.~Minden, ``A framework for
+  rf spectrum measurements and analysis,'' in \emph{New Frontiers in Dynamic
+  Spectrum Access Networks, 2005. DySPAN 2005. 2005 First IEEE International
+  Symposium on}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2005, pp.
+  573--576.
 
 \bibitem{cogjm}
 J.~Mitola and G.~Q. Maguire, ``Cognitive radio: making software radios more
@@ -299,6 +311,11 @@ G.~Yang, J.~Wang, J.~Luo, O.~Y. Wen, H.~Li, Q.~Li, and S.~Li, ``Cooperative
   spectrum sensing in heterogeneous cognitive radio networks based on
   normalized energy detection,'' \emph{IEEE Transactions on vehicular
   technology}, vol.~65, no.~3, pp. 1452--1463, 2016.
+
+\bibitem{arhtn14}
+Y.~Zeng and Y.-C. Liang, ``Eigenvalue-based spectrum sensing algorithms for
+  cognitive radio,'' \emph{IEEE transactions on communications}, vol.~57,
+  no.~6, 2009.
 
 \bibitem{267870}
 J.~Mitola, ``Software radios-survey, critical evaluation and future

@@ -13,10 +13,33 @@ Gradually we are moving towards context awareness among automotive devices, wher
 In the following section we discuss positive train control (PTC), wireless broadband (WiBro), train-to-train (T2T) and train-to-ground (T2G) communication, Long Term Evolution for Railways (LTE-R) communication system, spectrum regulation for LTE-R, LTE and Internet-of-Things (IoT) for railways which are important technologies for achieving smart railway transportation system.
 
 \section{Positive Train Control}
+Positive Train Control (PTC) is an advanced system designed for monitoring and controlling of train movements to provide advanced safety with the help of modern wireless communication technology. The key idea behind PTC is the constant flow of information to the train about its location, warnings if engineer doesn't slow down the train, derailments caused by excessive speed of train, etc. Managing track occupancies through centralized route and interlocking logic, enforcing permanent and temporary speed limits for the train, real-time localization of the train these are some of the basic features implemented in PTC. 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=10cm,keepaspectratio]{images/Gill/5G/ptc.eps} 
+\caption{Architecture of Positive Train Control}
+\label{ptc}
+\end{figure}
+
+
+The Figure~\ref{ptc} gives the simplistic architecture of the PTC, where train receives the flow of information through various system using wireless communication links. The primary means of determining location for the train is by using differential GPS which can continuously compare it's position with the stored position of speed restriction and work zones~\cite{5338992}. Central Office (CO) regularly monitor trains, exchanging information with Train management computers (TMC) and gathering precise speed and position information. CO also collects information regarding train orders, number of cars, weight, route and track characteristics along the route, including speed restrictions, curves, grades and crossing. All wayside equipments are continuously monitored by PTC, where it issue alerts in cases such as when an automatic crossing gate is not working or a hot box detector some axles slightly above a certain temperature level. It also applies corrective action in cases where there are reports of a possible track breakage due to extreme heat or a flood.
 
 \section{Wireless Broadband (WiBro)}
 
-\section{T2T and T2G Communication System}
+Wireless Broadband (WiBro) is a mobile broadband wireless access (BWA) service which had its first public demonstration in Dec. 2005 and has been in service in South Korea since June 2006. WiBro was developed as a mobile BWA solution in Korea and was based on IEEE 802.11e WiMax standard. It is a subset of consolidated version of IEEE Standard 802.16-
+2004 (fixed wireless specifications), P802.16e (enhancements to support mobility), and P802.16-2004/Cor1 (corrections to IEEE Standard 802.16-2004). The pro-files and test specifications of WiBro will be harmonized with WiMAX Forum’s mobile WiMAX profiles and test specification, drawing a convergence of the two standards.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\textwidth,height=10cm,keepaspectratio]{images/Gill/5G/wibro.eps} 
+\caption{Korean Wireless Broadband (WiBro) system architecture for high speed internet connectivity.}
+\label{wibro}
+\end{figure}
+
+Figure~\ref{wibro} describes the architecture of BWA based WiBro communication system in the phase I standardization~\cite{wibro}. The WiBro network consists of Access control Routers (ACR) which connects backbone network with Radio Access Station (RAS). The RAS is the interface between mobile nodes and the core network at the physical layer and it controls the radio resource at the data link layer in conjunction with an ACR. The key distinction of WiBro from conventional cellular networks is that Internet Protocol (IP) is used between an ACr and RASs and also between ACRs. WiBro uses Time or Frequency Division Duplexing (TDD or FDD) for duplexing and Orthogonal Frequency Division Multiple Access (OFDMA) for robustness against fast fading and narrow-band co-channel interference.
+
 
 \section{LTE-R Communication System}
 
@@ -56,7 +79,7 @@ Conventional LTE networks are different compared to LTE-R in many ways such as a
 
 \section{Spectrum Regulation for LTE-R}
 
-Departing from technical issues, we now discuss the crucial interactions that 5G will encounter with spectrum policy and allocation by the federal communications commission (FCC). As already discussed in Section~\ref{5gcell} the spectrum allocated for cellular technologies is already saturated in peak markets due to massive amounts of wireless services and networks. Figure~\ref{specalloc} shows the pronounced scarcity in the the wireless cellular bands as seen in the FCC frequency allocation chart. Large amount of unused spectrum is available in the mm-Wave realm and can be used for high data rate applications. Due to different propagation characteristics for signals at low and sub-terahertz frequencies, future systems will need to integrate a broad range of frequencies. Frequencies on a lower spectrum can be used for wide coverage, mobility support, control signaling and high frequencies for high data rate applications in small cells. This requires a new approach to spectrum policy and allocation methods for 5G standardization.
+Departing from technical issues, we now discuss the crucial interactions that smart railways will encounter with spectrum policy and allocation by the federal communications commission (FCC). As already discussed in Section~\ref{5gcell} the spectrum allocated for cellular technologies is already saturated in peak markets due to massive amounts of wireless services and networks. Figure~\ref{specalloc} shows the pronounced scarcity in the the wireless cellular bands as seen in the FCC frequency allocation chart. Large amount of unused spectrum is available in the mm-Wave realm and can be used for high data rate applications. Due to different propagation characteristics for signals at low and sub-terahertz frequencies, future systems will need to integrate a broad range of frequencies. Frequencies on a lower spectrum can be used for wide coverage, mobility support, control signaling and high frequencies for high data rate applications in small cells. This requires a new approach to spectrum policy and allocation methods for 5G standardization.
 
 \begin{figure}[!ht]
 	\centering
@@ -123,4 +146,5 @@ constructed from coaxial cable where the outer shield has a series of holes with
 
 A radio system based on LCX has been deployed in Japan for high speed railways ''Series N700''~\cite{takatsu2007history} to connect the train to ground network. Wi-Fi access points are chosen for in-train communications with peak data rates of 2 Mbps for uplink and downlink. Although current technologies can provide wireless communication services in HSTs, the capacity of communication system is very low (1--4 Mbps). These data rates are insufficient for next generation wireless communication system where the peak data rates of 0.5 -- 5 Gbps are expected. LTE-R communication system can be implemented for achieving high data rates but it cannot be achieved by using conventional cellular system. The penetration loss due to tunnel walls is very high and secondly, the fast moving trains causes large Doppler shifts leading to poor connectivity due to retransmissions. Hence, leaky coaxial cable is the best candidate for achieving extensive internet access inside a tunnel environment for high speed railways.
 
-
+\section{summary}
+A radio system based on LCX has been deployed in Japan for high speed railways ''Series N700''~\cite{takatsu2007history} to connect the train to ground network. Wi-Fi access points are chosen for in-train communications with peak data rates of 2 Mbps for uplink and downlink. Although current technologies can provide wireless communication services in HSTs, the capacity of communication system is very low (1--4 Mbps). These data rates are insufficient for next generation wireless communication system where the peak data rates of 0.5 -- 5 Gbps are expected. LTE-R communication system can be implemented for achieving high data rates but it cannot be achieved by using conventional cellular system. The penetration loss due to tunnel walls is very high and secondly, the fast moving trains causes large Doppler shifts leading to poor connectivity due to retransmissions. Hence, leaky coaxial cable is the best candidate for achieving extensive internet access inside a tunnel environment for high speed railways.

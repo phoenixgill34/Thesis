@@ -7,7 +7,7 @@ This chapter provides the background information needed to understand the chapte
 Spectrum sensing plays a key role in the decision-making part of cognitive radio network. It is required by CR to detect the presence of spectrum white space and also to estimate accurately the presence of incumbent users (PUs). Since the primary users have prerogative on the spectrum band usage, so it is of paramount importance to avoid interfering with the PU. It is very challenging to get an accurate estimate under a practical fading environment based on conventional spectrum sensing techniques. Various non-idealities such as shadowing, multipath and fluctuating noise variance can make it difficult to detect the primary user. In the case of fast  varying  channels over time, some works focus on improving the peformance of spectrum sensing and signal identification~\cite{hassan2012blind,kharbech2013blind,hassan2009automatic}. To combat the Doppler shift caused due to high-speed environments algorithms~\cite{simon2013iterative} have been proposed for channel estimation and equalization. Cooperative spectrum sensing~\cite{ksgill} can be use to tackle lot of the problems caused due to multipath, shadowing and high Doppler shift. In the paper we tested the performance of cooperative spectrum sensing using soft and hard data fusion schemes on software-defined radio test-bed. The experiment confirmed that cooperation among sensor nodes improved the spectrum sensing performance as a result of increased spatial-temporal diversity in received signal source. The various types of spectrum sensing schemes are discussed below in the following subsections.
 
 \subsection{Energy Detection}
-In energy detection (ED) we use the energy spectra of the received signal and compare it against a predefined threshold level to estimate the presence of the signal.In ED scheme we only rely on the energy of the signal in the frequency channel, and no phase information is required. The key advantage of the ED scheme is that it doesn't require any prior information of the signal, i.e. type of modulation scheme, phase information or any other signal parameter. Energy detection can be considered as binary hypothesis testing scheme and is given by:
+In energy detection (ED) we use the energy spectra of the received signal and compare it against a predefined threshold level to estimate the presence of the signal.In ED scheme we only rely on the energy of the signal in the frequency channel, and no phase information is required. The key advantage of the ED scheme is that it doesn't require any prior information of the signal, i.e. type of modulation scheme, phase information or any other signal parameter. Energy detection can be considered as binary hypothesis testing scheme and is given by~\cite{arhtn4}:
 
 \begin{equation}
 	\label{eq:1}
@@ -19,7 +19,15 @@ In energy detection (ED) we use the energy spectra of the received signal and co
     \end{aligned}
     \right.
 \end{equation}
-where $y(n)$ represents the received signal, $s(n)$ represents the signal source (PU), and $w(n)$ is the white Gaussian noise $w(n) \sim N(0,\sigma_n^2) $. $\Hmat_0$ describes the hypothesis when there is no signal present, while the hypothesis $\Hmat_1$ is the presence of signal.
+where $y(n)$ represents the received signal, $s(n)$ represents the signal source (PU), and $w(n)$ is the white Gaussian noise $w(n) \sim N(0,\sigma_n^2) $. $\Hmat_0$ describes the hypothesis when there is no signal present, while the hypothesis $\Hmat_1$ is the presence of signal. Figure~\ref{energydet} explains the energy detection scheme in the form of a block diagram. Firstly the analog signal $X(t)$ is converted into digital domain via analog-to-digital (ADC) converter, then the Fast Fourier Transform (FFT) block converts the signal from time domain to frequency domain. We then calculate the magnitude square of the signal and finally we take the average over the N values to compute the decision statistic $\delta $. The $\delta$ is compared with the threshold to estimate the presence or absence of the signal.
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/energydet.eps}
+    \caption{The block diagram describing the working of energy detection scheme.} 
+\label{energydet}      
+\end{figure}
+
 
 The decision whether the signal is present or absent is decided by evaluating a local test statistic $L$ to see whether it is above or below certain fixed threshold $\tau$. 
 The local test statistic $L$, which is the complex-magnitude squared of the FFT samples, is compared with $\tau$ using equation:
@@ -46,39 +54,48 @@ P_f = Q\Bigg(\dfrac{\tau-M(2\sigma_n^2)}{\sqrt{M}(2\sigma_n^2)}\Bigg),
 \label{eq:4}
 ~~~~~~~P_d = Q\Bigg(\dfrac{\tau-M(2\sigma_n^2)(1+\gamma)}{\sqrt{M(1+2\gamma)}(2\sigma_n^2)}\Bigg).
 \end{equation}
-In cooperative spectrum sensing, each sensor node transmits the local sensing data to the fusion center for signal source detection. The local sensing data has to be quantized, thus yielding quantization errors. To minimize the quantization error in local test statistic $L$ and to reduce the effect of noise variance, the energy of the received signal $y(n)$ is normalized\cite{ref:13}. The local test statistic $L$ for the $r^{th}$ sensor node is given as:
-\begin{equation}
-	\label{eq:5}
-	L_r = \dfrac{1}{M_r\sigma_{n,r}^2}\sum_{r=1}^{M_r}|y(n)|^2
-\end{equation}
-where $M_r$ is the number of samples used to estimate the power of the signal source in the node,  $\sigma_{n,r}$ is the noise power variance.
-
-In Eq~(\ref{eq:1}) $s(n)$ is considered as a deterministic signal and $w(n)$ is a Gaussian random variable with a variance of $\sigma_n^2$. Based on CLT, $L_r$ will have a following distribution~\cite{inphtn7}:
-
-\begin{equation}
-	\label{eq:6}
-	L_r = 
-	\left\{
-	\begin{aligned}
-		& N(1,\dfrac{1}{M_r}),~~~~~~~~~~~~\Hmat_0 \\
-		& N(\gamma_r+1,\dfrac{1+2\gamma_r}{M_r}),~\Hmat_1		
-	\end{aligned}
-	\right.
-\end{equation}
-where $\gamma_r$ is the received SNR of the $r^{th}$ SU. The local decision statistic $L_r$ is quantized before transmission due to the bandwidth constraint, and this can lead to quantization errors. The values of $L_r$ received by FC can be modeled as:
-\begin{equation}
-	\label{eq:7}
-	 \beta_r = L_r + w_{q,r},
-\end{equation}
-where $\beta_r$ is the decision statistic received by the FC and $w_q$ is the noise added to the signal due to fading and quantization error. In \cite{arhtn14}, the $w_q$ is modeled as a Gaussian noise with zero mean and $\sigma_q^2$ variance. Figure~{} explains the normalized energy detection scheme in the block diagram form.
 
 \subsection{Cyclostationary Method}
 
+There are lot of applications where it is required to perform the modulation recognition and signal classification. Communication signals can be more accurately described as statistical processes which repeats itself cyclically or periodically rather than a stationary process. Mathematically Cyclostationary feature detection scheme can be described by the equation~\cite{bookhtn1}:
+
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio]{images/Gill/figs/cyclostationary.eps}
+    \caption{The block diagram describing the working of cyclostationary feature detection scheme.} 
+\label{cycl}      
+\end{figure}
+
+\begin{equation}
+\label{eq:cyclo}
+R_x(t,\tau) = E\Bigg\{x\bigg(t+\tau \bigg)x^*\bigg(t-\tau \bigg)\Bigg\} = \sum_{\{\alpha\}} R_x^{\alpha}(\tau)e^{j2\pi\alpha t}
+\end{equation}
+
+The Eq~.(\ref{eq:cyclo}) shows the autocorrelation of the observed signal $x(t)$ with periodicity $\tau$, $E\{.\}$ is the expectation operator, $\{\alpha\}$ is the set of Fourier components and $R_x^{\alpha}$ is the cyclic autocorrelation function (CAF) and is given by:
+
+\begin{equation}
+R_x^{\alpha} = \lim_{T\rightarrow \inf}\int_{-T/2}^{T/2} R_x(t,\tau)e^{-j2\pi\alpha t}
+\end{equation}
+
+Figure~\ref{cycl} shows the block diagram implementation of cyclostationary feature detection scheme where we correlate the frequency domain signal and then pass it to the cyclic frequency detection block and perform the signal classification.
 
 \subsection{Matched Filter Detection}
 
+In the matched filter detection method a known signal is correlated with an unknown signal captured from the available radio resource to detect the presence of pattern in the unknown signal. It is an optimal filter that projects the received signal in the direction of the pilot signal $x_p$~\cite{weidling2005framework}. The test statistic is given by:
 
-\subsection{Wavelet Detection}
+\begin{equation}
+T_{MD} = \sum_N y(n)x^*_p(n)
+\end{equation}
+The test statistic $T_{MD}$ is compared with a particular threshold to decide whether the signal is present or absent.The probability of detection $P_d$ and probability of false alarm $P_{fa}$ can be expressed as:
+\begin{equation}
+P_d = Q\bigg(\dfrac{\lambda-E}{\sqrt{E\sigma_{n,r}^2}}\bigg)
+\end{equation}
+
+\begin{equation}
+P_{fa} = Q\bigg(\dfrac{\lambda}{\sqrt{E\sigma_{n,r}^2}}\bigg)
+\end{equation}
+
+where $E$ is the energy of the signal source, $\lambda$ is the detection threshold and $\sigma_{n,r}$ is the noise variance. The use of matched filter is very limited due to the requirement of apriori information which is not feasible in most cases. 
 
 \section{Cognitive Radios}
 Cognitive radio (CR)~\cite{cogjm} is a communication systems paradigm that focuses on employing highly agile, environmentally aware, intelligent wireless platforms in
@@ -94,45 +111,9 @@ The work is underway to determine the best possible methods of developing the co
 \end{figure}
 
 \section{CSS in Heterogeneous Networks}
-In Heterogeneous CR network, each radio is equipped with different numbers of antennas, sampling rates and RF characteristics. In addition, each sensor node may experience distinct channel fading and suffer from different noise levels due to their respective locations and device performances, such as amplifier and ADC.  As a result, each node may have different sensing capabilities and reliability values. This is a universal and fundamental characteristic of a heterogeneous CR network which requires robust algorithms to achieve high accuracy in signal source detection for estimating the presence of a primary user\cite{arhtn13}. In this thesis, we investigate the cooperative spectrum sensing in heterogeneous networks with a centralized FC, a transmitter acting as a signal source and four sensor nodes. As explained earlier we are using energy detection as one of the spectrum sensing technique since it possesses a very low implementation complexity~\cite{arhtn4}. The energy detection scheme detects the presence or absence of a signal source based on its intercepted energy signature. If the energy of the signal is higher than a certain threshold, this indicates that the channel is occupied. The ED can be modeled by the equation:
-\begin{equation}
-	\label{eq:1}
-     y(n) = 
-     \left\{
-     \begin{aligned}
-   &w(n),~~~~~~~~~\Hmat_0\\
-   &s(n) + w(n),~\Hmat_1
-    \end{aligned}
-    \right.
-\end{equation}
-where $y(n)$ represents the received signal, $s(n)$ represents the signal source PU, and $w(n)$ is the white Gaussian noise $w(n) \sim N(0,\sigma_n^2) $. $\Hmat_0$ describes the hypothesis when there is no signal present, while the hypothesis $\Hmat_1$ is the presence of signal.
+In Heterogeneous CR network, each radio is equipped with different numbers of antennas, sampling rates and RF characteristics. In addition, each sensor node may experience distinct channel fading and suffer from different noise levels due to their respective locations and device performances, such as amplifier and ADC.  As a result, each node may have different sensing capabilities and reliability values. This is a universal and fundamental characteristic of a heterogeneous CR network which requires robust algorithms to achieve high accuracy in signal source detection for estimating the presence of a primary user\cite{arhtn13}. In this thesis, we investigate the cooperative spectrum sensing in heterogeneous networks with a centralized FC, a transmitter acting as a signal source and four sensor nodes. As explained earlier we are using energy detection as one of the spectrum sensing technique since it possesses a very low implementation complexity~\cite{arhtn4}. The energy detection scheme detects the presence or absence of a signal source based on its intercepted energy signature. If the energy of the signal is higher than a certain threshold, this indicates that the channel is occupied. 
 
-The decision whether the signal is present or absent is decided by evaluating a local test statistic $L$ to see whether it is above or below certain fixed threshold $\tau$. 
-The local test statistic $L$, which is the complex-magnitude squared of the FFT samples, is compared with $\tau$ using equation:
 
-\begin{equation}
-\label{eq:2}
-	L = \sum_{n=1}^{M}{|y(n)|^2} = 
-	\left\{
-	\begin{aligned}
-		<\tau,~\Hmat_0 \\
-		>\tau,~\Hmat_1		
-	\end{aligned}
-	\right.
-\end{equation}
-
-where $|y(n)|^2$ is the energy of a specific FFT bin and n=1,2,3...M are the number of samples received.
-
-The probability of false alarm $P_{fa}$ and probability of detection $P_d$ are given by:
-\begin{equation}
-\label{eq:3}
-P_f = Q\Bigg(\dfrac{\tau-M(2\sigma_n^2)}{\sqrt{M}(2\sigma_n^2)}\Bigg),
-\end{equation}
-
-\begin{equation}
-\label{eq:4}
-~~~~~~~P_d = Q\Bigg(\dfrac{\tau-M(2\sigma_n^2)(1+\gamma)}{\sqrt{M(1+2\gamma)}(2\sigma_n^2)}\Bigg).
-\end{equation}
 In cooperative spectrum sensing, each sensor node transmits the local sensing data to the fusion center for signal source detection. The local sensing data has to be quantized, thus yielding quantization errors. To minimize the quantization error in local test statistic $L$ and to reduce the effect of noise variance, the energy of the received signal $y(n)$ is normalized\cite{arhtn13}. The local test statistic $L$ for the $r^{th}$ sensor node is given as:
 \begin{equation}
 	\label{eq:5}
