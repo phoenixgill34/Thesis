@@ -2,10 +2,7 @@
 \label{chapter5}
 
 \section{Overview}
-This chapter outlines the implementation of heterogeneous test-bed for cooperative spectrum sensing using software-defined radios N210, and RTL-SDR and we also describe the simulation test-bed for performance analysis of LTE-R communication system in a tunnel environment. We start with heterogeneous cooperative spectrum sensing where we first describe the experimental setup which is implemented using soft and hard fusion schemes. The sensor nodes which consists of three RTL-SDRs and one USRP N210 are placed in a controlled indoor laboratory environment around 8-10 meters apart. The signal source is being simulated by another USRP N210 which is transmitting a DQPSK signal at 450 MHz. The post-processing is done on a Fusion Center which makes the decision based on global test statistic using both soft and hard decision schemes. The performance of both the schemes are evaluated in a real fading scenario on a hardware test-bed. 
-
-We then discuss our LTE-R test-bed implementation in MATLAB and compare the performance for QPSK, 16QAM and 64QAM modulation schemes in a tunnel environment. First we show the results of K-factor variation in a tunnel environment for a high speed train in a tunnel. Using the K-factor we then implement our channel model which also takes into effect the high Doppler shift due to mobility of the train. The bit-error rate curves are generated for the LTE-R modulation schemes for the proposed channel model for high speed train in a tunnel. Finally, we show a time-varying BER curve for high speed train moving with the velocity $v$ at discrete timesteps.
-
+This chapter outlines the implementation of heterogeneous test-bed for cooperative spectrum sensing using software-defined radios N210, and RTL-SDR. We start with heterogeneous cooperative spectrum sensing where we first describe the experimental setup which is implemented using soft and hard fusion schemes. The sensor nodes which consists of three RTL-SDRs and one USRP N210 are placed in a controlled indoor laboratory environment around 8-10 meters apart. The signal source is being simulated by another USRP N210 which is transmitting a DQPSK signal at 450 MHz. The post-processing is done on a Fusion Center which makes the decision based on global test statistic using both soft and hard decision schemes. Finally we discuss the results where the performance of both the schemes are evaluated in a real fading scenario on a hardware test-bed. 
 
 \section{Experimental Setup for Heterogeneous CSS}
 
@@ -93,7 +90,7 @@ The local test statistic in each sensor node is computed and then transmitted to
 \label{eq:8}
 G_{MNE} = \max\{\beta_r\},
 \end{equation}
-The $P_{fa}$ and $P_d$ values for the MNE-CS is given by:~\cite{ref:12},
+The $P_{fa}$ and $P_d$ values for the MNE-CS is given by:~\cite{inhtn12},
 \begin{equation}
 \label{eq:9}
 P_{fa} = 1-\prod_{r=1}^R\Bigg(1-Q\Bigg(\dfrac{\tau-1}{\sqrt{\dfrac{1}{M_r}+\sigma_{q,r}}}\Bigg)\Bigg),
@@ -139,7 +136,6 @@ The algorithm for EGC-CS is also illustrated by the flowchart in Figure~\ref{inp
 \label{egcscheme}      
 \end{figure}
 
-
 \section{Heterogeneous CSS Results}
 In this thesis, we implemented the heterogeneous cooperative spectrum sensing (CSS) using both hard and soft data fusion schemes. We start by collecting the data across 450 MHz band for all sensor nodes in a distributed manner. The spectrum sensing data is normalized for both soft and hard data fusion schemes using the same operational parameters to compare their performance accurately. The measurements are performed using software-defined radios (SDRs) and the post processing is conducted on desktop computers. The desktop computer consists of i7 Intel processor with eight cores and 3.41 GHz clock cycle running Ubuntu 16.04. The sensor node network is implemented using RTL-SDR dongles and Ettus Research USRP N210 on GNU Radio Software platform.
 These sensor nodes collect the spectral data, normalize it and then transmit it to the FC for the detection. For soft data fusion, the data is quantized in the local sensor nodes before it is transmitted to FC due to the limited bandwidth of the overhead channel. 
@@ -175,4 +171,4 @@ The Figure~\ref{softpd} shows the $P_{davg}$ vs $SNR_{avg}$ for both soft and ha
 
 
 \section{Summary}
-This chapter outlined and examined the topics of jamming and anti-jamming techniques, and provided a foundation in communication system theory and advanced equalizer design.  Secondly it setup an understanding of Software-Defined Radio, the power of such an architecture, and examples of implementations and existing software for future designs.  Next, this thesis will consider a new anti-jamming technique and design an implementation of such a system.  After the implementation is investigated, the result of specific experiments on such an implementation will be analyzed.\\
+In this chapter we described the test-bed setup using USRP N210 and RTL-SDR with different operating characteristics. The CSS performance for both soft and hard data fusion was derived at different SNR values. For soft-data fusion scheme we use maximum normalized energy (MNE) and equal gain combining (EGC) scheme and, for hard data fusion scheme we used AND, OR and Majority Rule. The results show that soft-data fusion scheme performs better than hard data fusion schemes for low SNR values, but as we increase SNR both schemes converges to same values. We learned that for severe environment we can use soft-fusion and for noise-free environment hard decision schemes can be used due to their low implementation complexity.

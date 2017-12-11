@@ -1,62 +1,62 @@
-\contentsline {chapter}{List of Figures}{6}{chapter*.2}
-\contentsline {chapter}{List of Tables}{8}{chapter*.3}
-\contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}
-\contentsline {section}{\numberline {1.1}Motivation}{9}{section.1.1}
-\contentsline {section}{\numberline {1.2}State of the Art}{11}{section.1.2}
+\contentsline {chapter}{List of Figures}{5}{chapter*.2}
+\contentsline {chapter}{List of Tables}{7}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{8}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motivation}{8}{section.1.1}
+\contentsline {section}{\numberline {1.2}State of the Art}{12}{section.1.2}
 \contentsline {section}{\numberline {1.3}Thesis Contributions}{13}{section.1.3}
 \contentsline {section}{\numberline {1.4}Thesis Organization}{13}{section.1.4}
+\contentsline {section}{\numberline {1.5}List of Related Publications}{14}{section.1.5}
 \contentsline {chapter}{\numberline {2}Smart Railway Communication System}{15}{chapter.2}
 \contentsline {section}{\numberline {2.1}Positive Train Control}{16}{section.2.1}
 \contentsline {section}{\numberline {2.2}Wireless Broadband (WiBro)}{17}{section.2.2}
 \contentsline {section}{\numberline {2.3}LTE-R Communication System}{18}{section.2.3}
 \contentsline {section}{\numberline {2.4}Spectrum Regulation for LTE-R}{21}{section.2.4}
-\contentsline {section}{\numberline {2.5}Vehicular Communication Using LTE}{23}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Internet of Things (IoT) for Railways}{24}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}Leaky Coaxial Cable for LTE-R}{27}{section.2.6}
-\contentsline {section}{\numberline {2.7}summary}{29}{section.2.7}
-\contentsline {chapter}{\numberline {3}Heterogeneous Cooperative Spectrum Sensing (CSS)}{30}{chapter.3}
-\contentsline {section}{\numberline {3.1}Spectrum Sensing}{30}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Energy Detection}{31}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Cyclostationary Method}{32}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Matched Filter Detection}{33}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Cognitive Radios}{34}{section.3.2}
-\contentsline {section}{\numberline {3.3}CSS in Heterogeneous Networks}{35}{section.3.3}
-\contentsline {section}{\numberline {3.4}Software Defined Radios}{36}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}USRP N210 and RTL-SDR}{38}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}GNU Radio and Software-Defined Radio}{39}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}MATLAB}{40}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Summary}{40}{section.3.5}
-\contentsline {chapter}{\numberline {4}Proposed LTE-R Test-bed Implementation and Results}{41}{chapter.4}
-\contentsline {section}{\numberline {4.1}LTE-R Testbed in Matlab}{41}{section.4.1}
-\contentsline {section}{\numberline {4.2}HST LTE-R in a Tunnel}{43}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}K-factor in a Tunnel}{44}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}BER Performance}{44}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Channel Impairements Inside a Tunnel}{46}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Multipath Fading}{47}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Doppler Shift}{47}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Proposed Channel Model}{49}{section.4.4}
-\contentsline {section}{\numberline {4.5}Summary}{50}{section.4.5}
-\contentsline {chapter}{\numberline {5}CSS Implementation and Results}{52}{chapter.5}
-\contentsline {section}{\numberline {5.1}Overview}{52}{section.5.1}
-\contentsline {section}{\numberline {5.2}Experimental Setup for Heterogeneous CSS}{53}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Sensor Node and Signal Source Setup}{55}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Hard-Data Fusion Scheme}{57}{section.5.3}
+\contentsline {section}{\numberline {2.5}Train-to-train (T2T) Railway Communication}{23}{section.2.5}
+\contentsline {section}{\numberline {2.6}LTE-R Services}{24}{section.2.6}
+\contentsline {section}{\numberline {2.7}Leaky Coaxial Cable for LTE-R}{26}{section.2.7}
+\contentsline {section}{\numberline {2.8}summary}{27}{section.2.8}
+\contentsline {chapter}{\numberline {3}Heterogeneous Cooperative Spectrum Sensing (CSS)}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Spectrum Sensing}{29}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Energy Detection}{30}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Cyclostationary Method}{31}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Matched Filter Detection}{32}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Cognitive Radios}{33}{section.3.2}
+\contentsline {section}{\numberline {3.3}CSS in Heterogeneous Networks}{34}{section.3.3}
+\contentsline {section}{\numberline {3.4}Software Defined Radios}{35}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}USRP N210 and RTL-SDR}{37}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}GNU Radio and MATLAB}{38}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Summary}{39}{section.3.5}
+\contentsline {chapter}{\numberline {4}Proposed LTE-R Test-bed Implementation and Results}{40}{chapter.4}
+\contentsline {section}{\numberline {4.1}Channel Impairements Inside a Tunnel}{41}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Multipath Fading}{41}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Doppler Shift}{42}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Proposed Channel Model}{43}{section.4.2}
+\contentsline {section}{\numberline {4.3}LTE-R Testbed in Matlab}{45}{section.4.3}
+\contentsline {section}{\numberline {4.4}HST LTE-R in a Tunnel}{46}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}K-factor in a Tunnel}{47}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}BER Performance}{48}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Summary}{49}{section.4.5}
+\contentsline {chapter}{\numberline {5}CSS Implementation and Results}{51}{chapter.5}
+\contentsline {section}{\numberline {5.1}Overview}{51}{section.5.1}
+\contentsline {section}{\numberline {5.2}Experimental Setup for Heterogeneous CSS}{51}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Sensor Node and Signal Source Setup}{54}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Hard-Data Fusion Scheme}{55}{section.5.3}
 \contentsline {section}{\numberline {5.4}Soft-Data Fusion Scheme}{57}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Maximum Normalized Energy Scheme}{58}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Equal Gain Combining Scheme}{59}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Heterogeneous CSS Results}{60}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Hard Decision Combining}{61}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.4.1}Maximum Normalized Energy Scheme}{57}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Equal Gain Combining Scheme}{58}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Heterogeneous CSS Results}{59}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Hard Decision Combining}{60}{subsection.5.5.1}
 \contentsline {subsection}{\numberline {5.5.2}Soft Decision Combining}{61}{subsection.5.5.2}
 \contentsline {section}{\numberline {5.6}Summary}{62}{section.5.6}
-\contentsline {chapter}{\numberline {6}Conclusions}{65}{chapter.6}
-\contentsline {section}{\numberline {6.1}Research Outcomes}{65}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{66}{section.6.2}
-\contentsline {chapter}{Bibliography}{67}{chapter*.37}
-\contentsline {chapter}{\numberline {A}Heterogeneous Cooperative Spectrum Sensing Code}{75}{appendix.A}
-\contentsline {section}{\numberline {A.1}harddecisionpdroc.m}{75}{section.A.1}
-\contentsline {section}{\numberline {A.2}softharddecisionpd.m}{77}{section.A.2}
-\contentsline {section}{\numberline {A.3}spectrumsenseusrp.py}{79}{section.A.3}
-\contentsline {section}{\numberline {A.4}gnuradiortlsdrsense.py}{87}{section.A.4}
-\contentsline {chapter}{\numberline {B}LTE-R Analysis Code}{93}{appendix.B}
-\contentsline {section}{\numberline {B.1}kfactordist.m}{93}{section.B.1}
-\contentsline {section}{\numberline {B.2}bercalculation.m}{94}{section.B.2}
+\contentsline {chapter}{\numberline {6}Conclusions}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}Research Outcomes}{63}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future Work}{64}{section.6.2}
+\contentsline {chapter}{Bibliography}{66}{chapter*.38}
+\contentsline {chapter}{\numberline {A}Heterogeneous Cooperative Spectrum Sensing Code}{74}{appendix.A}
+\contentsline {section}{\numberline {A.1}harddecisionpdroc.m}{74}{section.A.1}
+\contentsline {section}{\numberline {A.2}softharddecisionpd.m}{76}{section.A.2}
+\contentsline {section}{\numberline {A.3}spectrumsenseusrp.py}{78}{section.A.3}
+\contentsline {section}{\numberline {A.4}gnuradiortlsdrsense.py}{86}{section.A.4}
+\contentsline {chapter}{\numberline {B}LTE-R Analysis Code}{92}{appendix.B}
+\contentsline {section}{\numberline {B.1}kfactordist.m}{92}{section.B.1}
+\contentsline {section}{\numberline {B.2}bercalculation.m}{93}{section.B.2}

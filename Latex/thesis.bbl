@@ -21,6 +21,56 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{corridor}
+\BIBentryALTinterwordspacing
+``Corridor: Cognitive radio for railway through dynamic and opportunistic
+  spectrum reuse.'' March 2014. [Online]. Available:
+  \url{http://corridor.ifsttar.fr}
+\BIBentrySTDinterwordspacing
+
+\bibitem{5621621}
+A.~Amanna, M.~Gadnhiok, M.~J. Price, J.~H. Reed, W.~P. Siriwongpairat, and
+  T.~K. Himsoon, ``Railway cognitive radio,'' \emph{IEEE Vehicular Technology
+  Magazine}, vol.~5, no.~3, pp. 82--89, Sept 2010.
+
+\bibitem{trlter1}
+U.~G.-R.~F. Group, ``Gsm-r functional requirement specification {(FRS)},''
+  {UIC, Paris, France} UIC EIRENE Technology Report, Tech. Rep. UIC Code 950,
+  Version 7.3.0, 2012.
+
+\bibitem{trlter2}
+G.~T. 36.201, ``Evolved universal terrestrial radio access {(E-UTRA)}; lte
+  physical layer; general description,'' 3GPP, Sophia Antipolis, France, Tech.
+  Rep. version 12.2.0, Release 12, 2015.
+
+\bibitem{arlter3}
+K.~Masur and D.~Mandoc, ``Lte/sae—the future railway mobile radio system?
+  long term visions on railway mobile radio technologies,'' \emph{International
+  Union of Railways (UIC), Technical Report}, vol.~1, 2009.
+
+\bibitem{inplter4}
+G.~Tingting and S.~Bin, ``A high-speed railway mobile communication system
+  based on lte,'' in \emph{Electronics and Information Engineering (ICEIE),
+  2010 International Conference On}, vol.~1.\hskip 1em plus 0.5em minus
+  0.4em\relax IEEE, 2010, pp. V1--414.
+
+\bibitem{inplter5}
+K.~Guan, Z.~Zhong, and B.~Ai, ``Assessment of lte-r using high speed railway
+  channel model,'' in \emph{Communications and Mobile Computing (CMC), 2011
+  Third International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax
+  IEEE, 2011, pp. 461--464.
+
+\bibitem{inplter6}
+H.~Wei, Z.~Zhong, K.~Guan, and B.~Ai, ``Path loss models in viaduct and plain
+  scenarios of the high-speed railway,'' in \emph{Communications and Networking
+  in China (CHINACOM), 2010 5th International ICST Conference on}.\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 1--5.
+
+\bibitem{arlter7}
+D.~G. Dudley, M.~Lienard, S.~F. Mahmoud, and P.~Degauque, ``Wireless
+  propagation in tunnels,'' \emph{IEEE Antennas and Propagation Magazine},
+  vol.~49, no.~2, pp. 11--26, 2007.
+
 \bibitem{arhtn2}
 I.~F. Akyildiz, W.-Y. Lee, M.~C. Vuran, and S.~Mohanty, ``Next
   generation/dynamic spectrum access/cognitive radio wireless networks: A
@@ -63,43 +113,16 @@ A.~Ghasemi and E.~S. Sousa, ``Impact of user collaboration on the performance
   Technology Conference, 2006. VTC-2006 Fall. 2006 IEEE 64th}.\hskip 1em plus
   0.5em minus 0.4em\relax IEEE, 2006, pp. 1--6.
 
-\bibitem{trlter1}
-U.~G.-R.~F. Group, ``Gsm-r functional requirement specification {(FRS)},''
-  {UIC, Paris, France} UIC EIRENE Technology Report, Tech. Rep. UIC Code 950,
-  Version 7.3.0, 2012.
+\bibitem{inplter8}
+J.-M. Molina-Garcia-Pardo, M.~Lienard, A.~Nasr, and P.~Degauque, ``Wideband
+  analysis of large scale and small scale fading in tunnels,'' in \emph{ITS
+  Telecommunications, 2008. ITST 2008. 8th International Conference on}.\hskip
+  1em plus 0.5em minus 0.4em\relax IEEE, 2008, pp. 270--273.
 
-\bibitem{trlter2}
-G.~T. 36.201, ``Evolved universal terrestrial radio access {(E-UTRA)}; lte
-  physical layer; general description,'' 3GPP, Sophia Antipolis, France, Tech.
-  Rep. version 12.2.0, Release 12, 2015.
-
-\bibitem{arlter3}
-K.~Masur and D.~Mandoc, ``Lte/sae—the future railway mobile radio system?
-  long term visions on railway mobile radio technologies,'' \emph{International
-  Union of Railways (UIC), Technical Report}, vol.~1, 2009.
-
-\bibitem{inplter4}
-G.~Tingting and S.~Bin, ``A high-speed railway mobile communication system
-  based on lte,'' in \emph{Electronics and Information Engineering (ICEIE),
-  2010 International Conference On}, vol.~1.\hskip 1em plus 0.5em minus
-  0.4em\relax IEEE, 2010, pp. V1--414.
-
-\bibitem{inplter5}
-K.~Guan, Z.~Zhong, and B.~Ai, ``Assessment of lte-r using high speed railway
-  channel model,'' in \emph{Communications and Mobile Computing (CMC), 2011
-  Third International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax
-  IEEE, 2011, pp. 461--464.
-
-\bibitem{inplter6}
-H.~Wei, Z.~Zhong, K.~Guan, and B.~Ai, ``Path loss models in viaduct and plain
-  scenarios of the high-speed railway,'' in \emph{Communications and Networking
-  in China (CHINACOM), 2010 5th International ICST Conference on}.\hskip 1em
-  plus 0.5em minus 0.4em\relax IEEE, 2010, pp. 1--5.
-
-\bibitem{arlter7}
-D.~G. Dudley, M.~Lienard, S.~F. Mahmoud, and P.~Degauque, ``Wireless
-  propagation in tunnels,'' \emph{IEEE Antennas and Propagation Magazine},
-  vol.~49, no.~2, pp. 11--26, 2007.
+\bibitem{inplter9}
+T.~Liu, X.~Ma, R.~Zhao, H.~Dong, and L.~Jia, ``Doppler shift estimation for
+  high-speed railway scenario,'' in \emph{2016 IEEE 83rd Vehicular Technology
+  Conference (VTC Spring)}, May 2016, pp. 1--5.
 
 \bibitem{arhtn9}
 J.~Ma, G.~Zhao, and Y.~Li, ``Soft combination and detection for cooperative
@@ -123,16 +146,10 @@ Y.~Zeng, Y.-C. Liang, S.~Zheng, and E.~C. Peh, ``Optimal cooperative sensing
   IEEE International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax
   IEEE, 2011, pp. 1--5.
 
-\bibitem{inplter8}
-J.-M. Molina-Garcia-Pardo, M.~Lienard, A.~Nasr, and P.~Degauque, ``Wideband
-  analysis of large scale and small scale fading in tunnels,'' in \emph{ITS
-  Telecommunications, 2008. ITST 2008. 8th International Conference on}.\hskip
-  1em plus 0.5em minus 0.4em\relax IEEE, 2008, pp. 270--273.
-
-\bibitem{inplter9}
-T.~Liu, X.~Ma, R.~Zhao, H.~Dong, and L.~Jia, ``Doppler shift estimation for
-  high-speed railway scenario,'' in \emph{2016 IEEE 83rd Vehicular Technology
-  Conference (VTC Spring)}, May 2016, pp. 1--5.
+\bibitem{booklter11}
+T.~S. Rappaport \emph{et~al.}, \emph{Wireless communications: principles and
+  practice}.\hskip 1em plus 0.5em minus 0.4em\relax prentice hall PTR New
+  Jersey, 1996, vol.~2.
 
 \bibitem{usrp}
 \BIBentryALTinterwordspacing
@@ -145,31 +162,14 @@ Usrp. [Online]. Available:
 Rtl-sdr. [Online]. Available: \url{http://www.rtl-sdr.com/}
 \BIBentrySTDinterwordspacing
 
-\bibitem{booklter11}
-T.~S. Rappaport \emph{et~al.}, \emph{Wireless communications: principles and
-  practice}.\hskip 1em plus 0.5em minus 0.4em\relax prentice hall PTR New
-  Jersey, 1996, vol.~2.
-
-\bibitem{corridor}
-\BIBentryALTinterwordspacing
-``Corridor: Cognitive radio for railway through dynamic and opportunistic
-  spectrum reuse.'' ~11 2014. [Online]. Available:
-  \url{http://corridor.ifsttar.fr}
-\BIBentrySTDinterwordspacing
-
-\bibitem{5621621}
-A.~Amanna, M.~Gadnhiok, M.~J. Price, J.~H. Reed, W.~P. Siriwongpairat, and
-  T.~K. Himsoon, ``Railway cognitive radio,'' \emph{IEEE Vehicular Technology
-  Magazine}, vol.~5, no.~3, pp. 82--89, Sept 2010.
-
 \bibitem{5338992}
 R.~Lindsey, ``Positive train control in north america,'' \emph{IEEE Vehicular
   Technology Magazine}, vol.~4, no.~4, pp. 22--26, December 2009.
 
 \bibitem{wibro}
 \BIBentryALTinterwordspacing
-``Wibro standard phase–i,'' 2004, tTAS.KO-06.0065R1. [Online]. Available:
-  \url{http://corridor.ifsttar.fr}
+``Wibro standard phase–i,'' December 2004, tTAS.KO-06.0065R1. [Online].
+  Available: \url{http://corridor.ifsttar.fr}
 \BIBentrySTDinterwordspacing
 
 \bibitem{tingting2010high}
@@ -199,26 +199,23 @@ X.~Ge, H.~Cheng, G.~Mao, Y.~Yang, and S.~Tu, ``Vehicular communications for 5g
   cooperative small-cell networks,'' \emph{IEEE Transactions on Vehicular
   Technology}, vol.~65, no.~10, pp. 7882--7894, 2016.
 
-\bibitem{araniti2013lte}
-G.~Araniti, C.~Campolo, M.~Condoluci, A.~Iera, and A.~Molinaro, ``Lte for
-  vehicular networking: a survey,'' \emph{IEEE Communications Magazine},
-  vol.~51, no.~5, pp. 148--157, 2013.
+\bibitem{nterhuber2017wide}
+P.~Unterhuber, S.~Sand, M.~Soliman, B.~Siebler, A.~Lehner, T.~Strang,
+  M.~d'Atri, F.~Tavano, and D.~Gera, ``Wide band propagation in train-to-train
+  scenarios—measurement campaign and first results,'' in \emph{Antennas and
+  Propagation (EUCAP), 2017 11th European Conference on}.\hskip 1em plus 0.5em
+  minus 0.4em\relax IEEE, 2017, pp. 3356--3360.
+
+\bibitem{unterhuber2016survey}
+P.~Unterhuber, S.~Pfletschinger, S.~Sand, M.~Soliman, T.~Jost, A.~Arriola,
+  I.~Val, C.~Cruces, J.~Moreno, J.~P. Garc{\'\i}a-Nieto \emph{et~al.}, ``A
+  survey of channel measurements and models for current and future railway
+  communication systems,'' \emph{Mobile Information Systems}, vol. 2016, 2016.
 
 \bibitem{mumtaz2014direct}
 S.~Mumtaz, K.~M.~S. Huq, and J.~Rodriguez, ``Direct mobile-to-mobile
   communication: Paradigm for 5g,'' \emph{IEEE Wireless Communications},
   vol.~21, no.~5, pp. 14--23, 2014.
-
-\bibitem{laya2014random}
-A.~Laya, L.~Alonso, and J.~Alonso-Zarate, ``Is the random access channel of lte
-  and lte-a suitable for m2m communications? a survey of alternatives.''
-  \emph{IEEE Communications Surveys and Tutorials}, vol.~16, no.~1, pp. 4--16,
-  2014.
-
-\bibitem{chen2014survey}
-M.~Chen, J.~Wan, S.~Gonz{\'a}lez-Valenzuela, X.~Liao, and V.~C. Leung, ``A
-  survey of recent developments in home m2m networks.'' \emph{IEEE
-  Communications Surveys and Tutorials}, vol.~16, no.~1, pp. 98--114, 2014.
 
 \bibitem{n1974leaky}
 \BIBentryALTinterwordspacing
@@ -247,7 +244,8 @@ T.~Takatsu, ``The history and future of high-speed railways in japan,''
 \bibitem{hassan2012blind}
 K.~Hassan, I.~Dayoub, W.~Hamouda, C.~N. Nzeza, and M.~Berbineau, ``Blind
   digital modulation identification for spatially-correlated mimo systems,''
-  pp. 683--693, 2012.
+  \emph{IEEE Transactions on Wireless Communications}, vol.~11, no.~2, pp.
+  683--693, 2012.
 
 \bibitem{kharbech2013blind}
 S.~Kharbech, I.~Dayoub, E.~Simon, and M.~Zwingelstein-Colin, ``Blind digital
@@ -353,11 +351,6 @@ Matlab2017a. [Online]. Available:
   \url{https://www.mathworks.com/products/matlab.html}
 \BIBentrySTDinterwordspacing
 
-\bibitem{lter17}
-K.~Arshad, F.~Katsriku, A.~Lasebae \emph{et~al.}, ``Effects of different
-  parameters on attenuation rates in circular and arch tunnels,'' \emph{PIERS
-  Online}, vol.~3, no.~5, pp. 607--611, 2007.
-
 \bibitem{booklter13}
 M.~P{\"a}tzold, \emph{Mobile radio channels}.\hskip 1em plus 0.5em minus
   0.4em\relax John Wiley \& Sons, 2011.
@@ -389,6 +382,11 @@ P.~V.~R. Ferreira and A.~M. Wyglinski, ``Performance analysis of uhf mobile
 D.~Jordane \emph{et~al.}, \emph{Electromagnetic waves and radiating
   systems}.\hskip 1em plus 0.5em minus 0.4em\relax Prentice-Hall Of Lndia
   Private Limited; New Delhi, 1967.
+
+\bibitem{lter17}
+K.~Arshad, F.~Katsriku, A.~Lasebae \emph{et~al.}, ``Effects of different
+  parameters on attenuation rates in circular and arch tunnels,'' \emph{PIERS
+  Online}, vol.~3, no.~5, pp. 607--611, 2007.
 
 \bibitem{ghasemi2005collaborative}
 A.~Ghasemi and E.~S. Sousa, ``Collaborative spectrum sensing for opportunistic
