@@ -1,30 +1,19 @@
 \chapter{Conclusions}
 \label{conclusion}
-This chapter summarizes the work as part of this project and then suggests related research that can be performed in the future. The research achievements includes simulation test-bed which is implemented in MATLAB to test the performance of LTE-R in our proposed channel. The proposed channel is built on two-ray propagation model with time-series K-factor which we have derived mathematically and also uses Doppler shift profile for high speed trains. We also discussed the implementation of test-bed for cooperative spectrum sensing in heterogeneous network, the performance measure of both soft and hard data fusion schemes in a real fading scenario. The future work section describes how we can take the mobility effect into the cooperative spectrum sensing and then test the performance of soft and hard fusion schemes in a mobile scenario. For LTE-R for future work we will use LTE antenna toolbox provided by MATLAB to implement the simulation test-bed which is more realistic and close to the actual system.
+The research achievements of this thesis includes a simulation test-bed that is implemented in MATLAB in order to test the performance of LTE-R in our proposed channel. The proposed channel is built on two-ray propagation model with time-series $K$-factor, which we have derived mathematically and also uses Doppler shift profile for high speed trains. We also discussed the implementation of a test-bed for cooperative spectrum sensing in heterogeneous networks, the performance measure of both soft and hard data fusion schemes in a real fading scenario. 
 
 \section{Research Outcomes}
 \begin{itemize}
-\item We analyzed the BER performance of a LTE-R system for high speed trains inside tunnel environments using our proposed channel model. For the implementation of our channel, we first derived the time-series K-factor function using the classical two-ray propagation model.
+\item We analyzed the BER performance of a LTE-R system for high speed trains inside tunnel environments using our proposed channel model. For the implementation of our channel, we first derived the time-series $K$-factor function using the classical two-ray propagation model.
 
-\item We then analyzed the LTE-R performance under our channel model for different modulation schemes for various K-factors. Finally, we compared all the modulation schemes under worst
-and best K-factor, and we observed that for low $E_b/N_0$ sub-carriers must be modulated with QPSK for maintaining reliable communication link.
+\item We analyzed the LTE-R performance under our channel model for different modulation schemes for various $K$-factors. We also compared all the modulation schemes under worst and best $K$-factor, and we observed that for low $E_b/N_0$ sub-carriers must be modulated with QPSK for maintaining reliable communication link.
 
-\item The last plot shows the BER curve for discrete time-step when the train is moving with a velocity of 500 Km/h and carrier frequency for all modulation scheme is set to 3 GHz.The plot is also overlayed with continuous K-factor variation with the propagation of the train. It can be observed from the plot that as the K-factor goes high the BER drops, which represents the train moving towards the LCX slot. 
+\item We obtained the BER curve for discrete time-step when the train is moving with a velocity of 500 Km/h and carrier frequency for all modulation scheme is set to 3 GHz. The plot is also overlayed with continuous $K$-factor variation with the propagation of the train. It can be observed from the plot that as the $K$-factor goes high the BER drops, which represents the train moving towards the LCX slot. As the train move away from the slot the BER starts increasing. For reliable and efficient communication links the sub-carriers have to be modulated with QPSK for low $K$-factor values, or more LTE repeaters are required inside the tunnel to get good connectivity. However, the most important factor that has to be taken into consideration is the real-time channel equalization to reduce the BER rate.
 
-\item As the train move away from the slot the BER starts increasing. For reliable and efficient communication links the sub-carriers have to be modulated with QPSK for low K-factor values, or more LTE repeaters are required inside the tunnel to get good connectivity. However, the most important factor that has to be taken into consideration is the real-time channel equalization to reduce the BER rate.
-
-\item We also conducted an experimental study for cooperative spectrum sensing using normalized energy detection for both soft and hard decision combining techniques.
-
-\item It was found that the soft fusion schemes works better than hard decision for real fading environment with low SNR values.
-
-\item For higher values, all schemes converged to the same decision which led us to conclude that hard fusion schemes pays better when the environment is less noisy due to their low complexity as compared to soft fusion.
+\item We also conducted an experimental study for cooperative spectrum sensing using normalized energy detection for both soft and hard decision combining techniques. It was found that the soft fusion schemes works better than hard decision for real fading environment with low SNR values. For higher values, all schemes converged to the same decision which led us to conclude that hard fusion schemes pays better when the environment is less noisy due to their low complexity as compared to soft fusion.
 \end{itemize}
 
 \section{Future Work}
-\begin{itemize}
 
-\item For future work we will use LTE toolbox in MATLAB which gives more realistic picture of the simulation environment and we will expand the channel model to cover more scenarios for high speed railway.
+For future work we will use LTE toolbox in MATLAB which gives more realistic picture of the simulation environment and we will expand the channel model to cover more scenarios for high speed railway. In heterogeneous cooperative spectrum sensing it is worth exploring an increase in the number of nodes and adding mobility for the testing the performance of heterogeneous networks in a time-variant channel.
 
-\item In heterogeneous cooperative spectrum sensing it is worth exploring an increase in the number of nodes and adding mobility for the testing the performance of heterogeneous networks in a time-variant channel.
-
-\end{itemize}

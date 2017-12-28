@@ -1,12 +1,11 @@
-\chapter{Proposed LTE-R Test-bed Implementation and Results}
+\chapter{Proposed LTE-R Channel Model and Framework}
 \label{chapter4}
 
-This chapter provides background information on LTE proposed for high-speed railway communication system. It outlines the architecture for LTE-R leveraging the existing LTE network for high speed railway networks. For uniform coverage inside a tunnel environment, leaky coaxial cables (LCX) has been proposed for efficient communication. The severe channel impairments inside a tunnel are also discussed with special attention to high Doppler shift cause due to high velocities of trains and harsh multipath fading environment. The proposed two-ray propagation channel model is discussed and mathematical derivation of K-factor is described. We then discuss our LTE-R test-bed implementation in MATLAB and compare the performance for QPSK, 16QAM and 64QAM modulation schemes in a tunnel environment. First we show the results of K-factor variation in a tunnel environment for a high speed train in a tunnel. Using the K-factor we then implement our channel model which also takes into effect the high Doppler shift due to mobility of the train. The bit-error rate curves are generated for the LTE-R modulation schemes for the proposed channel model for high speed train in a tunnel. Finally, we show a time-varying BER curve for high speed train moving with the velocity $v$ at discrete timesteps.
+This chapter provides background information on proposed LTE high-speed railway communication system. It outlines the architecture for LTE-R leveraging the existing LTE network for high speed railway networks. For uniform coverage inside a tunnel environment, leaky coaxial cables (LCX) have been proposed for efficient communication. The severe channel impairments inside a tunnel are also discussed with special attention given to high Doppler shift caused by the high velocities of trains and harsh multipath fading environment. The proposed two-ray propagation channel model is discussed and mathematical derivations of the $K$-factor is described. We then discuss our LTE-R test-bed implementation in MATLAB and compare the performance for QPSK, 16QAM and 64QAM modulation schemes in a tunnel environment. First, we show the results of $K$-factor variation in a tunnel environment for a high speed train in a tunnel. Using the $K$-factor, we then implement our channel model, which also takes into effect the high Doppler shift due to mobility of the train. The bit-error rate curves are generated for the LTE-R modulation schemes for the proposed channel model for high speed train in a tunnel. Finally, we show a time-varying BER curve for high speed train moving with the velocity $v$ at discrete timesteps.
 
 
 \section{Channel Impairements Inside a Tunnel}
-The tunnel environment is affected by multipath and diffraction effects due to multiple reflections from the tunnel walls, which leads to a substantial fading environment. By deploying LCX cables, we can eliminate the large penetration loss due to tunnel walls. However, small-scale fading can still cause a large amount of errors and decrease the QoS for the communication link. High velocity trains experience very high Doppler shifts and a fast fading channel. These problems can lead to significant BER degradation of the LTE system. The frequency shifts caused by the Doppler phenomenon can lead to shifts in the sub-carrier frequencies for OFDM, which leads to synchronization errors. The maximum Doppler shifts for a train traveling at 500 km/h is 2.314 kHz for a 5 GHz carrier frequency. This large Doppler shift can also lead to significant drops in the quality of wireless signals and increase the bit error rate. Thus,
-to develop an efficient and reliable communication link inside tunnels, we need to properly model this channel impairment and build our proposed channel model by taking into account these tunnel phenomenons. These impairments are described in detail in the following subsections.
+The tunnel environment is affected by multipath and diffraction effects due to multiple reflections from the tunnel walls, which leads to a substantial fading environment. By deploying LCX cables, we can eliminate the large penetration loss due to tunnel walls. However, small-scale fading can still cause a large amount of errors and decrease the QoS for the communication link. High velocity trains experience very high Doppler shifts and a fast fading channel. These problems can lead to significant BER degradation of the LTE system. The frequency shifts caused by the Doppler phenomenon can lead to shifts in the sub-carrier frequencies for OFDM, which leads to synchronization errors~\cite{inplter9}. The maximum Doppler shifts for a train traveling at 500 km/h is 2.314 kHz for a 5 GHz carrier frequency. This large Doppler shift can also lead to significant drops in the quality of wireless signals and increase the bit error rate. Thus, to develop an efficient and reliable communication link inside tunnels, we need to properly model this channel impairment and build our proposed channel model by taking into account these tunnel phenomena. These impairments are described in detail in the following subsections.
 
 \subsection{Multipath Fading}
 The following time-varying multipath channel impulse response considers the effects of Doppler shift and scattering~\cite{booklter13}:
@@ -21,7 +20,7 @@ p(\alpha) = \dfrac{2\alpha(1+K)}{\Omega}I_0\Bigg(2\alpha\sqrt{\dfrac{K+K^2}{\Ome
 where $K$ is the Rician factor and $\alpha$ is the complex amplitude of the channel response function that has a unity second moment, \textit{i.e.}, $\Omega \equiv E[\alpha^2] = 1$.
 
 \subsection{Doppler Shift}
-The 3GPP channel model~\cite{trlter14} is used for its Doppler shift profile in high speed railway environment. The measurements obtained for the Doppler frequency shift are implemented for two scenarios. The first scenario is for an open space while the second scenario is for high speed trains. Doppler shift is not taken into consideration. There exists a third scenario for tunnels using multiple antennas. Since the slots of LCX can be modeled as multiple antenna system, we use this Doppler shift profile for our proposed channel. The Doppler shift variation $f_s(t)$ is described by:
+The 3GPP channel model~\cite{trlter14} is used for its Doppler shift profile in high speed railway environment. The measurements obtained for the Doppler frequency shift are implemented for two scenarios. The first scenario is for an open space while the second scenario is for high speed trains. Doppler shift is not taken into consideration. There exists a third scenario for tunnels using multiple antennas. Since the slots of the LCX can be modeled as multiple antenna system, we use this Doppler shift profile for our proposed channel. The Doppler shift variation $f_s(t)$ is described by:
 
 \begin{equation}
 \label{eq1}
@@ -37,7 +36,7 @@ where \textrm{$f_d$} is the maximum Doppler shift, $\theta$ is the elevation ang
  	\end{aligned}
 \right.
 \end{equation}
-where $D_s/2$ is the initial distance of the train from base-station, and $\mathrm{D_{min}}$ is base-station (BS)-Railway track distance, both in meters; $v$ is the velocity of the train in \textrm{m/s}, $t$ is time in seconds.
+where $D_s/2$ is the initial distance of the train from base-station, and $D_{min}$ is base-station (BS)-Railway track distance, both in meters, $v$ is the velocity of the train in \textrm{m/s}, and $t$ is time in seconds.
 
 \begin{figure}[!ht]
 \centering
@@ -46,11 +45,11 @@ where $D_s/2$ is the initial distance of the train from base-station, and $\math
 \label{doppler}
 \end{figure}
 
-Figure~\ref{doppler} shows the Doppler spectrum for $f_c$ = 5 GHz and $v$ = 300 Km/h, 400 Km/h and 500 Km/h, and as we can see in the figure the maximum Doppler shift range is from -2.314 kHz to +2.314 kHz. These range of Doppler shift values can lead to very high bit-error rate and poor connectivity in communication system. In the following section we discuss our proposed channel model which consists of Doppler shift profile for high speed train and dynamic K-factor for tunnel environment.
+Figure~\ref{doppler} shows the Doppler spectrum for $f_c$ = 5 GHz and $v$ = 300 Km/h, 400 Km/h and 500 Km/h, and as we can see in the figure the maximum Doppler shift range is from -2.314 kHz to +2.314 kHz. These ranges of Doppler shift values can lead to very high bit-error rate and poor connectivity in communication system. In the following section, we discuss our proposed channel model that consists of Doppler shift profile for high speed train and dynamic $K$-factor for tunnel environment.
 
 \section{Proposed Channel Model}
 
-The tunnel measurement campaign conducted in~\cite{inplter8} shows that the amplitude variation inside tunnel follows Rician distribution. In the thesis, we apply the approach used in~\cite{inlter15} for single elevation angle $\theta$ and expand it to a time-varying case. In this thesis, we model $\theta$ as a function of time and derive time-series $K$-factor for the tunnel environment. Figure~\ref{subblock} describes our proposed channel model which is implemented using dynamic K-factor and Doppler shift profile derived using Eq.(\ref{eq1}).  In the following section we discuss the classical two-ray propagation model and mathematical derivation of dynamic K-factor for our proposed channel model.
+The tunnel measurement campaign conducted in~\cite{inplter8} shows that the amplitude variation inside tunnel follows Rician distribution. In the thesis, we apply the approach used in~\cite{inlter15} for single elevation angle $\theta$ and expand it to a time-varying case. In this thesis, we model $\theta$ as a function of time and derive time-series $K$-factor for the tunnel environment. Figure~\ref{subblock} describes our proposed channel model which is implemented using dynamic $K$-factor and Doppler shift profile derived using Eq.~(\ref{eq1}).  In the following section, we discuss the classical two-ray propagation model and mathematical derivation of dynamic $K$-factor for our proposed channel model.
 
 \begin{figure}[!ht]
 \centering
@@ -73,7 +72,7 @@ f_r(t) = f_c(t)-f_s(t)
 \end{equation}
 where $f_c(t)$ is the sub-carrier frequency, and $f_s(t)$ is the Doppler shift given by Eq.~(\ref{eq1}).
 
-The phase difference function of $t$, $\Delta\phi(t)$ between the two reflected paths is given by~\cite{booklter11}:
+The phase difference function of $t$, $\Delta\phi(t)$, between the two reflected paths is given by~\cite{booklter11}:
 \begin{equation}
 \begin{split}
 \Delta\phi(t) =& \dfrac{2\pi}{\lambda(t)}\bigg(\sqrt{D_{\textrm{LOS}}^2+(h_t+h_r)^2}-\\
@@ -86,7 +85,7 @@ The resultant received power $p_r(t)$ is given by the sum of the LOS received po
 \begin{equation}
 \begin{split}
 p_r(t) =& ~p_t(t)\bigg(\dfrac{\lambda}{4\pi d}\bigg)^2G_t G_r\bigg[1+\\
-& |\Gamma(t)|^2+2|\Gamma(t)|\cos(\angle\Gamma(t)-\angle\Delta\phi(t))\bigg]
+& |\Gamma(t)|^2+2|\Gamma(t)|\cos(\angle\Gamma(t)-\angle\Delta\phi(t))\bigg],
 \end{split}
 \end{equation}
 which is a function of the transmitter power $p_t(t)$ and the reflection coefficient $\Gamma(t)$, where $G_t$ and $G_r$ are the transmitter and receiver antenna gains,  respectively.
@@ -96,9 +95,8 @@ The $K$-factor is defined as the ratio of the direct path power and the power in
 \mathrm{K}(t) = \dfrac{1}{|\Gamma(t)|^2+2|\Gamma(t)|\textrm{cos}(\angle \Gamma(t)-\Gamma(t)\Delta\Phi(t))}
 \end{equation}
 
-\section{LTE-R Testbed in Matlab}
-We have implemented the simulation testbed in MATLAB, consisting of a transmitter, a channel and a receiver. The K-factor values for the channel model are obtained from Eq.(\ref{kfactor}) and are used to generate a time-series BER curve for different modulation schemes used in LTE-R. The values used for the electrical material properties for tunnel walls~\cite{lter17} and its
-specifications are given in Table~\ref{tablelter}. The relative permittivity for the tunnel walls is taken as $\varepsilon_r = 5$ and $\sigma$ is set to 0.1. The simulation is conducted for velocity of $v (Km/h) = $ 300, 400 and 500 Km/h. Since the frequency band allocation for LTE-R will most probably be from 2--6 GHz, hence the $f_c$ values chose are 2, 3 and 5 GHz. The height of the receiver is assumed to be around the length of the train and height of tunnel is chosen as the size of the leaky coaxial cable.
+\section{LTE-R Testbed in MATLAB}
+We have implemented the simulation testbed in MATLAB, consisting of a transmitter, a channel and a receiver. The $K$-factor values for the channel model are obtained from Eq~.(\ref{kfactor}) and are used to generate a time-series BER curve for different modulation schemes used in LTE-R. The values used for the electrical material properties for tunnel walls~\cite{lter17} and its specifications are given in Table~\ref{tablelter}. The relative permittivity for the tunnel walls is taken as $\varepsilon_r = 5$ and $\sigma$ is set to 0.1. The simulation is conducted for velocity of $v = $ 300, 400 and 500 Km/h. Since the frequency band allocation for LTE-R will most probably be from 2--6 GHz, hence the $f_c$ values chose are 2, 3 and 5 GHz. The height of the receiver is assumed to be around the length of the train and height of tunnel is chosen as the size of the leaky coaxial cable.
 
 \begin{table*}[t!]
 \centering
@@ -120,10 +118,10 @@ Train (Rx) & Height = 4.2 m &  v (km/h) = 300, 400, 500\\
 \label{finalblock}
 \end{figure}
 
-Figure~\ref{finalblock} shows the block diagram of the simulation test-bed used for the performance analysis of LTE-R. The random source block generate the symbol between 0 and M-1, where M = 4,16,64 for QPSK, 16QAM and 64QAM respectively. The data is then modulated with specific modulation type and then pass through the proposed HST channel model. The additive white gaussian noise is added after applying the channel coefficients to the signal data. We then demodulate the data packets and pass it to the ber calculator object which then computes the bit-error rate. The simulations are run for SNR values ranging from 0--20 dB and plots are generated for all three modulation schemes.
+Figure~\ref{finalblock} shows the block diagram of the simulation test-bed used for the performance analysis of LTE-R. The random source block generate the symbol between 0 and $M-1$, where $M = 4,16,64$ for QPSK, 16QAM and 64QAM, respectively. The data is then modulated with specific modulation type and then pass through the proposed HST channel model. The additive white gaussian noise is added after applying the channel coefficients to the signal data. We then demodulate the data packets and pass it to the ber calculator object which then computes the bit-error rate. The simulations are run for SNR values ranging from 0--20 dB and plots are generated for all three modulation schemes.
 
 \section{HST LTE-R in a Tunnel}
-Using LTE System Toolbox provided by MATLAB we generated Figure~\ref{lteofdma} which shows the received resource grid without equalization. The frame worth of data was modulated with QPSK, 16QAM and 64QAM for equal number of subcarriers and mapped to symbol in a subframe. We generate ten subframes individually and create one frame after merging all subframes. The frame is passed through our proposed high speed train channel model, with additive white gaussian noise added. We can see that without equalization the received resourced grid has lot of errrors and will lead to numerous retransmissions.
+Using LTE System Toolbox provided by MATLAB we generated Figure~\ref{lteofdma}, which shows the received resource grid without equalization. The frame worth of data was modulated with QPSK, 16QAM and 64QAM for equal number of subcarriers and mapped to symbol in a subframe. We generate ten subframes individually and create one frame after merging all subframes. The frame is passed through our proposed high speed train channel model, with additive white gaussian noise added. We can see that without equalization the received resourced grid has lot of errrors and will lead to numerous retransmissions.
 
 \begin{figure}[!ht]
 \centering
@@ -132,8 +130,7 @@ Using LTE System Toolbox provided by MATLAB we generated Figure~\ref{lteofdma} w
 \label{lteofdma}
 \end{figure}
 
-\subsection{K-factor in a Tunnel}
-In Figure~\ref{kfactor}, we calculated the K-factor for the HST inside a tunnel with velocity $v$ = 500 km/h for different center frequencies. It shows the variation of the Rician K-factor with the distance between the transmitter and receiver as the train is moving along the tunnel. We computed the K-factor for a leaky cable with periodic slots separated by distance d in fixed time-steps. The plot shows that the K-factor varies significantly over a short distances. Therefore, assuming a single K-factor for the channel model is not accurate, we use time-series K-factor to do our channel modeling.
+In Figure~\ref{kfactor}, we calculated the $K$-factor for the HST inside a tunnel with velocity $v$ = 500 km/h for different center frequencies. It shows the variation of the Rician $K$-factor with the distance between the transmitter and receiver as the train is moving along the tunnel. We computed the $K$-factor for a leaky cable with periodic slots separated by distance d in fixed time-steps. The plot shows that the $K$-factor varies significantly over a short distances. Therefore, assuming a single $K$-factor for the channel model is not accurate, we use time-series $K$-factor to do our channel modeling.
 
 \begin{figure}[!ht]
 \centering
@@ -142,8 +139,7 @@ In Figure~\ref{kfactor}, we calculated the K-factor for the HST inside a tunnel 
 \label{kfactor}
 \end{figure}
 
-\subsection{BER Performance}
-To show the impact of varying K-factor on the channel, we computed the BER curve for different modulation schemes of LTE-R with different K-factors. Fig.~\ref{fig:qpsk} shows the BER versus SNR performance for QPSK modulation for different K-factors of the tunnel channel model. The figure clearly demonstrates for higher K-factor we have a better performance while performance degrades as K-factor goes low. Fig.\ref{fig:qam16} shows the $E_b/N_0$ versus BER for 16-QAM and as we can see the BER is higher compared to QPSK. Fig.~\ref{fig:qam64} shows the $E_b/N_0$ versus BER for 64-QAM for different K-factors. And finally we compare all the modulation schemes for the best and worst K-factor in Fig.~\ref{fig:qamall}.
+To show the impact of varying $K$-factor on the channel, we computed the BER curve for different modulation schemes of LTE-R with different $K$-factors. Figure.~\ref{fig:qpsk} shows the BER versus SNR performance for QPSK modulation for different $K$-factors of the tunnel channel model. The figure clearly demonstrates for higher $K$-factor we have a better performance while performance degrades as $K$-factor decreases. Figure.\ref{fig:qam16} shows the $E_b/N_0$ versus BER for 16-QAM and as we can see the BER is higher compared to QPSK. Figure.~\ref{fig:qam64} shows the $E_b/N_0$ versus BER for 64-QAM for different $K$-factors. Finally, we compare all the modulation schemes for the best and worst $K$-factor in Figure.~\ref{fig:qamall}.
 
 \begin{figure*}[t!]
   \begin{center}
@@ -159,18 +155,16 @@ To show the impact of varying K-factor on the channel, we computed the BER curve
    \end{center}
 \end{figure*}
 
-In Fig.~\ref{kfactorber} we calculate the BER performance for a high speed train in discrete time-steps. As the train moves towards
-the LCX slot the SNR goes high and the SNR decreases as the train moves away. This trend can be seen in the plot, as we move towards the slot the BER curve decreases and it starts increases once we move. It is important to consider here that due to the varying nature of K-factor the BER curve also varies significantly. Hence, by considering the time-varying nature of K-factor we can have a better performance analysis.
+In Figure.~\ref{kfactorber} we calculate the BER performance for a high speed train in discrete time-steps. As the train moves towards the LCX slot, the SNR goes high and the SNR decreases as the train moves away. This trend can be seen in the plot, as we move towards the slot the BER curve decreases and it starts increases once we move. It is important to consider here that due to the varying nature of $K$-factor the BER curve also varies significantly. Hence, by considering the time-varying nature of $K$-factor we can have a better performance analysis.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio]{images/Gill/lte_figs/kfactorcontinuous.eps} 
 \caption{BER variation with time for HST with different modulation schemes of LTE-R. As the train moves towards
-the antenna the general trend of BER goes down with small-scale fluctuations due to varying K-factor.}
+the antenna the general trend of BER goes down with small-scale fluctuations due to varying $K$-factor.}
 \label{kfactorber}
 \end{figure}
 
 \section{Summary}
-We analyzed the BER performance of a LTE-R system for high speed trains inside tunnel environments using our proposed channel model. For the implementation
-of our channel, we first derived the time-series K-factor function using the classical two-ray propagation model. We then analyzed the LTE-R performance under our channel model for different modulation schemes for various K-factors. Finally, we compared all the modulation schemes under worst and best K-factor. The results show that for low $E_b/N_0$ sub-carriers must be modulated with QPSK for maintaining reliable communication link.
+We analyzed the BER performance of a LTE-R system for high speed trains inside tunnel environments using our proposed channel model. For the implementation of our channel, we first derived the time-series $K$-factor function using the classical two-ray propagation model. We then analyzed the LTE-R performance under our channel model for different modulation schemes for various $K$-factors. Finally, we compared all the modulation schemes under worst and best $K$-factor. The results show that for low $E_b/N_0$ sub-carriers must be modulated with QPSK for maintaining reliable communication link.
 
