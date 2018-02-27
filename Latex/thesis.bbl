@@ -29,13 +29,18 @@
 
 \bibitem{arlter10}
 H.~Wang, F.~R. Yu, and H.~Jiang, ``Modeling of radio channels with leaky
-  coaxial cable for lte-m based cbtc systems,'' \emph{IEEE Communications
+  coaxial cable for {LTE-M} based cbtc systems,'' \emph{IEEE Communications
   Letters}, vol.~20, no.~5, pp. 1038--1041, 2016.
 
 \bibitem{bookhtn1}
 A.~M. Wyglinski and D.~Pu, \emph{Digital communication systems engineering with
   software-defined radio}.\hskip 1em plus 0.5em minus 0.4em\relax Artech House,
   2013.
+
+\bibitem{trlter2}
+G.~T. 36.201, ``Evolved universal terrestrial radio access {(E-UTRA)}; {LTE}
+  physical layer; general description,'' 3GPP, Sophia Antipolis, France, Tech.
+  Rep. version 12.2.0, Release 12, 2015.
 
 \bibitem{corridor}
 \BIBentryALTinterwordspacing
@@ -54,11 +59,6 @@ U.~G. {F}unctional {G}roup, ``{GSM-R} functional requirement specification
   {(FRS)},'' {UIC, Paris, France} UIC EIRENE Technology Report, Tech. Rep. UIC
   Code 950, Version 7.3.0, 2012.
 
-\bibitem{trlter2}
-G.~T. 36.201, ``Evolved universal terrestrial radio access {(E-UTRA)}; {LTE}
-  physical layer; general description,'' 3GPP, Sophia Antipolis, France, Tech.
-  Rep. version 12.2.0, Release 12, 2015.
-
 \bibitem{arlter3}
 K.~Masur and D.~Mandoc, ``{LTE/SAE} the future railway mobile radio system?
   long term visions on railway mobile radio technologies,'' \emph{International
@@ -66,12 +66,12 @@ K.~Masur and D.~Mandoc, ``{LTE/SAE} the future railway mobile radio system?
 
 \bibitem{inplter4}
 G.~Tingting and S.~Bin, ``A high-speed railway mobile communication system
-  based on lte,'' in \emph{Electronics and Information Engineering (ICEIE),
+  based on {LTE},'' in \emph{Electronics and Information Engineering (ICEIE),
   2010 International Conference On}, vol.~1.\hskip 1em plus 0.5em minus
   0.4em\relax IEEE, 2010, pp. V1--414.
 
 \bibitem{inplter5}
-K.~Guan, Z.~Zhong, and B.~Ai, ``Assessment of lte-r using high speed railway
+K.~Guan, Z.~Zhong, and B.~Ai, ``Assessment of {LTE-R} using high speed railway
   channel model,'' in \emph{Communications and Mobile Computing (CMC), 2011
   Third International Conference on}.\hskip 1em plus 0.5em minus 0.4em\relax
   IEEE, 2011, pp. 461--464.
@@ -99,6 +99,16 @@ Q.~Zhao and B.~M. Sadler, ``A survey of dynamic spectrum access,'' \emph{IEEE
 \bibitem{arhtn4}
 H.~Urkowitz, ``Energy detection of unknown deterministic signals,''
   \emph{Proceedings of the IEEE}, vol.~55, no.~4, pp. 523--531, 1967.
+
+\bibitem{chen2008cyclostationary}
+J.~Chen, A.~Gibson, and J.~Zafar, ``Cyclostationary spectrum detection in
+  cognitive radios,'' 2008.
+
+\bibitem{kapoor2011opportunistic}
+S.~Kapoor, S.~Rao, and G.~Singh, ``Opportunistic spectrum sensing by employing
+  matched filter in cognitive radio network,'' in \emph{Communication Systems
+  and Network Technologies (CSNT), 2011 International Conference on}.\hskip 1em
+  plus 0.5em minus 0.4em\relax IEEE, 2011, pp. 580--583.
 
 \bibitem{inphtn5}
 D.~Cabric, S.~M. Mishra, and R.~W. Brodersen, ``Implementation issues in
@@ -130,6 +140,12 @@ J.-M. Molina-Garcia-Pardo, M.~Lienard, A.~Nasr, and P.~Degauque, ``Wideband
   Telecommunications, 2008. ITST 2008. 8th International Conference on}.\hskip
   1em plus 0.5em minus 0.4em\relax IEEE, 2008, pp. 270--273.
 
+\bibitem{7553613}
+R.~He, B.~Ai, G.~Wang, K.~Guan, Z.~Zhong, A.~F. Molisch, C.~Briso-Rodriguez,
+  and C.~P. Oestges, ``High-speed railway communications: From {GSM-R} to
+  {LTE-R},'' \emph{IEEE Vehicular Technology Magazine}, vol.~11, no.~3, pp.
+  49--58, Sept 2016.
+
 \bibitem{inplter9}
 T.~Liu, X.~Ma, R.~Zhao, H.~Dong, and L.~Jia, ``Doppler shift estimation for
   high-speed railway scenario,'' in \emph{2016 IEEE 83rd Vehicular Technology
@@ -158,9 +174,8 @@ Y.~Zeng, Y.-C. Liang, S.~Zheng, and E.~C. Peh, ``Optimal cooperative sensing
   IEEE, 2011, pp. 1--5.
 
 \bibitem{booklter11}
-T.~S. Rappaport \emph{et~al.}, \emph{Wireless communications: principles and
-  practice}.\hskip 1em plus 0.5em minus 0.4em\relax prentice hall PTR New
-  Jersey, 1996, vol.~2.
+T.~S. Rappaport, \emph{Wireless communications: principles and practice}.\hskip
+  1em plus 0.5em minus 0.4em\relax prentice hall PTR New Jersey, 1996, vol.~2.
 
 \bibitem{usrp}
 \BIBentryALTinterwordspacing
@@ -171,6 +186,13 @@ T.~S. Rappaport \emph{et~al.}, \emph{Wireless communications: principles and
 \bibitem{rtlsdr}
 \BIBentryALTinterwordspacing
 {RTL-SDR}. [Online]. Available: \url{http://www.rtl-sdr.com/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{nytimes}
+\BIBentryALTinterwordspacing
+``Nytimes (2017) the amtrak derailment was caused by a collective failure.''
+  December 2017. [Online]. Available:
+  \url{https://www.nytimes.com/2017/12/24/opinion/amtrak-derailment-seattle.html?\_r=0}
 \BIBentrySTDinterwordspacing
 
 \bibitem{5338992}
@@ -194,12 +216,6 @@ F.~Rusek, D.~Persson, B.~K. Lau, E.~G. Larsson, T.~L. Marzetta, O.~Edfors, and
   F.~Tufvesson, ``Scaling up {MIMO}: Opportunities and challenges with very
   large arrays,'' \emph{IEEE Signal Processing Magazine}, vol.~30, no.~1, pp.
   40--60, 2013.
-
-\bibitem{7553613}
-R.~He, B.~Ai, G.~Wang, K.~Guan, Z.~Zhong, A.~F. Molisch, C.~Briso-Rodriguez,
-  and C.~P. Oestges, ``High-speed railway communications: From {GSM-R} to
-  {LTE-R},'' \emph{IEEE Vehicular Technology Magazine}, vol.~11, no.~3, pp.
-  49--58, Sept 2016.
 
 \bibitem{wyglinski2009cognitive}
 A.~M. Wyglinski, M.~Nekovee, and T.~Hou, \emph{Cognitive radio communications
@@ -348,6 +364,12 @@ R.~I. Lackey and D.~W. Upmal, ``Speakeasy: the military software radio,''
   \url{https://www.xilinx.com/products/silicon-devices/fpga/xa-spartan-3a.html}
 \BIBentrySTDinterwordspacing
 
+\bibitem{rtl}
+\BIBentryALTinterwordspacing
+{20\$ RTL-SDR}. [Online]. Available:
+  \url{https://www.rtl-sdr.com/about-rtl-sdr/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{gnradio}
 \BIBentryALTinterwordspacing
 {GNU Radio}. [Online]. Available: \url{http://gnuradio.org/}
@@ -409,6 +431,12 @@ D.~Jordane \emph{et~al.}, \emph{Electromagnetic waves and radiating
 K.~Arshad, F.~Katsriku, A.~Lasebae \emph{et~al.}, ``Effects of different
   parameters on attenuation rates in circular and arch tunnels,'' \emph{PIERS
   Online}, vol.~3, no.~5, pp. 607--611, 2007.
+
+\bibitem{ltetoolbox}
+\BIBentryALTinterwordspacing
+{LTE} {S}ystem {T}oolbox. [Online]. Available:
+  \url{https://www.mathworks.com/products/lte-system.html}
+\BIBentrySTDinterwordspacing
 
 \bibitem{ghasemi2005collaborative}
 A.~Ghasemi and E.~S. Sousa, ``Collaborative spectrum sensing for opportunistic

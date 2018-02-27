@@ -1,42 +1,42 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces High speed train inside a tunnel for LTE-R. $D_{LOS}$ is the distance between transmitter and receiver, $d$ is the distance between the LCX cable transmission slots.\relax }}{3}{figure.caption.4}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Heterogeneous sensor network employing cooperative spectrum sensing. $RFFE_i$ and $SR_i$ represents different front end and sampling rates for the SDR units.\relax }}{4}{figure.caption.5}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Heterogeneous sensor network employing cooperative spectrum sensing. $RFFE_i$ and $SR_i$ represents different front end and sampling rates for the SDR units.\relax }}{5}{figure.caption.5}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Architecture of Positive Train Control consisting of wayside units, central office and real-time GPS information. All these technologies assist PTC in achieving advance control and safety of the trains.\relax }}{9}{figure.caption.6}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Korean Wireless Broadband (WiBro) system architecture for high speed internet connectivity. WiBro is an all IP-based network, which uses ACRs to connect the backbone network with radio access station.\relax }}{11}{figure.caption.7}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Proposed LTE-R Architecture for next generation High-speed Railways consisting of EPA and E-UTRAN.\relax }}{12}{figure.caption.8}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Federal Communications Commission (FCC) spectrum allocation chart\nobreakspace {}\cite {fcc}.\relax }}{14}{figure.caption.10}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Vehicular communication using D2D 5G cellular communication technology.\relax }}{16}{figure.caption.11}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Key LTE-R services required to augment railway security, QoS and efficiency\relax }}{17}{figure.caption.12}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Leaky Coaxial Cable used for uniform radio coverage in a Tunnel environment.\nobreakspace {}\cite {arlter10}\relax }}{20}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Vehicular communication using D2D 5G cellular communication technology.\relax }}{17}{figure.caption.11}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Leaky Coaxial Cable used for uniform radio coverage in a Tunnel environment\nobreakspace {}\cite {arlter10}.\relax }}{19}{figure.caption.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The block diagram describing the working of energy detection scheme\nobreakspace {}\cite {bookhtn1}.\relax }}{23}{figure.caption.14}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The block diagram describing the working of cyclostationary feature detection scheme.\relax }}{24}{figure.caption.15}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The block diagram explaining the basic parts of Cognitive Radio system. The operating parameters are configured based on the characterization of the wireless environment.\relax }}{26}{figure.caption.16}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Software defined radio pushes all the adaptive elements and data manipulation operation into software. The goal of SDR is to provide or define all of the radio operation in software.\relax }}{28}{figure.caption.17}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces RTL-SDR and USRP running a GNU Radio flow-graph and performing spectrum sensing at 450 MHz using normalized energy detection.\relax }}{30}{figure.caption.19}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The block diagram describing the working of energy detection scheme\nobreakspace {}\cite {bookhtn1}.\relax }}{23}{figure.caption.13}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The block diagram describing the working of cyclostationary feature detection scheme.\relax }}{24}{figure.caption.14}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The block diagram explaining the basic parts of CR system. The operating parameters are configured based on the characterization of the wireless environment.\relax }}{26}{figure.caption.15}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Software defined radio pushes all the adaptive elements and data manipulation operation into software. The goal of SDR is to provide or define all of the radio operation in software.\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces RTL-SDR and USRP running a GNU Radio flow-graph and performing spectrum sensing at 450 MHz using normalized energy detection.\relax }}{30}{figure.caption.18}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\fontsize 8{9.5pt}\selectfont RTL-SDR}}}{30}{subfigure.5.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\fontsize 8{9.5pt}\selectfont USRP N210}}}{30}{subfigure.5.2}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Block diagram describing the flow of information between GNU Radio and USRP N210. USRP N210 has in-built Xilinx Spartan 3A FPGA for designing reconfigurable SDR test-beds.\relax }}{31}{figure.caption.20}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces GNU Radio flow-graph for spectrum sensing using energy detection using RTL-SDR source.\relax }}{32}{figure.caption.21}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Screen capture of MATLAB editor running a code for computing receiver operating characteristics of soft decision combining scheme.\relax }}{33}{figure.caption.22}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Block diagram describing the flow of information between GNU Radio and USRP N210. USRP N210 has in-built Xilinx Spartan 3A FPGA for designing reconfigurable SDR test-beds.\relax }}{31}{figure.caption.19}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces GNU Radio flow-graph for spectrum sensing using energy detection using RTL-SDR source.\relax }}{32}{figure.caption.20}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Screen capture of MATLAB editor running a code for computing receiver operating characteristics of soft decision combining scheme.\relax }}{33}{figure.caption.21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Doppler spectrum for LTE-R at different train velocities $v$ (km/h) = 300, 400 and 500 and $f_c$ = 5 GHz.\relax }}{37}{figure.caption.23}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces HST channel model consisting of time-series K-factor and Doppler shift caused due to velocity of the train.\relax }}{38}{figure.caption.24}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Block diagram of a communication system through a HST channel using QPSK, 16-QAM and 64-QAM.\relax }}{40}{figure.caption.26}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Received LTE-R OFDM signal under HST Ricean Fading Environment.\relax }}{41}{figure.caption.27}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces K-factor versus $D_{LOS}$ for different center frequencies $f_c$ = 2, 3 and 5 GHz.\relax }}{42}{figure.caption.28}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparison of $E_b/N_0$ verus BER for LTE-R OFDM modulation with different $K$-factors. The first three sub-figures shows the $E_b/N_0$ versus BER for individual modulation schemes employed in LTE-R and in last plot we compare all the modulation schemes for different $K$-factors.\relax }}{43}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {OFDM-QPSK}}}{43}{subfigure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OFDM-16QAM}}}{43}{subfigure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {OFDM-64QAM}}}{43}{subfigure.6.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {OFDM-MQAM}}}{43}{subfigure.6.4}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces BER variation with time for HST with different modulation schemes of LTE-R. As the train moves towards the antenna the general trend of BER goes down with small-scale fluctuations due to varying $K$-factor.\relax }}{44}{figure.caption.30}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Doppler spectrum for LTE-R at different train velocities $v$ (km/h) = 300, 400 and 500 and $f_c$ = 5 GHz.\relax }}{37}{figure.caption.22}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Two ray propagation model in an open free space path-loss environment.\relax }}{38}{figure.caption.23}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces HST channel model consisting of time-series K-factor and Doppler shift caused due to velocity of the train.\relax }}{38}{figure.caption.24}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Block diagram of a communication system through a HST channel using QPSK, 16-QAM and 64-QAM.\relax }}{40}{figure.caption.26}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Received LTE-R OFDM signal under HST Ricean Fading Environment.\relax }}{41}{figure.caption.27}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces K-factor versus $D_{LOS}$ for different center frequencies $f_c$ = 2, 3 and 5 GHz.\relax }}{42}{figure.caption.28}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparison of $E_b/N_0$ verus BER for LTE-R OFDM modulation with different $K$-factors. The first three sub-figures shows the $E_b/N_0$ versus BER for individual modulation schemes employed in LTE-R and in last plot we compare all the modulation schemes for different $K$-factors.\relax }}{43}{figure.caption.29}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {OFDM-QPSK}}}{43}{subfigure.7.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {OFDM-16QAM}}}{43}{subfigure.7.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {OFDM-64QAM}}}{43}{subfigure.7.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {OFDM-MQAM}}}{43}{subfigure.7.4}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces BER variation with time for HST with different modulation schemes of LTE-R. As the train moves towards the antenna the general trend of BER goes down with small-scale fluctuations due to varying $K$-factor.\relax }}{44}{figure.caption.30}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Experimental Test-Bed For Cooperative Sensing in Heterogeneous Network. Sensors 1, 2 and 4 are RTL-SDR units, sensor 3 is USRP N210 and TX is another USRP N210 unit which is used as a signal source for this work.\relax }}{47}{figure.caption.31}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces GNU Radio Flowgraph For Transmitter Running on USRP N210.\relax }}{48}{figure.caption.32}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces GNURadio Flowgraph For USRP and RTL-SDR sensor nodes.\relax }}{49}{figure.caption.33}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Flowchart showing AND, OR and Majority Rule Fusion schemes.\relax }}{51}{figure.caption.35}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Flowchart showing AND, OR and Majority Rule Fusion schemes.\relax }}{50}{figure.caption.35}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Flowchart describing Maximum Normalized Energy Scheme.\relax }}{52}{figure.caption.36}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Flowchart describing Equal Gain Combining Scheme.\relax }}{53}{figure.caption.37}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Probability of Detection versus $SNR_avg$ For Hard Decision Combining.\relax }}{54}{figure.caption.38}

@@ -1,6 +1,6 @@
-\chapter{Conclusions}
+\chapter{Conclusion}
 \label{conclusion}
-The research achievements of this thesis includes a simulation test-bed that is implemented in MATLAB in order to test the performance of LTE-R in our proposed channel. The proposed channel is built on two-ray propagation model with time-series $K$-factor, which we have derived mathematically and also uses Doppler shift profile for high speed trains. We also discussed the implementation of a test-bed for cooperative spectrum sensing in heterogeneous networks, the performance measure of both soft and hard data fusion schemes in a real fading scenario. 
+The research achievements of this thesis includes a simulation test-bed that is implemented in MATLAB in order to assess the performance of LTE-R in our proposed channel. The proposed channel is built on two-ray propagation model with time-series $K$-factor, which we have derived mathematically and also uses Doppler shift profile for high speed trains. We also presented the implementation of a hardware test-bed for cooperative spectrum sensing in heterogeneous networks, which employs both soft and hard data fusion schemes in a real fading scenario. 
 
 \section{Research Outcomes}
 \begin{itemize}
@@ -8,12 +8,15 @@ The research achievements of this thesis includes a simulation test-bed that is 
 
 \item We analyzed the LTE-R performance under our channel model for different modulation schemes for various $K$-factors. We also compared all the modulation schemes under worst and best $K$-factor, and we observed that for low $E_b/N_0$ sub-carriers must be modulated with QPSK for maintaining reliable communication link.
 
-\item We obtained the BER curve for discrete time-step when the train is moving with a velocity of 500 Km/h and carrier frequency for all modulation scheme is set to 3 GHz. The plot is also overlayed with continuous $K$-factor variation with the propagation of the train. It can be observed from the plot that as the $K$-factor goes high the BER drops, which represents the train moving towards the LCX slot. As the train move away from the slot the BER starts increasing. For reliable and efficient communication links the sub-carriers have to be modulated with QPSK for low $K$-factor values, or more LTE repeaters are required inside the tunnel to get good connectivity. However, the most important factor that has to be taken into consideration is the real-time channel equalization to reduce the BER rate.
-
 \item We also conducted an experimental study for cooperative spectrum sensing using normalized energy detection for both soft and hard decision combining techniques. It was found that the soft fusion schemes works better than hard decision for real fading environment with low SNR values. For higher values, all schemes converged to the same decision which led us to conclude that hard fusion schemes pays better when the environment is less noisy due to their low complexity as compared to soft fusion.
 \end{itemize}
 
 \section{Future Work}
+\begin{itemize}
+\item For future work we will use LTE toolbox in MATLAB which gives more realistic picture of the simulation environment and we will expand the channel model to cover more scenarios for high speed railway. We will also conduct the channel measurement campaign inside tunnel to reinforce our simulation results.
 
-For future work we will use LTE toolbox in MATLAB which gives more realistic picture of the simulation environment and we will expand the channel model to cover more scenarios for high speed railway. In heterogeneous cooperative spectrum sensing it is worth exploring an increase in the number of nodes and adding mobility for the testing the performance of heterogeneous networks in a time-variant channel.
+\item Currently, the Positive Train Control (PTC) is being investigated to provide advanced safety operations for railway system in open space environment. We will simulate PTC for LTE-R communication system in a tunnel environment using our channel model.
+
+\item In heterogeneous cooperative spectrum sensing, it is worth exploring an increase in the number of nodes and adding mobility, for testing the performance of heterogeneous networks in a time-variant channel.
+\end{itemize}
 

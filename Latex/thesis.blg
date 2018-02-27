@@ -18,46 +18,48 @@ Database file #1: mybib.bib
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in chen2008cyclostationary
 
 Done.
-You've used 74 entries,
+You've used 79 entries,
             4024 wiz_defined-function locations,
-            1206 strings with 20523 characters,
-and the built_in function-call counts, 54927 in all, are:
-= -- 4401
-> -- 1276
-< -- 473
-+ -- 698
-- -- 215
-* -- 2595
-:= -- 8155
-add.period$ -- 165
-call.type$ -- 74
-change.case$ -- 70
-chr.to.int$ -- 1068
-cite$ -- 74
-duplicate$ -- 3970
-empty$ -- 4573
-format.name$ -- 271
-if$ -- 12727
+            1223 strings with 21131 characters,
+and the built_in function-call counts, 57002 in all, are:
+= -- 4547
+> -- 1309
+< -- 482
++ -- 717
+- -- 220
+* -- 2673
+:= -- 8477
+add.period$ -- 174
+call.type$ -- 79
+change.case$ -- 75
+chr.to.int$ -- 1092
+cite$ -- 80
+duplicate$ -- 4141
+empty$ -- 4786
+format.name$ -- 277
+if$ -- 13195
 int.to.chr$ -- 0
-int.to.str$ -- 74
-missing$ -- 714
-newline$ -- 265
-num.names$ -- 66
-pop$ -- 1675
+int.to.str$ -- 79
+missing$ -- 748
+newline$ -- 286
+num.names$ -- 68
+pop$ -- 1789
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 4255
+skip$ -- 4414
 stack$ -- 0
-substring$ -- 2562
-swap$ -- 3243
-text.length$ -- 117
+substring$ -- 2621
+swap$ -- 3346
+text.length$ -- 118
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 74
-warning$ -- 0
-while$ -- 256
-width$ -- 76
-write$ -- 737
+type$ -- 79
+warning$ -- 1
+while$ -- 262
+width$ -- 81
+write$ -- 778
+(There was 1 warning)
